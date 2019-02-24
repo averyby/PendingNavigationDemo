@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Counter from './counter';
 
 ReactDOM.render(
-  <h1>Hello, from React!</h1>,
+  <Counter />,
   document.getElementById('react-root')
 );
