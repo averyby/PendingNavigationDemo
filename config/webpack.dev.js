@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -15,7 +16,8 @@ module.exports = {
     // 是相对于 webpack-dev-server 的命令运行所处的目录的。由于 webpack-dev-server 是在
     // 项目根目录运行的，而 dist 即是在项目根目录下面，所以这里无需先进入上级目录。
     contentBase: "dist",
-    overlay: true
+    overlay: true,
+    hot: true
   },
   module: {
     rules: [
@@ -71,5 +73,8 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
