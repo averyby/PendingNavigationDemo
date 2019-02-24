@@ -43,10 +43,24 @@ module.exports = {
             loader: 'extract-loader'
           },
           {
-            loader: 'html-loader'
+            loader: 'html-loader',
+            options: {
+              attrs: ['img:src']
+            }
           }
         ]
       },
+      {
+        test: /\.(jpg|gif|png)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[ext]'
+            }
+          }
+        ]
+      }
     ]
   }
 };
