@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: {
@@ -23,6 +24,11 @@ module.exports = {
     contentBase: "dist",
     overlay: true,
     hot: true
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all"
+    }
   },
   devtool: "source-map",
   module: {
@@ -142,6 +148,9 @@ module.exports = {
       template: "./src/index.html",
       // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
       title: "Link's Journal"
+    }),
+    new BundleAnalyzerPlugin({
+      generateStatsFile: true
     })
   ]
 };

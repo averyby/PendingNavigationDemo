@@ -18,6 +18,11 @@ module.exports = env => {
       path: path.resolve(__dirname, '../dist'),
       publicPath: "/"
     },
+    optimization: {
+      splitChunks: {
+        chunks: "all"
+      }
+    },
     devtool: "source-map",
     module: {
       rules: [
