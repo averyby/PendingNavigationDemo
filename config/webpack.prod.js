@@ -5,6 +5,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const BrotliPlugin = require('brotli-webpack-plugin');
 
 module.exports = env => {
   return {
@@ -149,9 +150,10 @@ module.exports = env => {
       new UglifyJSPlugin({
         sourceMap: true
       }),
-      new CompressionPlugin({
-        algorithm: "gzip"
-      })
+      // new CompressionPlugin({
+      //   algorithm: "gzip"
+      // }),
+      new BrotliPlugin()
     ]
   };
 };

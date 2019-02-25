@@ -27,7 +27,9 @@ if (!isProd) {
 // 生产环境才是 express static middleware 从磁盘上 serve files
 const expressStaticGzip = require('express-static-gzip');
 
-server.use(expressStaticGzip('dist'));
+server.use(expressStaticGzip('dist', {
+  enableBrotli: true
+}));
 
 const PORT = process.env.PORT || 8080; // heroku 会生成一个端口，如果在开发环境，我们使用 8080
 server.listen(PORT, () => {
