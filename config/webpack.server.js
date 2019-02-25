@@ -112,7 +112,8 @@ module.exports = env => {
             {
               loader: 'file-loader',
               options: {
-                name: 'images/[name].[ext]'
+                name: 'images/[name].[ext]',
+                emitFile: false
               }
             }
           ]
