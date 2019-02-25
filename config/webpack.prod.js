@@ -3,6 +3,8 @@ const webpack = require('webpack');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = env => {
   return {
@@ -120,10 +122,20 @@ module.exports = env => {
       ]
     },
     plugins: [
-      new OptimizeCssAssetsPlugin(),
+      new OptimizeCssAssetsPlugin({
+        assetNameRegExp: /\.css$/g,
+        cssProcessor: require('cssnano'),
+        cssProcessorOptions: {
+          discardComments: {
+            removeAll: true
+          }
+        },
+        canPrint: true
+      }),
       new MiniCSSExtractPlugin({
         filename: "[name]-[contenthash].css"
       }),
+      new webpack.NamedModulesPlugin(),
       new HTMLWebpackPlugin({
         template: "./src/index.html",
         inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
@@ -133,6 +145,12 @@ module.exports = env => {
         'process.env': {
           'NODE_ENV': JSON.stringify(env.NODE_ENV)
         }
+      }),
+      new UglifyJSPlugin({
+        sourceMap: true
+      }),
+      new CompressionPlugin({
+        algorithm: "gzip"
       })
     ]
   };
