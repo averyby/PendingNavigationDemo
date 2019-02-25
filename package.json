@@ -7,14 +7,13 @@
     "start": "webpack-dev-server --config=config/webpack.dev.js",
     "build": "webpack --config=config/webpack.dev.js",
     "dev": "nodemon --inspect --watch config --watch src/server src/server/main.js",
-    "prod": "NODE_ENV=production node src/server/main.js"
+    "prod": "NODE_ENV=production node src/server/main.js",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "dependencies": {
     "@babel/core": "^7.3.3",
     "@babel/plugin-proposal-class-properties": "^7.3.3",
@@ -63,5 +62,6 @@
     "stylus-loader": "^3.0.2",
     "webpack-dev-middleware": "^3.6.0",
     "webpack-hot-middleware": "^2.24.3"
-  }
+  },
+  "heroku-run-build-script": true
 }
