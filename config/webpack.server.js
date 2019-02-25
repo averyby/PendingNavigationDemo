@@ -1,29 +1,20 @@
 const path = require('path');
 const webpack = require('webpack');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
-const BrotliPlugin = require('brotli-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = env => {
   return {
     entry: {
-      main: ['./src/main.js'],
+      server: ["./src/server/main.js"]
     },
     mode: 'production',
     output: {
       filename: '[name]-bundle.js', // name 会被 entry 名替换
-      path: path.resolve(__dirname, '../dist'),
-      publicPath: "/"
+      path: path.resolve(__dirname, '../build')
     },
-    optimization: {
-      splitChunks: {
-        chunks: "all"
-      }
-    },
+    target: "node",
+    externals: nodeExternals(),
     devtool: "source-map",
     module: {
       rules: [
@@ -70,8 +61,8 @@ module.exports = env => {
               loader: 'css-loader',
               options: {
                 importLoaders: 1,
-                // modules: true,
-                // localIdentName: "[name]--[local]--[hash:base64:8]"
+                modules: true,
+                localIdentName: "[name]--[local]--[hash:base64:8]"
               }
             },
             {
@@ -137,39 +128,14 @@ module.exports = env => {
       ]
     },
     plugins: [
-      new OptimizeCssAssetsPlugin({
-        assetNameRegExp: /\.css$/g,
-        cssProcessor: require('cssnano'),
-        cssProcessorOptions: {
-          discardComments: {
-            removeAll: true
-          }
-        },
-        canPrint: true
-      }),
       new MiniCSSExtractPlugin({
         filename: "[name].css"
       }),
       new webpack.NamedModulesPlugin(),
-      // new HTMLWebpackPlugin({
-      //   template: "./src/index.html",
-      //   // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
-      //   title: "Link's Journal"
-      // }),
       new webpack.DefinePlugin({
         'process.env': {
           'NODE_ENV': JSON.stringify(env.NODE_ENV)
         }
-      }),
-      new UglifyJSPlugin({
-        sourceMap: true
-      }),
-      // new CompressionPlugin({
-      //   algorithm: "gzip"
-      // }),
-      new BrotliPlugin(),
-      new BundleAnalyzerPlugin({
-        generateStatsFile: true
       })
     ]
   };

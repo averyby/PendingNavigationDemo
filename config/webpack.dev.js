@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
@@ -46,7 +46,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: MiniCSSExtractPlugin.loader
           },
           {
             loader: 'css-loader'
@@ -57,7 +57,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: MiniCSSExtractPlugin.loader
           },
           {
             loader: 'css-loader'
@@ -70,7 +70,7 @@ module.exports = {
         test: /\.styl$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: MiniCSSExtractPlugin.loader
           },
           {
             loader: 'css-loader',
@@ -91,7 +91,7 @@ module.exports = {
         test: /\.less$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: MiniCSSExtractPlugin.loader
           },
           {
             loader: 'css-loader'
@@ -143,14 +143,14 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new HTMLWebpackPlugin({
-      template: "./src/index.html",
-      // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
-      title: "Link's Journal"
+    new MiniCSSExtractPlugin({
+      filename: "[name].css"
     }),
-    new BundleAnalyzerPlugin({
-      generateStatsFile: true
-    })
+    new webpack.HotModuleReplacementPlugin(),
+    // new HTMLWebpackPlugin({
+    //   template: "./src/index.html",
+    //   // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
+    //   title: "Link's Journal"
+    // })
   ]
 };

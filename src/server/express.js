@@ -1,5 +1,7 @@
 import express from 'express';
-import path from 'path';
+import React from 'react';
+import AppRoot from '../components/AppRoot';
+import ReactDOMServer from 'react-dom/server';
 
 const server = express();
 
@@ -30,6 +32,25 @@ const expressStaticGzip = require('express-static-gzip');
 server.use(expressStaticGzip('dist', {
   enableBrotli: true
 }));
+
+server.get("*", (req, res) => {
+  const html = ReactDOMServer.renderToString(<AppRoot />);
+  res.send(`
+<html>
+  <head>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+      <div id="react-root">
+        ${html}
+      </div>
+      <script src="/vendors~main-bundle.js"></script>
+      <script src="/main-bundle.js"></script>
+  </body>
+  </html>
+  `);
+});
+
 
 const PORT = process.env.PORT || 8080; // heroku 会生成一个端口，如果在开发环境，我们使用 8080
 server.listen(PORT, () => {

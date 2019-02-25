@@ -7,8 +7,9 @@
     "start": "webpack-dev-server --config=config/webpack.dev.js",
     "build": "webpack --config=config/webpack.prod.js  --env.NODE_ENV=production --env.ANYTHING=value",
     "build:dev": "webpack --config=config/webpack.dev.js",
+    "build:server": "BABEL_ENV=production webpack --config=config/webpack.server.js --env.NODE_ENV=production --watch",
     "dev": "nodemon --inspect --watch config --watch src/server src/server/main.js",
-    "prod": "NODE_ENV=production node src/server/main.js",
+    "prod": "NODE_ENV=production node build/server-bundle.js",
     "heroku-postbuild": "echo Skip build on Heroku"
   },
   "keywords": [],
@@ -72,7 +73,8 @@
     "webpack-cli": "^3.2.3",
     "webpack-dev-middleware": "^3.6.0",
     "webpack-dev-server": "^3.2.0",
-    "webpack-hot-middleware": "^2.24.3"
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-node-externals": "^1.7.2"
   },
   "heroku-run-build-script": true
 }

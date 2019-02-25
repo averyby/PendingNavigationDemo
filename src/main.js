@@ -10,7 +10,7 @@ require('@babel/register');
 // 还是会感知到这种变化并作出重新构建的（控制台可以看到动静），因为 html-webpack-plugin 使得
 // index.html 成为了它们跟踪的资源。但是浏览器并不会自动刷新。
 
-require('./index.html');
+// require('./index.html');
 require('./app');
 
 console.log(`Environment is ${process.env.NODE_ENV}`);
