@@ -1,5 +1,3 @@
-// require('@babel/runtime/regenerator');
-// require('webpack-hot-middleware/client?reload=true');
 require('@babel/register');
 
 // 为了支持 index.html 模板改了之后浏览器能够自动刷新，需要在 js 里显式地 require index.html。
@@ -14,3 +12,5 @@ require('@babel/register');
 
 require('./index.html');
 require('./app');
+
+console.log(`Environment is ${process.env.NODE_ENV}`);

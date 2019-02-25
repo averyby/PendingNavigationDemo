@@ -4,7 +4,11 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: ['./src/main.js'],
+    main: [
+      '@babel/runtime/regenerator',
+      'webpack-hot-middleware/client?reload=true',
+      './src/main.js'
+    ],
   },
   mode: 'development',
   output: {
@@ -125,7 +129,7 @@ module.exports = {
     ]
   },
   plugins: [
-    // new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({
       template: "./src/index.html",
       inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
