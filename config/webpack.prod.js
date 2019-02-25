@@ -139,7 +139,7 @@ module.exports = env => {
       new webpack.NamedModulesPlugin(),
       new HTMLWebpackPlugin({
         template: "./src/index.html",
-        inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
+        // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
         title: "Link's Journal"
       }),
       new webpack.DefinePlugin({

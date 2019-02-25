@@ -70,8 +70,8 @@ module.exports = {
             loader: 'css-loader',
             options: {
               importLoaders: 1,
-              modules: true,
-              localIdentName: "[name]--[local]--[hash:base64:8]"
+              // modules: true,
+              // localIdentName: "[name]--[local]--[hash:base64:8]"
             }
           },
           {
@@ -132,7 +132,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({
       template: "./src/index.html",
-      inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
+      // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
       title: "Link's Journal"
     })
   ]
