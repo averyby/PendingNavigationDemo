@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
 import styles from './main.styl';
+import styled from '@emotion/styled';
+import { css } from "@emotion/core";
+
+const Fancy = styled('h1')`
+  color: ${props => (props.wild ? "hotpink" : "gold")}
+`;
+
+const red = "#f00";
+
+const className = css`
+  color: ${red};
+  font-size: 13px;
+`;
 
 class Heading extends Component {
   constructor(props) {
@@ -17,11 +30,12 @@ class Heading extends Component {
   };
 
   render() {
+    const isWild = this.state.count % 2 === 0;
     return (
-      <div className={styles.counter}>
-        <h1 onClick={this.handleClick}>
+      <div css={className}>
+        <Fancy wild={isWild} onClick={this.handleClick}>
           Count: {this.state.count}
-        </h1>
+        </Fancy>
       </div>
     )
   }

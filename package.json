@@ -42,7 +42,11 @@
     "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
     "autoprefixer": "^9.4.8",
+    "babel-plugin-emotion": "^10.0.7",
+    "emotion": "^10.0.7",
     "express": "^4.16.4",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
@@ -51,6 +55,7 @@
     "postcss-loader": "^3.0.0",
     "react": "^16.8.3",
     "react-dom": "npm:@hot-loader/react-dom",
+    "react-emotion": "^10.0.0",
     "react-hot-loader": "^4.7.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
