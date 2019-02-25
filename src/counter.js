@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
+import styles from './main.styl';
 
 class Heading extends Component {
   constructor(props) {
@@ -17,9 +18,11 @@ class Heading extends Component {
 
   render() {
     return (
-      <h1 onClick={this.handleClick}>
-        Count: {this.state.count}
-      </h1>
+      <div className={styles.counter}>
+        <h1 onClick={this.handleClick}>
+          Count: {this.state.count}
+        </h1>
+      </div>
     )
   }
 }
