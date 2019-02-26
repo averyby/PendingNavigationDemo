@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: #444; }
+
+.counter {
+  text-decoration: underline; }
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-flow: column; }
+  .profile h1 {
+    /*height: 100vh;*/
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-shadow: 0 0 20px black; }
+  .profile img {
+    border-radius: 100%;
+    width: 300px;
+    box-shadow: 0 0 20px black; }
+  .profile .content {
+    background: lightyellow;
+    padding: 15px;
+    border-radius: 8px; }
+
+
+/*# sourceMappingURL=main.css.map*/
