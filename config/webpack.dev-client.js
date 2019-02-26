@@ -1,9 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+// const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  name: "client",
   entry: {
     main: [
       '@babel/runtime/regenerator',

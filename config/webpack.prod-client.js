@@ -9,6 +9,7 @@ const BrotliPlugin = require('brotli-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = env => {
+  name: "client",
   return {
     entry: {
       main: ['./src/main.js'],

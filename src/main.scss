@@ -3,4 +3,36 @@ body {
   background-color: #444;
 }
 
-@import './profile';
+.counter {
+  text-decoration: underline;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-flow: column;
+
+  h1 {
+    /*height: 100vh;*/
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-shadow: 0 0 20px black;
+  }
+
+  img {
+    border-radius: 100%;
+    width: 300px;
+    box-shadow: 0 0 20px black;
+  }
+
+  .content {
+    background: lightyellow;
+    padding: 15px;
+    border-radius: 8px;
+  }
+}

@@ -1224,7 +1224,7 @@ async@^1.5.2:
   resolved "http://registry.npm.taobao.org/async/download/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
   integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
 
-async@~2.6.0:
+async@^2.4.1, async@~2.6.0:
   version "2.6.2"
   resolved "http://registry.npm.taobao.org/async/download/async-2.6.2.tgz#18330ea7e6e313887f5d2f2a904bac6fe4dd5381"
   integrity sha1-GDMOp+bjE4h/XS8qkEusb+TdU4E=
@@ -3370,7 +3370,7 @@ debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.
   dependencies:
     ms "2.0.0"
 
-debug@^3.2.5, debug@^3.2.6:
+debug@^3.1.0, debug@^3.2.5, debug@^3.2.6:
   version "3.2.6"
   resolved "http://registry.npm.taobao.org/debug/download/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   integrity sha1-6D0X3hbYp++3cX7b5fsQE17uYps=
@@ -3952,6 +3952,16 @@ extract-loader@^3.1.0:
     btoa "^1.2.1"
     loader-utils "^1.1.0"
     resolve "^1.8.1"
+
+extract-text-webpack-plugin@^3.0.2:
+  version "3.0.2"
+  resolved "http://registry.npm.taobao.org/extract-text-webpack-plugin/download/extract-text-webpack-plugin-3.0.2.tgz#5f043eaa02f9750a9258b78c0a6e0dc1408fb2f7"
+  integrity sha1-XwQ+qgL5dQqSWLeMCm4NwUCPsvc=
+  dependencies:
+    async "^2.4.1"
+    loader-utils "^1.1.0"
+    schema-utils "^0.3.0"
+    webpack-sources "^1.0.1"
 
 extsprintf@1.3.0:
   version "1.3.0"
@@ -8169,7 +8179,7 @@ source-map-support@^0.4.15:
   dependencies:
     source-map "^0.5.6"
 
-source-map-support@^0.5.9, source-map-support@~0.5.9:
+source-map-support@^0.5.3, source-map-support@^0.5.9, source-map-support@~0.5.9:
   version "0.5.10"
   resolved "http://registry.npm.taobao.org/source-map-support/download/source-map-support-0.5.10.tgz#2214080bc9d51832511ee2bab96e3c2f9353120c"
   integrity sha1-IhQIC8nVGDJRHuK6uW48L5NTEgw=
@@ -9081,6 +9091,15 @@ webpack-hot-middleware@^2.24.3:
     querystring "^0.2.0"
     strip-ansi "^3.0.0"
 
+webpack-hot-server-middleware@^0.6.0:
+  version "0.6.0"
+  resolved "http://registry.npm.taobao.org/webpack-hot-server-middleware/download/webpack-hot-server-middleware-0.6.0.tgz#7733d142a028049b84a60795ffa77e0b819d0104"
+  integrity sha1-dzPRQqAoBJuEpgeV/6d+C4GdAQQ=
+  dependencies:
+    debug "^3.1.0"
+    require-from-string "^2.0.1"
+    source-map-support "^0.5.3"
+
 webpack-log@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/webpack-log/download/webpack-log-2.0.0.tgz#5b7928e0637593f119d32f6227c1e0ac31e1b47f"
@@ -9088,6 +9107,11 @@ webpack-log@^2.0.0:
   dependencies:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
+
+webpack-mild-compile@^3.3.1:
+  version "3.3.1"
+  resolved "http://registry.npm.taobao.org/webpack-mild-compile/download/webpack-mild-compile-3.3.1.tgz#60d56efcf8f0424ec12373cb2649b9c8a6d37e7f"
+  integrity sha1-YNVu/PjwQk7BI3PLJkm5yKbTfn8=
 
 webpack-node-externals@^1.7.2:
   version "1.7.2"

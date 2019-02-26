@@ -4,6 +4,7 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = env => {
+  name: "server",
   return {
     entry: {
       server: ["./src/server/main.js"]

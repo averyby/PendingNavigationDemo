@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
-import '../main.styl';
+import '../main.scss';
 import MarkdownData from '../../data/post.md';
 
 class Heading extends Component {
