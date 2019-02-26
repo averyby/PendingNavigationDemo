@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
 import '../main.scss';
-import MarkdownData from '../../data/post.md';
+import { BrowserRouter as Router } from "react-router-dom";
+import './nav.css';
+import Routes from './Routes';
+
 
 class Heading extends Component {
   constructor(props) {
@@ -11,13 +14,9 @@ class Heading extends Component {
 
   render() {
     return (
-      <div className="profile">
-        <img src={require('../images/square.jpg')} alt="" />
-        <h1>{MarkdownData.title}</h1>
-        <div className="content"
-             dangerouslySetInnerHTML={{ __html: MarkdownData.__content }}>
-        </div>
-      </div>
+      <Router>
+        <Routes />
+      </Router>
     )
   }
 }
