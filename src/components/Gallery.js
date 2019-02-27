@@ -1,7 +1,9 @@
 import React from 'react';
 
 const getBundle = () => {
-  import(/* webpackChunkName: "lodash" */ 'lodash').then(_ => {
+  // react-universal-component 使得动态 import 时无需写 magic comment
+  // 使用模块名
+  import('lodash').then(_ => {
     console.log('imported', _);
   });
 };

@@ -16,6 +16,7 @@ module.exports = {
   mode: 'production',
   output: {
     filename: '[name]-bundle.js', // name 会被 entry 名替换
+    chunkFilename: "[name].js",
     path: path.resolve(__dirname, '../dist'),
     publicPath: "/"
   },

@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-const nodeExternals = require('webpack-node-externals');
+const externals = require('./node-externals');
 
 module.exports = {
   name: "server",
@@ -10,10 +9,11 @@ module.exports = {
   output: {
     filename: 'prod-server-bundle.js', // name 会被 entry 名替换
     path: path.resolve(__dirname, '../build'),
+    publicPath: "/",
     libraryTarget: "commonjs2"
   },
   target: "node",
-  externals: nodeExternals(),
+  externals,
   devtool: "source-map",
   module: {
     rules: [
@@ -30,9 +30,6 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCSSExtractPlugin.loader
-          },
-          {
             loader: 'css-loader'
           }
         ]
@@ -40,9 +37,6 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
           {
             loader: 'css-loader'
           },
@@ -54,15 +48,7 @@ module.exports = {
         test: /\.styl$/,
         use: [
           {
-            loader: MiniCSSExtractPlugin.loader
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              modules: true,
-              localIdentName: "[name]--[local]--[hash:base64:8]"
-            }
+            loader: 'css-loader'
           },
           {
             loader: "postcss-loader"
@@ -74,9 +60,6 @@ module.exports = {
       }, {
         test: /\.less$/,
         use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
           {
             loader: 'css-loader'
           },
@@ -128,8 +111,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new MiniCSSExtractPlugin({
-      filename: "[name].css"
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.DefinePlugin({

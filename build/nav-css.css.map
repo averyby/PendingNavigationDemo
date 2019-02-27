@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/components/nav.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;;AAEA;AACA;AACA;AACA;AACA,C","file":"nav-css.css","sourcesContent":[".nav {\n    width: 100%;\n    line-height: 2em;\n    background-color: black;\n}\n\n.nav a {\n    color: white;\n    text-decoration: none;\n    padding: 0 20px;\n}"],"sourceRoot":""}
