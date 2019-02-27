@@ -16,7 +16,7 @@ export default () => (req, res) => {
               <Routes />
             </StaticRouter>
           )}</div>
-          <script src="/vendors~main-bundle.js"></script>
+          <script src="/vendors~main.js"></script>
           <script src="/main-bundle.js"></script>
       </body>
       </html>
