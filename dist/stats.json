@@ -4,21 +4,24 @@
   "warnings": [
   ],
   "version": "4.29.5",
-  "hash": "1924f2e11445064b0133",
-  "time": 13581,
-  "builtAt": 1551257810216,
+  "hash": "ae2a0ca6677b35d9b366",
+  "time": 12476,
+  "builtAt": 1551317439911,
   "publicPath": "/",
   "outputPath": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/dist",
   "assetsByChunkName": {
     "About": [
+      "About.css",
       "About.js",
       "About.js.map"
     ],
     "Article": [
+      "Article.css",
       "Article.js",
       "Article.js.map"
     ],
     "Gallery": [
+      "Gallery.css",
       "Gallery.js",
       "Gallery.js.map"
     ],
@@ -39,7 +42,7 @@
   "assets": [
     {
       "name": "About.js",
-      "size": 825,
+      "size": 890,
       "chunks": [
         0
       ],
@@ -50,7 +53,7 @@
     },
     {
       "name": "Article.js",
-      "size": 311,
+      "size": 380,
       "chunks": [
         1
       ],
@@ -61,7 +64,7 @@
     },
     {
       "name": "Gallery.js",
-      "size": 836,
+      "size": 907,
       "chunks": [
         2
       ],
@@ -72,7 +75,7 @@
     },
     {
       "name": "main-bundle.js",
-      "size": 7924,
+      "size": 8772,
       "chunks": [
         3
       ],
@@ -147,6 +150,7 @@
         0
       ],
       "assets": [
+        "About.css",
         "About.js",
         "About.js.map"
       ],
@@ -160,6 +164,7 @@
         0
       ],
       "assets": [
+        "About.css",
         "About.js",
         "About.js.map"
       ],
@@ -193,6 +198,7 @@
         1
       ],
       "assets": [
+        "Article.css",
         "Article.js",
         "Article.js.map"
       ],
@@ -206,6 +212,7 @@
         1
       ],
       "assets": [
+        "Article.css",
         "Article.js",
         "Article.js.map"
       ],
@@ -219,6 +226,7 @@
         2
       ],
       "assets": [
+        "Gallery.css",
         "Gallery.js",
         "Gallery.js.map"
       ],
@@ -232,6 +240,7 @@
         2
       ],
       "assets": [
+        "Gallery.css",
         "Gallery.js",
         "Gallery.js.map"
       ],
@@ -290,15 +299,16 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 739,
+      "size": 1329,
       "names": [
         "About"
       ],
       "files": [
+        "About.css",
         "About.js",
         "About.js.map"
       ],
-      "hash": "627f3c04f17040dcd5c8",
+      "hash": "21e8f0b0120b3231188e",
       "siblings": [
       ],
       "parents": [
@@ -386,7 +396,7 @@
               "moduleName": "./src/components/About.js",
               "type": "harmony import specifier",
               "userRequest": "../../data/post.md",
-              "loc": "10:38-50"
+              "loc": "11:38-50"
             },
             {
               "moduleId": "./src/components/About.js",
@@ -395,7 +405,7 @@
               "moduleName": "./src/components/About.js",
               "type": "harmony import specifier",
               "userRequest": "../../data/post.md",
-              "loc": "13:14-26"
+              "loc": "14:14-26"
             }
           ],
           "usedExports": [
@@ -414,8 +424,8 @@
           "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/About.js",
           "name": "./src/components/About.js",
           "index": 72,
-          "index2": 74,
-          "size": 477,
+          "index2": 76,
+          "size": 504,
           "cacheable": true,
           "built": true,
           "optional": true,
@@ -509,8 +519,87 @@
             "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./src/components lazy ^\\.\\/.*$ namespace object (referenced with context element), ./src/components weak ^\\.\\/.*$ (referenced with context element)"
           ],
           "depth": 6,
-          "source": "import MarkdownData from \"../../data/post.md\";\nimport React from 'react';\nimport imagePath from '../images/square.jpg';\nexport default (function () {\n  return React.createElement(\"div\", {\n    className: \"profile\"\n  }, React.createElement(\"img\", {\n    src: imagePath,\n    alt: \"\"\n  }), React.createElement(\"h1\", null, MarkdownData.title), React.createElement(\"div\", {\n    className: \"content\",\n    dangerouslySetInnerHTML: {\n      __html: MarkdownData.__content\n    }\n  }));\n});",
-          "parsedSrc": "function(e,n,t){\"use strict\";t.r(n);var a=t(\"./data/post.md\"),o=t.n(a),s=t(\"./node_modules/react/index.js\"),r=t.n(s),i=t(\"./src/images/square.jpg\"),c=t.n(i);n.default=function(){return r.a.createElement(\"div\",{className:\"profile\"},r.a.createElement(\"img\",{src:c.a,alt:\"\"}),r.a.createElement(\"h1\",null,o.a.title),r.a.createElement(\"div\",{className:\"content\",dangerouslySetInnerHTML:{__html:o.a.__content}}))}}"
+          "source": "import MarkdownData from \"../../data/post.md\";\nimport React from 'react';\nimport imagePath from '../images/square.jpg';\nimport '../css/About.css';\nexport default (function () {\n  return React.createElement(\"div\", {\n    className: \"profile\"\n  }, React.createElement(\"img\", {\n    src: imagePath,\n    alt: \"\"\n  }), React.createElement(\"h1\", null, MarkdownData.title), React.createElement(\"div\", {\n    className: \"content\",\n    dangerouslySetInnerHTML: {\n      __html: MarkdownData.__content\n    }\n  }));\n});",
+          "parsedSrc": "function(e,n,t){\"use strict\";t.r(n);var s=t(\"./data/post.md\"),a=t.n(s),o=t(\"./node_modules/react/index.js\"),r=t.n(o),c=t(\"./src/images/square.jpg\"),i=t.n(c);t(\"./src/css/About.css\"),n.default=function(){return r.a.createElement(\"div\",{className:\"profile\"},r.a.createElement(\"img\",{src:i.a,alt:\"\"}),r.a.createElement(\"h1\",null,a.a.title),r.a.createElement(\"div\",{className:\"content\",dangerouslySetInnerHTML:{__html:a.a.__content}}))}}"
+        },
+        {
+          "id": "./src/css/About.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+          "name": "./src/css/About.css",
+          "index": 75,
+          "index2": 75,
+          "size": 563,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/About.js",
+          "issuerId": "./src/components/About.js",
+          "issuerName": "./src/components/About.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi ./src/main.js",
+              "name": "multi ./src/main.js"
+            },
+            {
+              "id": "./src/main.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+              "name": "./src/main.js"
+            },
+            {
+              "id": "./src/app.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+              "name": "./src/app.js"
+            },
+            {
+              "id": "./src/components/AppRoot.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+              "name": "./src/components/AppRoot.js"
+            },
+            {
+              "id": "./src/components/Routes.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+              "name": "./src/components/Routes.js"
+            },
+            {
+              "id": "./src/components lazy recursive ^\\.\\/.*$",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+              "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+            },
+            {
+              "id": "./src/components/About.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/About.js",
+              "name": "./src/components/About.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": "./src/components/About.js",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/About.js",
+              "module": "./src/components/About.js",
+              "moduleName": "./src/components/About.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../css/About.css",
+              "loc": "4:0-26"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 7,
+          "source": "// extracted by extract-css-chunks-webpack-plugin",
+          "parsedSrc": "function(e,n,t){}"
         },
         {
           "id": "./src/images/square.jpg",
@@ -589,7 +678,7 @@
               "moduleName": "./src/components/About.js",
               "type": "harmony import specifier",
               "userRequest": "../images/square.jpg",
-              "loc": "8:9-18"
+              "loc": "9:9-18"
             }
           ],
           "usedExports": [
@@ -602,6 +691,84 @@
           "depth": 7,
           "source": "module.exports = __webpack_public_path__ + \"images/square.jpg\";",
           "parsedSrc": "function(e,n,t){e.exports=t.p+\"images/square.jpg\"}"
+        },
+        {
+          "id": "?8391",
+          "identifier": "css /Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css 0",
+          "name": "css ./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+          "index": 76,
+          "index2": 74,
+          "size": 514,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+          "issuerId": "./src/css/About.css",
+          "issuerName": "./src/css/About.css",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi ./src/main.js",
+              "name": "multi ./src/main.js"
+            },
+            {
+              "id": "./src/main.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+              "name": "./src/main.js"
+            },
+            {
+              "id": "./src/app.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+              "name": "./src/app.js"
+            },
+            {
+              "id": "./src/components/AppRoot.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+              "name": "./src/components/AppRoot.js"
+            },
+            {
+              "id": "./src/components/Routes.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+              "name": "./src/components/Routes.js"
+            },
+            {
+              "id": "./src/components lazy recursive ^\\.\\/.*$",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+              "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+            },
+            {
+              "id": "./src/components/About.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/About.js",
+              "name": "./src/components/About.js"
+            },
+            {
+              "id": "./src/css/About.css",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+              "name": "./src/css/About.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": "./src/css/About.css",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+              "module": "./src/css/About.css",
+              "moduleName": "./src/css/About.css"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 8
         }
       ],
       "filteredModules": 0,
@@ -713,15 +880,16 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 147,
+      "size": 225,
       "names": [
         "Article"
       ],
       "files": [
+        "Article.css",
         "Article.js",
         "Article.js.map"
       ],
-      "hash": "bd0aea32c3e0c6c26653",
+      "hash": "ec7ea86846dc74e01368",
       "siblings": [
       ],
       "parents": [
@@ -737,9 +905,9 @@
           "id": "./src/components/Article.js",
           "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Article.js",
           "name": "./src/components/Article.js",
-          "index": 75,
-          "index2": 75,
-          "size": 147,
+          "index": 77,
+          "index2": 79,
+          "size": 176,
           "cacheable": true,
           "built": true,
           "optional": true,
@@ -833,8 +1001,165 @@
             "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./src/components lazy ^\\.\\/.*$ namespace object (referenced with context element), ./src/components weak ^\\.\\/.*$ (referenced with context element)"
           ],
           "depth": 6,
-          "source": "import React from 'react';\nexport default (function () {\n  return React.createElement(\"div\", null, React.createElement(\"h1\", null, \"Article\"));\n});",
-          "parsedSrc": "function(e,n,t){\"use strict\";t.r(n);var c=t(\"./node_modules/react/index.js\"),r=t.n(c);n.default=function(){return r.a.createElement(\"div\",null,r.a.createElement(\"h1\",null,\"Article\"))}}"
+          "source": "import React from 'react';\nimport '../css/Article.css';\nexport default (function () {\n  return React.createElement(\"div\", null, React.createElement(\"h1\", null, \"Article\"));\n});",
+          "parsedSrc": "function(e,c,n){\"use strict\";n.r(c);var s=n(\"./node_modules/react/index.js\"),t=n.n(s);n(\"./src/css/Article.css\"),c.default=function(){return t.a.createElement(\"div\",null,t.a.createElement(\"h1\",null,\"Article\"))}}"
+        },
+        {
+          "id": "./src/css/Article.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+          "name": "./src/css/Article.css",
+          "index": 78,
+          "index2": 78,
+          "size": 49,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Article.js",
+          "issuerId": "./src/components/Article.js",
+          "issuerName": "./src/components/Article.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi ./src/main.js",
+              "name": "multi ./src/main.js"
+            },
+            {
+              "id": "./src/main.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+              "name": "./src/main.js"
+            },
+            {
+              "id": "./src/app.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+              "name": "./src/app.js"
+            },
+            {
+              "id": "./src/components/AppRoot.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+              "name": "./src/components/AppRoot.js"
+            },
+            {
+              "id": "./src/components/Routes.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+              "name": "./src/components/Routes.js"
+            },
+            {
+              "id": "./src/components lazy recursive ^\\.\\/.*$",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+              "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+            },
+            {
+              "id": "./src/components/Article.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Article.js",
+              "name": "./src/components/Article.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": "./src/components/Article.js",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Article.js",
+              "module": "./src/components/Article.js",
+              "moduleName": "./src/components/Article.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../css/Article.css",
+              "loc": "2:0-28"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 7,
+          "source": "// extracted by extract-css-chunks-webpack-plugin",
+          "parsedSrc": "function(e,c,n){}"
+        },
+        {
+          "id": "?9715",
+          "identifier": "css /Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css 0",
+          "name": "css ./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+          "index": 79,
+          "index2": 77,
+          "size": 0,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+          "issuerId": "./src/css/Article.css",
+          "issuerName": "./src/css/Article.css",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi ./src/main.js",
+              "name": "multi ./src/main.js"
+            },
+            {
+              "id": "./src/main.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+              "name": "./src/main.js"
+            },
+            {
+              "id": "./src/app.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+              "name": "./src/app.js"
+            },
+            {
+              "id": "./src/components/AppRoot.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+              "name": "./src/components/AppRoot.js"
+            },
+            {
+              "id": "./src/components/Routes.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+              "name": "./src/components/Routes.js"
+            },
+            {
+              "id": "./src/components lazy recursive ^\\.\\/.*$",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+              "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+            },
+            {
+              "id": "./src/components/Article.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Article.js",
+              "name": "./src/components/Article.js"
+            },
+            {
+              "id": "./src/css/Article.css",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+              "name": "./src/css/Article.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": "./src/css/Article.css",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+              "module": "./src/css/Article.css",
+              "moduleName": "./src/css/Article.css"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 8
         }
       ],
       "filteredModules": 0,
@@ -946,15 +1271,16 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 912,
+      "size": 990,
       "names": [
         "Gallery"
       ],
       "files": [
+        "Gallery.css",
         "Gallery.js",
         "Gallery.js.map"
       ],
-      "hash": "940e7c8d7d3f69ae2c0d",
+      "hash": "9a0882366dddb9a236f3",
       "siblings": [
       ],
       "parents": [
@@ -971,9 +1297,9 @@
           "id": "./src/components/Gallery.js",
           "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
           "name": "./src/components/Gallery.js",
-          "index": 76,
-          "index2": 76,
-          "size": 912,
+          "index": 80,
+          "index2": 82,
+          "size": 941,
           "cacheable": true,
           "built": true,
           "optional": true,
@@ -1067,8 +1393,165 @@
             "ModuleConcatenation bailout: Module uses injected variables (__dirname)"
           ],
           "depth": 6,
-          "source": "import _path from \"path\";\nimport _universalImport from \"babel-plugin-universal-import/universalImport\";\nimport React from 'react';\n\nvar getBundle = function getBundle() {\n  // react-universal-component 使得动态 import 时无需写 magic comment\n  // 使用模块名\n  _universalImport({\n    id: \"lodash\",\n    load: function load() {\n      return Promise.all([import(\n      /* webpackChunkName: 'lodash' */\n      'lodash')]).then(function (proms) {\n        return proms[0];\n      });\n    },\n    path: function path() {\n      return _path.join(__dirname, 'lodash');\n    },\n    resolve: function resolve() {\n      return require.resolveWeak('lodash');\n    },\n    chunkName: function chunkName() {\n      return \"lodash\";\n    }\n  }).then(function (_) {\n    console.log('imported', _);\n  });\n};\n\nexport default (function () {\n  return React.createElement(\"div\", null, React.createElement(\"h1\", {\n    onClick: getBundle\n  }, \"Gallery\"));\n});",
-          "parsedSrc": "function(n,e,o){\"use strict\";o.r(e),function(n){var l=o(\"./node_modules/path-browserify/index.js\"),t=o.n(l),s=o(\"./node_modules/babel-plugin-universal-import/universalImport.js\"),r=o.n(s),u=o(\"./node_modules/react/index.js\"),a=o.n(u),i=function(){r()({id:\"lodash\",load:function(){return Promise.all([o.e(4).then(o.t.bind(null,\"./node_modules/lodash/lodash.js\",7))]).then(function(n){return n[0]})},path:function(){return t.a.join(n,\"lodash\")},resolve:function(){return\"./node_modules/lodash/lodash.js\"},chunkName:function(){return\"lodash\"}}).then(function(n){console.log(\"imported\",n)})};e.default=function(){return a.a.createElement(\"div\",null,a.a.createElement(\"h1\",{onClick:i},\"Gallery\"))}}.call(this,\"/\")}"
+          "source": "import _path from \"path\";\nimport _universalImport from \"babel-plugin-universal-import/universalImport\";\nimport React from 'react';\nimport '../css/Gallery.css';\n\nvar getBundle = function getBundle() {\n  // react-universal-component 使得动态 import 时无需写 magic comment\n  // 使用模块名\n  _universalImport({\n    id: \"lodash\",\n    load: function load() {\n      return Promise.all([import(\n      /* webpackChunkName: 'lodash' */\n      'lodash')]).then(function (proms) {\n        return proms[0];\n      });\n    },\n    path: function path() {\n      return _path.join(__dirname, 'lodash');\n    },\n    resolve: function resolve() {\n      return require.resolveWeak('lodash');\n    },\n    chunkName: function chunkName() {\n      return \"lodash\";\n    }\n  }).then(function (_) {\n    console.log('imported', _);\n  });\n};\n\nexport default (function () {\n  return React.createElement(\"div\", null, React.createElement(\"h1\", {\n    onClick: getBundle\n  }, \"Gallery\"));\n});",
+          "parsedSrc": "function(n,e,o){\"use strict\";o.r(e),function(n){var s=o(\"./node_modules/path-browserify/index.js\"),l=o.n(s),t=o(\"./node_modules/babel-plugin-universal-import/universalImport.js\"),r=o.n(t),u=o(\"./node_modules/react/index.js\"),a=o.n(u),c=(o(\"./src/css/Gallery.css\"),function(){r()({id:\"lodash\",load:function(){return Promise.all([o.e(4).then(o.t.bind(null,\"./node_modules/lodash/lodash.js\",7))]).then(function(n){return n[0]})},path:function(){return l.a.join(n,\"lodash\")},resolve:function(){return\"./node_modules/lodash/lodash.js\"},chunkName:function(){return\"lodash\"}}).then(function(n){console.log(\"imported\",n)})});e.default=function(){return a.a.createElement(\"div\",null,a.a.createElement(\"h1\",{onClick:c},\"Gallery\"))}}.call(this,\"/\")}"
+        },
+        {
+          "id": "./src/css/Gallery.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+          "name": "./src/css/Gallery.css",
+          "index": 81,
+          "index2": 81,
+          "size": 49,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            2
+          ],
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
+          "issuerId": "./src/components/Gallery.js",
+          "issuerName": "./src/components/Gallery.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi ./src/main.js",
+              "name": "multi ./src/main.js"
+            },
+            {
+              "id": "./src/main.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+              "name": "./src/main.js"
+            },
+            {
+              "id": "./src/app.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+              "name": "./src/app.js"
+            },
+            {
+              "id": "./src/components/AppRoot.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+              "name": "./src/components/AppRoot.js"
+            },
+            {
+              "id": "./src/components/Routes.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+              "name": "./src/components/Routes.js"
+            },
+            {
+              "id": "./src/components lazy recursive ^\\.\\/.*$",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+              "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+            },
+            {
+              "id": "./src/components/Gallery.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
+              "name": "./src/components/Gallery.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": "./src/components/Gallery.js",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
+              "module": "./src/components/Gallery.js",
+              "moduleName": "./src/components/Gallery.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../css/Gallery.css",
+              "loc": "4:0-28"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 7,
+          "source": "// extracted by extract-css-chunks-webpack-plugin",
+          "parsedSrc": "function(n,e,o){}"
+        },
+        {
+          "id": "?65ef",
+          "identifier": "css /Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css 0",
+          "name": "css ./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+          "index": 82,
+          "index2": 80,
+          "size": 0,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            2
+          ],
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+          "issuerId": "./src/css/Gallery.css",
+          "issuerName": "./src/css/Gallery.css",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi ./src/main.js",
+              "name": "multi ./src/main.js"
+            },
+            {
+              "id": "./src/main.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+              "name": "./src/main.js"
+            },
+            {
+              "id": "./src/app.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+              "name": "./src/app.js"
+            },
+            {
+              "id": "./src/components/AppRoot.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+              "name": "./src/components/AppRoot.js"
+            },
+            {
+              "id": "./src/components/Routes.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+              "name": "./src/components/Routes.js"
+            },
+            {
+              "id": "./src/components lazy recursive ^\\.\\/.*$",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+              "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+            },
+            {
+              "id": "./src/components/Gallery.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
+              "name": "./src/components/Gallery.js"
+            },
+            {
+              "id": "./src/css/Gallery.css",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+              "name": "./src/css/Gallery.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": "./src/css/Gallery.css",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+              "module": "./src/css/Gallery.css",
+              "moduleName": "./src/css/Gallery.css"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 8
         }
       ],
       "filteredModules": 0,
@@ -1180,7 +1663,7 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 5215,
+      "size": 4756,
       "names": [
         "main"
       ],
@@ -1189,7 +1672,7 @@
         "main-bundle.js",
         "main-bundle.js.map"
       ],
-      "hash": "5c8aaa67196d423b2bfa",
+      "hash": "5cee5e881068a3fa377f",
       "siblings": [
         5
       ],
@@ -1401,7 +1884,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 8,
-          "parsedSrc": "function(e,n,t){var o={\".\":\"./node_modules/react-universal-component/dist/requireById/index.js\",\"./\":\"./node_modules/react-universal-component/dist/requireById/index.js\",\"./index\":\"./node_modules/react-universal-component/dist/requireById/index.js\",\"./index.js\":\"./node_modules/react-universal-component/dist/requireById/index.js\"};function r(e){var n=s(e);return t(n)}function s(e){if(!t.o(o,e)){var n=new Error(\"Cannot find module '\"+e+\"'\");throw n.code=\"MODULE_NOT_FOUND\",n}return o[e]}r.keys=function(){return Object.keys(o)},r.resolve=s,e.exports=r,r.id=\"./node_modules/react-universal-component/dist/requireById sync recursive ^.*$\"}"
+          "parsedSrc": "function(e,n,t){var r={\".\":\"./node_modules/react-universal-component/dist/requireById/index.js\",\"./\":\"./node_modules/react-universal-component/dist/requireById/index.js\",\"./index\":\"./node_modules/react-universal-component/dist/requireById/index.js\",\"./index.js\":\"./node_modules/react-universal-component/dist/requireById/index.js\"};function o(e){var n=s(e);return t(n)}function s(e){if(!t.o(r,e)){var n=new Error(\"Cannot find module '\"+e+\"'\");throw n.code=\"MODULE_NOT_FOUND\",n}return r[e]}o.keys=function(){return Object.keys(r)},o.resolve=s,e.exports=o,o.id=\"./node_modules/react-universal-component/dist/requireById sync recursive ^.*$\"}"
         },
         {
           "id": "./src/app.js",
@@ -1456,7 +1939,7 @@
           ],
           "depth": 2,
           "source": "import React from 'react';\nimport ReactDOM from 'react-dom';\nimport AppRoot from './components/AppRoot';\nimport Data from '../data/bio';\nReactDOM.hydrate(React.createElement(AppRoot, {\n  heading: Data.heading,\n  content: Data.bioText\n}), document.getElementById('react-root'));",
-          "parsedSrc": "function(e,n,t){\"use strict\";t.r(n);var o=t(\"./node_modules/react/index.js\"),r=t.n(o),s=t(\"./node_modules/react-dom/index.js\"),c=t.n(s),a=t(\"./src/components/AppRoot.js\"),u=t(\"./data/bio.js\"),i=t.n(u);c.a.hydrate(r.a.createElement(a.default,{heading:i.a.heading,content:i.a.bioText}),document.getElementById(\"react-root\"))}"
+          "parsedSrc": "function(e,n,t){\"use strict\";t.r(n);var r=t(\"./node_modules/react/index.js\"),o=t.n(r),s=t(\"./node_modules/react-dom/index.js\"),c=t.n(s),a=t(\"./src/components/AppRoot.js\"),u=t(\"./data/bio.js\"),i=t.n(u);c.a.hydrate(o.a.createElement(a.default,{heading:i.a.heading,content:i.a.bioText}),document.getElementById(\"react-root\"))}"
         },
         {
           "id": "./src/components lazy recursive ^\\.\\/.*$",
@@ -1523,7 +2006,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 5,
-          "parsedSrc": "function(e,n,t){var o={\"./About\":[\"./src/components/About.js\",9,0],\"./About.js\":[\"./src/components/About.js\",9,0],\"./AppRoot\":[\"./src/components/AppRoot.js\",9],\"./AppRoot.js\":[\"./src/components/AppRoot.js\",9],\"./Article\":[\"./src/components/Article.js\",9,1],\"./Article.js\":[\"./src/components/Article.js\",9,1],\"./Gallery\":[\"./src/components/Gallery.js\",9,2],\"./Gallery.js\":[\"./src/components/Gallery.js\",9,2],\"./Routes\":[\"./src/components/Routes.js\",9],\"./Routes.js\":[\"./src/components/Routes.js\",9],\"./nav.css\":[\"./src/components/nav.css\",7]};function r(e){if(!t.o(o,e))return Promise.resolve().then(function(){var n=new Error(\"Cannot find module '\"+e+\"'\");throw n.code=\"MODULE_NOT_FOUND\",n});var n=o[e],r=n[0];return Promise.all(n.slice(2).map(t.e)).then(function(){return t.t(r,n[1])})}r.keys=function(){return Object.keys(o)},r.id=\"./src/components lazy recursive ^\\\\.\\\\/.*$\",e.exports=r}"
+          "parsedSrc": "function(e,n,t){var r={\"./About\":[\"./src/components/About.js\",9,0],\"./About.js\":[\"./src/components/About.js\",9,0],\"./AppRoot\":[\"./src/components/AppRoot.js\",9],\"./AppRoot.js\":[\"./src/components/AppRoot.js\",9],\"./Article\":[\"./src/components/Article.js\",9,1],\"./Article.js\":[\"./src/components/Article.js\",9,1],\"./Gallery\":[\"./src/components/Gallery.js\",9,2],\"./Gallery.js\":[\"./src/components/Gallery.js\",9,2],\"./Routes\":[\"./src/components/Routes.js\",9],\"./Routes.js\":[\"./src/components/Routes.js\",9],\"./nav.css\":[\"./src/components/nav.css\",7]};function o(e){if(!t.o(r,e))return Promise.resolve().then(function(){var n=new Error(\"Cannot find module '\"+e+\"'\");throw n.code=\"MODULE_NOT_FOUND\",n});var n=r[e],o=n[0];return Promise.all(n.slice(2).map(t.e)).then(function(){return t.t(o,n[1])})}o.keys=function(){return Object.keys(r)},o.id=\"./src/components lazy recursive ^\\\\.\\\\/.*$\",e.exports=o}"
         },
         {
           "id": "./src/components weak recursive ^\\.\\/.*$",
@@ -1590,7 +2073,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 5,
-          "parsedSrc": "function(e,n,t){var o={\"./About\":\"./src/components/About.js\",\"./About.js\":\"./src/components/About.js\",\"./AppRoot\":\"./src/components/AppRoot.js\",\"./AppRoot.js\":\"./src/components/AppRoot.js\",\"./Article\":\"./src/components/Article.js\",\"./Article.js\":\"./src/components/Article.js\",\"./Gallery\":\"./src/components/Gallery.js\",\"./Gallery.js\":\"./src/components/Gallery.js\",\"./Routes\":\"./src/components/Routes.js\",\"./Routes.js\":\"./src/components/Routes.js\",\"./nav.css\":\"./src/components/nav.css\"};function r(e){var n=s(e);if(!t.m[n]){var o=new Error(\"Module '\"+e+\"' ('\"+n+\"') is not available (weak dependency)\");throw o.code=\"MODULE_NOT_FOUND\",o}return t(n)}function s(e){if(!t.o(o,e)){var n=new Error(\"Cannot find module '\"+e+\"'\");throw n.code=\"MODULE_NOT_FOUND\",n}return o[e]}r.keys=function(){return Object.keys(o)},r.resolve=s,r.id=\"./src/components weak recursive ^\\\\.\\\\/.*$\",e.exports=r}"
+          "parsedSrc": "function(e,n,t){var r={\"./About\":\"./src/components/About.js\",\"./About.js\":\"./src/components/About.js\",\"./AppRoot\":\"./src/components/AppRoot.js\",\"./AppRoot.js\":\"./src/components/AppRoot.js\",\"./Article\":\"./src/components/Article.js\",\"./Article.js\":\"./src/components/Article.js\",\"./Gallery\":\"./src/components/Gallery.js\",\"./Gallery.js\":\"./src/components/Gallery.js\",\"./Routes\":\"./src/components/Routes.js\",\"./Routes.js\":\"./src/components/Routes.js\",\"./nav.css\":\"./src/components/nav.css\"};function o(e){var n=s(e);if(!t.m[n]){var r=new Error(\"Module '\"+e+\"' ('\"+n+\"') is not available (weak dependency)\");throw r.code=\"MODULE_NOT_FOUND\",r}return t(n)}function s(e){if(!t.o(r,e)){var n=new Error(\"Cannot find module '\"+e+\"'\");throw n.code=\"MODULE_NOT_FOUND\",n}return r[e]}o.keys=function(){return Object.keys(r)},o.resolve=s,o.id=\"./src/components weak recursive ^\\\\.\\\\/.*$\",e.exports=o}"
         },
         {
           "id": "./src/components/AppRoot.js",
@@ -1696,7 +2179,7 @@
           ],
           "depth": 3,
           "source": "import _classCallCheck from \"@babel/runtime/helpers/classCallCheck\";\nimport _createClass from \"@babel/runtime/helpers/createClass\";\nimport _possibleConstructorReturn from \"@babel/runtime/helpers/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime/helpers/getPrototypeOf\";\nimport _inherits from \"@babel/runtime/helpers/inherits\";\nimport React, { Component } from 'react';\nimport { hot } from 'react-hot-loader/root';\nimport '../main.scss';\nimport { BrowserRouter as Router } from \"react-router-dom\";\nimport './nav.css';\nimport Routes from './Routes';\n\nvar Heading =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(Heading, _Component);\n\n  function Heading(props) {\n    var _this;\n\n    _classCallCheck(this, Heading);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(Heading).call(this, props));\n    _this.state = {};\n    return _this;\n  }\n\n  _createClass(Heading, [{\n    key: \"render\",\n    value: function render() {\n      return React.createElement(Router, null, React.createElement(Routes, null));\n    }\n  }]);\n\n  return Heading;\n}(Component);\n\nexport default hot(Heading);",
-          "parsedSrc": "function(e,n,t){\"use strict\";t.r(n);var o=t(\"./node_modules/@babel/runtime/helpers/classCallCheck.js\"),r=t.n(o),s=t(\"./node_modules/@babel/runtime/helpers/createClass.js\"),c=t.n(s),a=t(\"./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js\"),u=t.n(a),i=t(\"./node_modules/@babel/runtime/helpers/getPrototypeOf.js\"),l=t.n(i),d=t(\"./node_modules/@babel/runtime/helpers/inherits.js\"),p=t.n(d),m=t(\"./node_modules/react/index.js\"),f=t.n(m),j=t(\"./node_modules/react-hot-loader/root.js\"),v=(t(\"./src/main.scss\"),t(\"./node_modules/react-router-dom/es/BrowserRouter.js\")),b=(t(\"./src/components/nav.css\"),t(\"./src/components/Routes.js\")),y=function(e){function n(e){var t;return r()(this,n),(t=u()(this,l()(n).call(this,e))).state={},t}return p()(n,e),c()(n,[{key:\"render\",value:function(){return f.a.createElement(v.a,null,f.a.createElement(b.default,null))}}]),n}(m.Component);n.default=Object(j.hot)(y)}"
+          "parsedSrc": "function(e,n,t){\"use strict\";t.r(n);var r=t(\"./node_modules/@babel/runtime/helpers/classCallCheck.js\"),o=t.n(r),s=t(\"./node_modules/@babel/runtime/helpers/createClass.js\"),c=t.n(s),a=t(\"./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js\"),u=t.n(a),i=t(\"./node_modules/@babel/runtime/helpers/getPrototypeOf.js\"),l=t.n(i),d=t(\"./node_modules/@babel/runtime/helpers/inherits.js\"),p=t.n(d),m=t(\"./node_modules/react/index.js\"),f=t.n(m),v=t(\"./node_modules/react-hot-loader/root.js\"),j=(t(\"./src/main.scss\"),t(\"./node_modules/react-router-dom/es/BrowserRouter.js\")),h=(t(\"./src/components/nav.css\"),t(\"./src/components/Routes.js\")),y=function(e){function n(e){var t;return o()(this,n),(t=u()(this,l()(n).call(this,e))).state={},t}return p()(n,e),c()(n,[{key:\"render\",value:function(){return f.a.createElement(j.a,null,f.a.createElement(h.default,null))}}]),n}(m.Component);n.default=Object(v.hot)(y)}"
         },
         {
           "id": "./src/components/Routes.js",
@@ -1807,15 +2290,15 @@
           ],
           "depth": 4,
           "source": "import _path from \"path\";\nimport _universalImport from \"babel-plugin-universal-import/universalImport\";\nimport { Link, Route, Switch } from \"react-router-dom\";\nimport React from 'react';\nimport universal from 'react-universal-component';\nvar UniversalComponent = universal(function (props) {\n  return _universalImport({\n    id: \"./\",\n    load: function load() {\n      return Promise.all([import(\n      /* webpackChunkName: '[request]' */\n      \"./\".concat(props.page))]).then(function (proms) {\n        return proms[0];\n      });\n    },\n    path: function path() {\n      return _path.join(__dirname, \"./\".concat(props.page));\n    },\n    resolve: function resolve() {\n      return require.resolveWeak(\"./\".concat(props.page));\n    },\n    chunkName: function chunkName() {\n      return \"\".concat(props.page);\n    }\n  });\n});\nexport default (function () {\n  return React.createElement(\"div\", null, React.createElement(\"div\", {\n    className: \"nav\"\n  }, React.createElement(Link, {\n    to: \"/\"\n  }, \"Gallery\"), React.createElement(Link, {\n    to: \"/about\"\n  }, \"About\"), React.createElement(Link, {\n    to: \"/article\"\n  }, \"Article\")), React.createElement(Switch, null, React.createElement(Route, {\n    exact: true,\n    path: \"/\"\n  }, React.createElement(UniversalComponent, {\n    page: \"Gallery\"\n  })), React.createElement(Route, {\n    path: \"/about\"\n  }, React.createElement(UniversalComponent, {\n    page: \"About\"\n  })), React.createElement(Route, {\n    path: \"/article\"\n  }, React.createElement(UniversalComponent, {\n    page: \"Article\"\n  }))));\n});",
-          "parsedSrc": "function(e,n,t){\"use strict\";t.r(n),function(e){var o=t(\"./node_modules/path-browserify/index.js\"),r=t.n(o),s=t(\"./node_modules/babel-plugin-universal-import/universalImport.js\"),c=t.n(s),a=t(\"./node_modules/react-router-dom/es/Link.js\"),u=t(\"./node_modules/react-router-dom/es/Switch.js\"),i=t(\"./node_modules/react-router-dom/es/Route.js\"),l=t(\"./node_modules/react/index.js\"),d=t.n(l),p=t(\"./node_modules/react-universal-component/dist/index.js\"),m=t.n(p)()(function(n){return c()({id:\"./\",load:function(){return Promise.all([t(\"./src/components lazy recursive ^\\\\.\\\\/.*$\")(\"./\".concat(n.page))]).then(function(e){return e[0]})},path:function(){return r.a.join(e,\"./\".concat(n.page))},resolve:function(){return t(\"./src/components weak recursive ^\\\\.\\\\/.*$\").resolve(\"./\".concat(n.page))},chunkName:function(){return\"\".concat(n.page)}})});n.default=function(){return d.a.createElement(\"div\",null,d.a.createElement(\"div\",{className:\"nav\"},d.a.createElement(a.a,{to:\"/\"},\"Gallery\"),d.a.createElement(a.a,{to:\"/about\"},\"About\"),d.a.createElement(a.a,{to:\"/article\"},\"Article\")),d.a.createElement(u.a,null,d.a.createElement(i.a,{exact:!0,path:\"/\"},d.a.createElement(m,{page:\"Gallery\"})),d.a.createElement(i.a,{path:\"/about\"},d.a.createElement(m,{page:\"About\"})),d.a.createElement(i.a,{path:\"/article\"},d.a.createElement(m,{page:\"Article\"}))))}}.call(this,\"/\")}"
+          "parsedSrc": "function(e,n,t){\"use strict\";t.r(n),function(e){var r=t(\"./node_modules/path-browserify/index.js\"),o=t.n(r),s=t(\"./node_modules/babel-plugin-universal-import/universalImport.js\"),c=t.n(s),a=t(\"./node_modules/react-router-dom/es/Link.js\"),u=t(\"./node_modules/react-router-dom/es/Switch.js\"),i=t(\"./node_modules/react-router-dom/es/Route.js\"),l=t(\"./node_modules/react/index.js\"),d=t.n(l),p=t(\"./node_modules/react-universal-component/dist/index.js\"),m=t.n(p)()(function(n){return c()({id:\"./\",load:function(){return Promise.all([t(\"./src/components lazy recursive ^\\\\.\\\\/.*$\")(\"./\".concat(n.page))]).then(function(e){return e[0]})},path:function(){return o.a.join(e,\"./\".concat(n.page))},resolve:function(){return t(\"./src/components weak recursive ^\\\\.\\\\/.*$\").resolve(\"./\".concat(n.page))},chunkName:function(){return\"\".concat(n.page)}})});n.default=function(){return d.a.createElement(\"div\",null,d.a.createElement(\"div\",{className:\"nav\"},d.a.createElement(a.a,{to:\"/\"},\"Gallery\"),d.a.createElement(a.a,{to:\"/about\"},\"About\"),d.a.createElement(a.a,{to:\"/article\"},\"Article\")),d.a.createElement(u.a,null,d.a.createElement(i.a,{exact:!0,path:\"/\"},d.a.createElement(m,{page:\"Gallery\"})),d.a.createElement(i.a,{path:\"/about\"},d.a.createElement(m,{page:\"About\"})),d.a.createElement(i.a,{path:\"/article\"},d.a.createElement(m,{page:\"Article\"}))))}}.call(this,\"/\")}"
         },
         {
           "id": "./src/components/nav.css",
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
           "name": "./src/components/nav.css",
           "index": 24,
           "index2": 21,
-          "size": 193,
+          "size": 203,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1888,7 +2371,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "// extracted by mini-css-extract-plugin",
+          "source": "// extracted by extract-css-chunks-webpack-plugin",
           "parsedSrc": "function(e,n,t){}"
         },
         {
@@ -1942,11 +2425,11 @@
         },
         {
           "id": "./src/main.scss",
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
           "name": "./src/main.scss",
           "index": 22,
           "index2": 19,
-          "size": 610,
+          "size": 141,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -2001,7 +2484,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "// extracted by mini-css-extract-plugin",
+          "source": "// extracted by extract-css-chunks-webpack-plugin",
           "parsedSrc": "function(e,n,t){}"
         },
         {
@@ -2017,7 +2500,7 @@
           "chunks": [
             3
           ],
-          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
           "issuerId": "./src/components/nav.css",
           "issuerName": "./src/components/nav.css",
           "issuerPath": [
@@ -2043,7 +2526,7 @@
             },
             {
               "id": "./src/components/nav.css",
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
               "name": "./src/components/nav.css"
             }
           ],
@@ -2055,7 +2538,7 @@
           "reasons": [
             {
               "moduleId": "./src/components/nav.css",
-              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
               "module": "./src/components/nav.css",
               "moduleName": "./src/components/nav.css"
             }
@@ -2073,14 +2556,14 @@
           "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/main.scss",
           "index": 23,
           "index2": 18,
-          "size": 571,
+          "size": 92,
           "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             3
           ],
-          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
           "issuerId": "./src/main.scss",
           "issuerName": "./src/main.scss",
           "issuerPath": [
@@ -2106,7 +2589,7 @@
             },
             {
               "id": "./src/main.scss",
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
               "name": "./src/main.scss"
             }
           ],
@@ -2118,7 +2601,7 @@
           "reasons": [
             {
               "moduleId": "./src/main.scss",
-              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
               "module": "./src/main.scss",
               "moduleName": "./src/main.scss"
             }
@@ -2173,8 +2656,8 @@
           "id": "./node_modules/lodash/lodash.js",
           "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/lodash/lodash.js",
           "name": "./node_modules/lodash/lodash.js",
-          "index": 77,
-          "index2": 77,
+          "index": 83,
+          "index2": 83,
           "size": 539855,
           "cacheable": true,
           "built": true,
@@ -2236,7 +2719,7 @@
               "moduleName": "./src/components/Gallery.js",
               "type": "import()",
               "userRequest": "lodash",
-              "loc": "11:26-13:15"
+              "loc": "12:26-14:15"
             },
             {
               "moduleId": "./src/components/Gallery.js",
@@ -2245,7 +2728,7 @@
               "moduleName": "./src/components/Gallery.js",
               "type": "require.resolve",
               "userRequest": "lodash",
-              "loc": "21:13-42"
+              "loc": "22:13-42"
             }
           ],
           "usedExports": true,
@@ -2265,7 +2748,7 @@
           "module": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
           "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
           "moduleName": "./src/components/Gallery.js",
-          "loc": "11:26-13:15",
+          "loc": "12:26-14:15",
           "request": "lodash",
           "reasons": [
           ]
@@ -2275,7 +2758,7 @@
           "module": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
           "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
           "moduleName": "./src/components/Gallery.js",
-          "loc": "11:26-13:15",
+          "loc": "12:26-14:15",
           "request": "lodash",
           "reasons": [
           ]
@@ -3071,7 +3554,7 @@
               "moduleName": "./src/components/Gallery.js",
               "type": "harmony import specifier",
               "userRequest": "babel-plugin-universal-import/universalImport",
-              "loc": "8:2-18"
+              "loc": "9:2-18"
             },
             {
               "moduleId": "./src/components/Routes.js",
@@ -3313,9 +3796,9 @@
               "prefetched": false,
               "chunks": [
               ],
-              "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "issuerId": null,
-              "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+              "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "issuerId": "./node_modules/react-router-dom/es/HashRouter.js",
+              "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
               "issuerPath": [
                 {
                   "id": 0,
@@ -3343,9 +3826,9 @@
                   "name": "./node_modules/react-router-dom/es/index.js"
                 },
                 {
-                  "id": null,
-                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-                  "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+                  "id": "./node_modules/react-router-dom/es/HashRouter.js",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+                  "name": "./node_modules/react-router-dom/es/HashRouter.js"
                 }
               ],
               "failed": false,
@@ -3569,9 +4052,9 @@
                   "name": "./node_modules/react-router-dom/es/index.js"
                 },
                 {
-                  "id": null,
-                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-                  "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+                  "id": "./node_modules/react-router-dom/es/HashRouter.js",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+                  "name": "./node_modules/react-router-dom/es/HashRouter.js"
                 },
                 {
                   "id": null,
@@ -3940,9 +4423,9 @@
                   "name": "./node_modules/react-router-dom/es/index.js"
                 },
                 {
-                  "id": null,
-                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-                  "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+                  "id": "./node_modules/react-router-dom/es/HashRouter.js",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+                  "name": "./node_modules/react-router-dom/es/HashRouter.js"
                 },
                 {
                   "id": null,
@@ -4166,9 +4649,9 @@
                   "name": "./node_modules/react-router-dom/es/index.js"
                 },
                 {
-                  "id": null,
-                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-                  "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+                  "id": "./node_modules/react-router-dom/es/HashRouter.js",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+                  "name": "./node_modules/react-router-dom/es/HashRouter.js"
                 },
                 {
                   "id": null,
@@ -4255,9 +4738,9 @@
                   "name": "./node_modules/react-router-dom/es/index.js"
                 },
                 {
-                  "id": null,
-                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-                  "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+                  "id": "./node_modules/react-router-dom/es/HashRouter.js",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+                  "name": "./node_modules/react-router-dom/es/HashRouter.js"
                 },
                 {
                   "id": null,
@@ -4342,9 +4825,9 @@
                   "name": "./node_modules/react-router-dom/es/index.js"
                 },
                 {
-                  "id": null,
-                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-                  "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+                  "id": "./node_modules/react-router-dom/es/HashRouter.js",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+                  "name": "./node_modules/react-router-dom/es/HashRouter.js"
                 },
                 {
                   "id": null,
@@ -4429,9 +4912,9 @@
                   "name": "./node_modules/react-router-dom/es/index.js"
                 },
                 {
-                  "id": null,
-                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-                  "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+                  "id": "./node_modules/react-router-dom/es/HashRouter.js",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+                  "name": "./node_modules/react-router-dom/es/HashRouter.js"
                 },
                 {
                   "id": null,
@@ -4523,9 +5006,9 @@
                   "name": "./node_modules/react-router-dom/es/index.js"
                 },
                 {
-                  "id": null,
-                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-                  "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+                  "id": "./node_modules/react-router-dom/es/HashRouter.js",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+                  "name": "./node_modules/react-router-dom/es/HashRouter.js"
                 },
                 {
                   "id": null,
@@ -4617,9 +5100,9 @@
                   "name": "./node_modules/react-router-dom/es/index.js"
                 },
                 {
-                  "id": null,
-                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-                  "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+                  "id": "./node_modules/react-router-dom/es/HashRouter.js",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+                  "name": "./node_modules/react-router-dom/es/HashRouter.js"
                 },
                 {
                   "id": null,
@@ -4747,9 +5230,9 @@
                   "name": "./node_modules/react-router-dom/es/index.js"
                 },
                 {
-                  "id": null,
-                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-                  "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+                  "id": "./node_modules/react-router-dom/es/HashRouter.js",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+                  "name": "./node_modules/react-router-dom/es/HashRouter.js"
                 },
                 {
                   "id": null,
@@ -4986,9 +5469,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": null,
@@ -5743,7 +6226,7 @@
               "moduleName": "./src/components/Gallery.js",
               "type": "harmony import specifier",
               "userRequest": "path",
-              "loc": "18:13-18"
+              "loc": "19:13-18"
             },
             {
               "moduleId": "./src/components/Routes.js",
@@ -5888,14 +6371,14 @@
               "name": "./src/components/AppRoot.js"
             },
             {
-              "id": "./src/components/Routes.js",
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
-              "name": "./src/components/Routes.js"
+              "id": "./node_modules/react-router-dom/es/index.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/index.js",
+              "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": "./node_modules/react-universal-component/dist/index.js",
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-universal-component/dist/index.js",
-              "name": "./node_modules/react-universal-component/dist/index.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": "./node_modules/prop-types/index.js",
@@ -5942,9 +6425,9 @@
           "chunks": [
             5
           ],
-          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-universal-component/dist/index.js",
-          "issuerId": "./node_modules/react-universal-component/dist/index.js",
-          "issuerName": "./node_modules/react-universal-component/dist/index.js",
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+          "issuerId": "./node_modules/react-router-dom/es/HashRouter.js",
+          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
           "issuerPath": [
             {
               "id": 0,
@@ -5967,14 +6450,14 @@
               "name": "./src/components/AppRoot.js"
             },
             {
-              "id": "./src/components/Routes.js",
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
-              "name": "./src/components/Routes.js"
+              "id": "./node_modules/react-router-dom/es/index.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/index.js",
+              "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": "./node_modules/react-universal-component/dist/index.js",
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-universal-component/dist/index.js",
-              "name": "./node_modules/react-universal-component/dist/index.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             }
           ],
           "failed": false,
@@ -6932,14 +7415,14 @@
               "name": "./src/components/AppRoot.js"
             },
             {
-              "id": "./src/components/Routes.js",
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
-              "name": "./src/components/Routes.js"
+              "id": "./node_modules/react-router-dom/es/index.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/index.js",
+              "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": "./node_modules/react-universal-component/dist/index.js",
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-universal-component/dist/index.js",
-              "name": "./node_modules/react-universal-component/dist/index.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": "./node_modules/prop-types/index.js",
@@ -9677,7 +10160,7 @@
               "moduleName": "./src/components/About.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "5:9-14"
+              "loc": "6:9-14"
             },
             {
               "moduleId": "./src/components/About.js",
@@ -9686,7 +10169,7 @@
               "moduleName": "./src/components/About.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:5-10"
+              "loc": "8:5-10"
             },
             {
               "moduleId": "./src/components/About.js",
@@ -9695,7 +10178,7 @@
               "moduleName": "./src/components/About.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "10:6-11"
+              "loc": "11:6-11"
             },
             {
               "moduleId": "./src/components/About.js",
@@ -9704,7 +10187,7 @@
               "moduleName": "./src/components/About.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "10:59-64"
+              "loc": "11:59-64"
             },
             {
               "moduleId": "./src/components/AppRoot.js",
@@ -9758,7 +10241,7 @@
               "moduleName": "./src/components/Article.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "3:9-14"
+              "loc": "4:9-14"
             },
             {
               "moduleId": "./src/components/Article.js",
@@ -9767,7 +10250,7 @@
               "moduleName": "./src/components/Article.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "3:42-47"
+              "loc": "4:42-47"
             },
             {
               "moduleId": "./src/components/Gallery.js",
@@ -9785,7 +10268,7 @@
               "moduleName": "./src/components/Gallery.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "32:9-14"
+              "loc": "33:9-14"
             },
             {
               "moduleId": "./src/components/Gallery.js",
@@ -9794,7 +10277,7 @@
               "moduleName": "./src/components/Gallery.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "32:42-47"
+              "loc": "33:42-47"
             },
             {
               "moduleId": "./src/components/Routes.js",
@@ -10154,9 +10637,9 @@
           "chunks": [
             5
           ],
-          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-          "issuerId": null,
-          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+          "issuerId": "./node_modules/react-router-dom/es/HashRouter.js",
+          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
           "issuerPath": [
             {
               "id": 0,
@@ -10184,9 +10667,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             }
           ],
           "failed": false,
@@ -10775,7 +11258,7 @@
           "moduleName": "./src/components/About.js",
           "type": "harmony import specifier",
           "userRequest": "../../data/post.md",
-          "loc": "10:38-50"
+          "loc": "11:38-50"
         },
         {
           "moduleId": "./src/components/About.js",
@@ -10784,7 +11267,7 @@
           "moduleName": "./src/components/About.js",
           "type": "harmony import specifier",
           "userRequest": "../../data/post.md",
-          "loc": "13:14-26"
+          "loc": "14:14-26"
         }
       ],
       "usedExports": [
@@ -11548,7 +12031,7 @@
           "moduleName": "./src/components/Gallery.js",
           "type": "harmony import specifier",
           "userRequest": "babel-plugin-universal-import/universalImport",
-          "loc": "8:2-18"
+          "loc": "9:2-18"
         },
         {
           "moduleId": "./src/components/Routes.js",
@@ -11789,9 +12272,9 @@
           "prefetched": false,
           "chunks": [
           ],
-          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-          "issuerId": null,
-          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+          "issuerId": "./node_modules/react-router-dom/es/HashRouter.js",
+          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
           "issuerPath": [
             {
               "id": 0,
@@ -11819,9 +12302,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             }
           ],
           "failed": false,
@@ -12045,9 +12528,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": null,
@@ -12416,9 +12899,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": null,
@@ -12642,9 +13125,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": null,
@@ -12731,9 +13214,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": null,
@@ -12818,9 +13301,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": null,
@@ -12905,9 +13388,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": null,
@@ -12999,9 +13482,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": null,
@@ -13093,9 +13576,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": null,
@@ -13223,9 +13706,9 @@
               "name": "./node_modules/react-router-dom/es/index.js"
             },
             {
-              "id": null,
-              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-              "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+              "id": "./node_modules/react-router-dom/es/HashRouter.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+              "name": "./node_modules/react-router-dom/es/HashRouter.js"
             },
             {
               "id": null,
@@ -13461,9 +13944,9 @@
           "name": "./node_modules/react-router-dom/es/index.js"
         },
         {
-          "id": null,
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-          "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+          "id": "./node_modules/react-router-dom/es/HashRouter.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+          "name": "./node_modules/react-router-dom/es/HashRouter.js"
         },
         {
           "id": null,
@@ -14074,8 +14557,8 @@
       "id": "./node_modules/lodash/lodash.js",
       "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/lodash/lodash.js",
       "name": "./node_modules/lodash/lodash.js",
-      "index": 77,
-      "index2": 77,
+      "index": 83,
+      "index2": 83,
       "size": 539855,
       "cacheable": true,
       "built": true,
@@ -14137,7 +14620,7 @@
           "moduleName": "./src/components/Gallery.js",
           "type": "import()",
           "userRequest": "lodash",
-          "loc": "11:26-13:15"
+          "loc": "12:26-14:15"
         },
         {
           "moduleId": "./src/components/Gallery.js",
@@ -14146,7 +14629,7 @@
           "moduleName": "./src/components/Gallery.js",
           "type": "require.resolve",
           "userRequest": "lodash",
-          "loc": "21:13-42"
+          "loc": "22:13-42"
         }
       ],
       "usedExports": true,
@@ -14300,7 +14783,7 @@
           "moduleName": "./src/components/Gallery.js",
           "type": "harmony import specifier",
           "userRequest": "path",
-          "loc": "18:13-18"
+          "loc": "19:13-18"
         },
         {
           "moduleId": "./src/components/Routes.js",
@@ -14443,14 +14926,14 @@
           "name": "./src/components/AppRoot.js"
         },
         {
-          "id": "./src/components/Routes.js",
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
-          "name": "./src/components/Routes.js"
+          "id": "./node_modules/react-router-dom/es/index.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/index.js",
+          "name": "./node_modules/react-router-dom/es/index.js"
         },
         {
-          "id": "./node_modules/react-universal-component/dist/index.js",
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-universal-component/dist/index.js",
-          "name": "./node_modules/react-universal-component/dist/index.js"
+          "id": "./node_modules/react-router-dom/es/HashRouter.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+          "name": "./node_modules/react-router-dom/es/HashRouter.js"
         },
         {
           "id": "./node_modules/prop-types/index.js",
@@ -14496,9 +14979,9 @@
       "chunks": [
         5
       ],
-      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-universal-component/dist/index.js",
-      "issuerId": "./node_modules/react-universal-component/dist/index.js",
-      "issuerName": "./node_modules/react-universal-component/dist/index.js",
+      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+      "issuerId": "./node_modules/react-router-dom/es/HashRouter.js",
+      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
       "issuerPath": [
         {
           "id": 0,
@@ -14521,14 +15004,14 @@
           "name": "./src/components/AppRoot.js"
         },
         {
-          "id": "./src/components/Routes.js",
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
-          "name": "./src/components/Routes.js"
+          "id": "./node_modules/react-router-dom/es/index.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/index.js",
+          "name": "./node_modules/react-router-dom/es/index.js"
         },
         {
-          "id": "./node_modules/react-universal-component/dist/index.js",
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-universal-component/dist/index.js",
-          "name": "./node_modules/react-universal-component/dist/index.js"
+          "id": "./node_modules/react-router-dom/es/HashRouter.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+          "name": "./node_modules/react-router-dom/es/HashRouter.js"
         }
       ],
       "failed": false,
@@ -15485,14 +15968,14 @@
           "name": "./src/components/AppRoot.js"
         },
         {
-          "id": "./src/components/Routes.js",
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
-          "name": "./src/components/Routes.js"
+          "id": "./node_modules/react-router-dom/es/index.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/index.js",
+          "name": "./node_modules/react-router-dom/es/index.js"
         },
         {
-          "id": "./node_modules/react-universal-component/dist/index.js",
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-universal-component/dist/index.js",
-          "name": "./node_modules/react-universal-component/dist/index.js"
+          "id": "./node_modules/react-router-dom/es/HashRouter.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+          "name": "./node_modules/react-router-dom/es/HashRouter.js"
         },
         {
           "id": "./node_modules/prop-types/index.js",
@@ -19606,7 +20089,7 @@
           "moduleName": "./src/components/About.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "5:9-14"
+          "loc": "6:9-14"
         },
         {
           "moduleId": "./src/components/About.js",
@@ -19615,7 +20098,7 @@
           "moduleName": "./src/components/About.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "7:5-10"
+          "loc": "8:5-10"
         },
         {
           "moduleId": "./src/components/About.js",
@@ -19624,7 +20107,7 @@
           "moduleName": "./src/components/About.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "10:6-11"
+          "loc": "11:6-11"
         },
         {
           "moduleId": "./src/components/About.js",
@@ -19633,7 +20116,7 @@
           "moduleName": "./src/components/About.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "10:59-64"
+          "loc": "11:59-64"
         },
         {
           "moduleId": "./src/components/AppRoot.js",
@@ -19687,7 +20170,7 @@
           "moduleName": "./src/components/Article.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "3:9-14"
+          "loc": "4:9-14"
         },
         {
           "moduleId": "./src/components/Article.js",
@@ -19696,7 +20179,7 @@
           "moduleName": "./src/components/Article.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "3:42-47"
+          "loc": "4:42-47"
         },
         {
           "moduleId": "./src/components/Gallery.js",
@@ -19714,7 +20197,7 @@
           "moduleName": "./src/components/Gallery.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "32:9-14"
+          "loc": "33:9-14"
         },
         {
           "moduleId": "./src/components/Gallery.js",
@@ -19723,7 +20206,7 @@
           "moduleName": "./src/components/Gallery.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "32:42-47"
+          "loc": "33:42-47"
         },
         {
           "moduleId": "./src/components/Routes.js",
@@ -20079,9 +20562,9 @@
       "chunks": [
         5
       ],
-      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-      "issuerId": null,
-      "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+      "issuerId": "./node_modules/react-router-dom/es/HashRouter.js",
+      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
       "issuerPath": [
         {
           "id": 0,
@@ -20109,9 +20592,9 @@
           "name": "./node_modules/react-router-dom/es/index.js"
         },
         {
-          "id": null,
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/BrowserRouter.js",
-          "name": "./node_modules/react-router-dom/es/BrowserRouter.js"
+          "id": "./node_modules/react-router-dom/es/HashRouter.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/react-router-dom/es/HashRouter.js",
+          "name": "./node_modules/react-router-dom/es/HashRouter.js"
         }
       ],
       "failed": false,
@@ -20680,8 +21163,8 @@
       "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/About.js",
       "name": "./src/components/About.js",
       "index": 72,
-      "index2": 74,
-      "size": 477,
+      "index2": 76,
+      "size": 504,
       "cacheable": true,
       "built": true,
       "optional": true,
@@ -20775,7 +21258,7 @@
         "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./src/components lazy ^\\.\\/.*$ namespace object (referenced with context element), ./src/components weak ^\\.\\/.*$ (referenced with context element)"
       ],
       "depth": 6,
-      "source": "import MarkdownData from \"../../data/post.md\";\nimport React from 'react';\nimport imagePath from '../images/square.jpg';\nexport default (function () {\n  return React.createElement(\"div\", {\n    className: \"profile\"\n  }, React.createElement(\"img\", {\n    src: imagePath,\n    alt: \"\"\n  }), React.createElement(\"h1\", null, MarkdownData.title), React.createElement(\"div\", {\n    className: \"content\",\n    dangerouslySetInnerHTML: {\n      __html: MarkdownData.__content\n    }\n  }));\n});"
+      "source": "import MarkdownData from \"../../data/post.md\";\nimport React from 'react';\nimport imagePath from '../images/square.jpg';\nimport '../css/About.css';\nexport default (function () {\n  return React.createElement(\"div\", {\n    className: \"profile\"\n  }, React.createElement(\"img\", {\n    src: imagePath,\n    alt: \"\"\n  }), React.createElement(\"h1\", null, MarkdownData.title), React.createElement(\"div\", {\n    className: \"content\",\n    dangerouslySetInnerHTML: {\n      __html: MarkdownData.__content\n    }\n  }));\n});"
     },
     {
       "id": "./src/components/AppRoot.js",
@@ -20886,9 +21369,9 @@
       "id": "./src/components/Article.js",
       "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Article.js",
       "name": "./src/components/Article.js",
-      "index": 75,
-      "index2": 75,
-      "size": 147,
+      "index": 77,
+      "index2": 79,
+      "size": 176,
       "cacheable": true,
       "built": true,
       "optional": true,
@@ -20982,15 +21465,15 @@
         "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./src/components lazy ^\\.\\/.*$ namespace object (referenced with context element), ./src/components weak ^\\.\\/.*$ (referenced with context element)"
       ],
       "depth": 6,
-      "source": "import React from 'react';\nexport default (function () {\n  return React.createElement(\"div\", null, React.createElement(\"h1\", null, \"Article\"));\n});"
+      "source": "import React from 'react';\nimport '../css/Article.css';\nexport default (function () {\n  return React.createElement(\"div\", null, React.createElement(\"h1\", null, \"Article\"));\n});"
     },
     {
       "id": "./src/components/Gallery.js",
       "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
       "name": "./src/components/Gallery.js",
-      "index": 76,
-      "index2": 76,
-      "size": 912,
+      "index": 80,
+      "index2": 82,
+      "size": 941,
       "cacheable": true,
       "built": true,
       "optional": true,
@@ -21084,7 +21567,7 @@
         "ModuleConcatenation bailout: Module uses injected variables (__dirname)"
       ],
       "depth": 6,
-      "source": "import _path from \"path\";\nimport _universalImport from \"babel-plugin-universal-import/universalImport\";\nimport React from 'react';\n\nvar getBundle = function getBundle() {\n  // react-universal-component 使得动态 import 时无需写 magic comment\n  // 使用模块名\n  _universalImport({\n    id: \"lodash\",\n    load: function load() {\n      return Promise.all([import(\n      /* webpackChunkName: 'lodash' */\n      'lodash')]).then(function (proms) {\n        return proms[0];\n      });\n    },\n    path: function path() {\n      return _path.join(__dirname, 'lodash');\n    },\n    resolve: function resolve() {\n      return require.resolveWeak('lodash');\n    },\n    chunkName: function chunkName() {\n      return \"lodash\";\n    }\n  }).then(function (_) {\n    console.log('imported', _);\n  });\n};\n\nexport default (function () {\n  return React.createElement(\"div\", null, React.createElement(\"h1\", {\n    onClick: getBundle\n  }, \"Gallery\"));\n});"
+      "source": "import _path from \"path\";\nimport _universalImport from \"babel-plugin-universal-import/universalImport\";\nimport React from 'react';\nimport '../css/Gallery.css';\n\nvar getBundle = function getBundle() {\n  // react-universal-component 使得动态 import 时无需写 magic comment\n  // 使用模块名\n  _universalImport({\n    id: \"lodash\",\n    load: function load() {\n      return Promise.all([import(\n      /* webpackChunkName: 'lodash' */\n      'lodash')]).then(function (proms) {\n        return proms[0];\n      });\n    },\n    path: function path() {\n      return _path.join(__dirname, 'lodash');\n    },\n    resolve: function resolve() {\n      return require.resolveWeak('lodash');\n    },\n    chunkName: function chunkName() {\n      return \"lodash\";\n    }\n  }).then(function (_) {\n    console.log('imported', _);\n  });\n};\n\nexport default (function () {\n  return React.createElement(\"div\", null, React.createElement(\"h1\", {\n    onClick: getBundle\n  }, \"Gallery\"));\n});"
     },
     {
       "id": "./src/components/Routes.js",
@@ -21198,11 +21681,11 @@
     },
     {
       "id": "./src/components/nav.css",
-      "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
+      "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
       "name": "./src/components/nav.css",
       "index": 24,
       "index2": 21,
-      "size": 39,
+      "size": 49,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -21275,7 +21758,241 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "// extracted by mini-css-extract-plugin"
+      "source": "// extracted by extract-css-chunks-webpack-plugin"
+    },
+    {
+      "id": "./src/css/About.css",
+      "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+      "name": "./src/css/About.css",
+      "index": 75,
+      "index2": 75,
+      "size": 49,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/About.js",
+      "issuerId": "./src/components/About.js",
+      "issuerName": "./src/components/About.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "multi ./src/main.js",
+          "name": "multi ./src/main.js"
+        },
+        {
+          "id": "./src/main.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+          "name": "./src/main.js"
+        },
+        {
+          "id": "./src/app.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+          "name": "./src/app.js"
+        },
+        {
+          "id": "./src/components/AppRoot.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+          "name": "./src/components/AppRoot.js"
+        },
+        {
+          "id": "./src/components/Routes.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+          "name": "./src/components/Routes.js"
+        },
+        {
+          "id": "./src/components lazy recursive ^\\.\\/.*$",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+          "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+        },
+        {
+          "id": "./src/components/About.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/About.js",
+          "name": "./src/components/About.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "reasons": [
+        {
+          "moduleId": "./src/components/About.js",
+          "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/About.js",
+          "module": "./src/components/About.js",
+          "moduleName": "./src/components/About.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../css/About.css",
+          "loc": "4:0-26"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 7,
+      "source": "// extracted by extract-css-chunks-webpack-plugin"
+    },
+    {
+      "id": "./src/css/Article.css",
+      "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+      "name": "./src/css/Article.css",
+      "index": 78,
+      "index2": 78,
+      "size": 49,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Article.js",
+      "issuerId": "./src/components/Article.js",
+      "issuerName": "./src/components/Article.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "multi ./src/main.js",
+          "name": "multi ./src/main.js"
+        },
+        {
+          "id": "./src/main.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+          "name": "./src/main.js"
+        },
+        {
+          "id": "./src/app.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+          "name": "./src/app.js"
+        },
+        {
+          "id": "./src/components/AppRoot.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+          "name": "./src/components/AppRoot.js"
+        },
+        {
+          "id": "./src/components/Routes.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+          "name": "./src/components/Routes.js"
+        },
+        {
+          "id": "./src/components lazy recursive ^\\.\\/.*$",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+          "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+        },
+        {
+          "id": "./src/components/Article.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Article.js",
+          "name": "./src/components/Article.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "reasons": [
+        {
+          "moduleId": "./src/components/Article.js",
+          "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Article.js",
+          "module": "./src/components/Article.js",
+          "moduleName": "./src/components/Article.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../css/Article.css",
+          "loc": "2:0-28"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 7,
+      "source": "// extracted by extract-css-chunks-webpack-plugin"
+    },
+    {
+      "id": "./src/css/Gallery.css",
+      "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+      "name": "./src/css/Gallery.css",
+      "index": 81,
+      "index2": 81,
+      "size": 49,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
+      "issuerId": "./src/components/Gallery.js",
+      "issuerName": "./src/components/Gallery.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "multi ./src/main.js",
+          "name": "multi ./src/main.js"
+        },
+        {
+          "id": "./src/main.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+          "name": "./src/main.js"
+        },
+        {
+          "id": "./src/app.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+          "name": "./src/app.js"
+        },
+        {
+          "id": "./src/components/AppRoot.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+          "name": "./src/components/AppRoot.js"
+        },
+        {
+          "id": "./src/components/Routes.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+          "name": "./src/components/Routes.js"
+        },
+        {
+          "id": "./src/components lazy recursive ^\\.\\/.*$",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+          "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+        },
+        {
+          "id": "./src/components/Gallery.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
+          "name": "./src/components/Gallery.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "reasons": [
+        {
+          "moduleId": "./src/components/Gallery.js",
+          "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
+          "module": "./src/components/Gallery.js",
+          "moduleName": "./src/components/Gallery.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../css/Gallery.css",
+          "loc": "4:0-28"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 7,
+      "source": "// extracted by extract-css-chunks-webpack-plugin"
     },
     {
       "id": "./src/images/square.jpg",
@@ -21354,7 +22071,7 @@
           "moduleName": "./src/components/About.js",
           "type": "harmony import specifier",
           "userRequest": "../images/square.jpg",
-          "loc": "8:9-18"
+          "loc": "9:9-18"
         }
       ],
       "usedExports": [
@@ -21417,11 +22134,11 @@
     },
     {
       "id": "./src/main.scss",
-      "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
+      "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
       "name": "./src/main.scss",
       "index": 22,
       "index2": 19,
-      "size": 39,
+      "size": 49,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -21476,7 +22193,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "// extracted by mini-css-extract-plugin"
+      "source": "// extracted by extract-css-chunks-webpack-plugin"
     },
     {
       "id": "?3a5d",
@@ -21491,7 +22208,7 @@
       "chunks": [
         3
       ],
-      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
+      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
       "issuerId": "./src/components/nav.css",
       "issuerName": "./src/components/nav.css",
       "issuerPath": [
@@ -21517,7 +22234,7 @@
         },
         {
           "id": "./src/components/nav.css",
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
           "name": "./src/components/nav.css"
         }
       ],
@@ -21529,7 +22246,7 @@
       "reasons": [
         {
           "moduleId": "./src/components/nav.css",
-          "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
+          "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
           "module": "./src/components/nav.css",
           "moduleName": "./src/components/nav.css"
         }
@@ -21542,19 +22259,253 @@
       "depth": 5
     },
     {
+      "id": "?65ef",
+      "identifier": "css /Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css 0",
+      "name": "css ./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+      "index": 82,
+      "index2": 80,
+      "size": 0,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+      "issuerId": "./src/css/Gallery.css",
+      "issuerName": "./src/css/Gallery.css",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "multi ./src/main.js",
+          "name": "multi ./src/main.js"
+        },
+        {
+          "id": "./src/main.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+          "name": "./src/main.js"
+        },
+        {
+          "id": "./src/app.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+          "name": "./src/app.js"
+        },
+        {
+          "id": "./src/components/AppRoot.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+          "name": "./src/components/AppRoot.js"
+        },
+        {
+          "id": "./src/components/Routes.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+          "name": "./src/components/Routes.js"
+        },
+        {
+          "id": "./src/components lazy recursive ^\\.\\/.*$",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+          "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+        },
+        {
+          "id": "./src/components/Gallery.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Gallery.js",
+          "name": "./src/components/Gallery.js"
+        },
+        {
+          "id": "./src/css/Gallery.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+          "name": "./src/css/Gallery.css"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "reasons": [
+        {
+          "moduleId": "./src/css/Gallery.css",
+          "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+          "module": "./src/css/Gallery.css",
+          "moduleName": "./src/css/Gallery.css"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 8
+    },
+    {
+      "id": "?8391",
+      "identifier": "css /Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css 0",
+      "name": "css ./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+      "index": 76,
+      "index2": 74,
+      "size": 514,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+      "issuerId": "./src/css/About.css",
+      "issuerName": "./src/css/About.css",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "multi ./src/main.js",
+          "name": "multi ./src/main.js"
+        },
+        {
+          "id": "./src/main.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+          "name": "./src/main.js"
+        },
+        {
+          "id": "./src/app.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+          "name": "./src/app.js"
+        },
+        {
+          "id": "./src/components/AppRoot.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+          "name": "./src/components/AppRoot.js"
+        },
+        {
+          "id": "./src/components/Routes.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+          "name": "./src/components/Routes.js"
+        },
+        {
+          "id": "./src/components lazy recursive ^\\.\\/.*$",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+          "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+        },
+        {
+          "id": "./src/components/About.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/About.js",
+          "name": "./src/components/About.js"
+        },
+        {
+          "id": "./src/css/About.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+          "name": "./src/css/About.css"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "reasons": [
+        {
+          "moduleId": "./src/css/About.css",
+          "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+          "module": "./src/css/About.css",
+          "moduleName": "./src/css/About.css"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 8
+    },
+    {
+      "id": "?9715",
+      "identifier": "css /Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css 0",
+      "name": "css ./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+      "index": 79,
+      "index2": 77,
+      "size": 0,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+      "issuerId": "./src/css/Article.css",
+      "issuerName": "./src/css/Article.css",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "multi ./src/main.js",
+          "name": "multi ./src/main.js"
+        },
+        {
+          "id": "./src/main.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.js",
+          "name": "./src/main.js"
+        },
+        {
+          "id": "./src/app.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/app.js",
+          "name": "./src/app.js"
+        },
+        {
+          "id": "./src/components/AppRoot.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js",
+          "name": "./src/components/AppRoot.js"
+        },
+        {
+          "id": "./src/components/Routes.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Routes.js",
+          "name": "./src/components/Routes.js"
+        },
+        {
+          "id": "./src/components lazy recursive ^\\.\\/.*$",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components lazy /^\\.\\/.*$/ groupOptions: {} namespace object",
+          "name": "./src/components lazy ^\\.\\/.*$ namespace object"
+        },
+        {
+          "id": "./src/components/Article.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/babel-loader/lib/index.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/Article.js",
+          "name": "./src/components/Article.js"
+        },
+        {
+          "id": "./src/css/Article.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+          "name": "./src/css/Article.css"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "reasons": [
+        {
+          "moduleId": "./src/css/Article.css",
+          "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+          "module": "./src/css/Article.css",
+          "moduleName": "./src/css/Article.css"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 8
+    },
+    {
       "id": "?b71c",
       "identifier": "css /Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss 0",
       "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/main.scss",
       "index": 23,
       "index2": 18,
-      "size": 571,
+      "size": 92,
       "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
         3
       ],
-      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
+      "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
       "issuerId": "./src/main.scss",
       "issuerName": "./src/main.scss",
       "issuerPath": [
@@ -21580,7 +22531,7 @@
         },
         {
           "id": "./src/main.scss",
-          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
           "name": "./src/main.scss"
         }
       ],
@@ -21592,7 +22543,7 @@
       "reasons": [
         {
           "moduleId": "./src/main.scss",
-          "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
+          "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/extract-css-chunks-webpack-plugin/dist/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
           "module": "./src/main.scss",
           "moduleName": "./src/main.scss"
         }
@@ -21620,7 +22571,7 @@
       ],
       "filteredAssets": 0,
       "entrypoints": {
-        "mini-css-extract-plugin": {
+        "extract-css-chunks-webpack-plugin": {
           "chunks": [
             0
           ],
@@ -21634,7 +22585,7 @@
         }
       },
       "namedChunkGroups": {
-        "mini-css-extract-plugin": {
+        "extract-css-chunks-webpack-plugin": {
           "chunks": [
             0
           ],
@@ -21653,14 +22604,14 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 3146,
+          "size": 2643,
           "names": [
-            "mini-css-extract-plugin"
+            "extract-css-chunks-webpack-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "8b88291f0fdd4e64f6f4",
+          "hash": "96659cf28b09542e9a1a",
           "siblings": [
           ],
           "parents": [
@@ -21676,7 +22627,7 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/main.scss",
               "index": 0,
               "index2": 1,
-              "size": 740,
+              "size": 237,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -21701,7 +22652,7 @@
                   "moduleName": null,
                   "type": "single entry",
                   "userRequest": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
-                  "loc": "mini-css-extract-plugin"
+                  "loc": "extract-css-chunks-webpack-plugin"
                 }
               ],
               "usedExports": true,
@@ -21710,7 +22661,7 @@
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 0,
-              "source": "exports = module.exports = require(\"../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body {\\n  margin: 0;\\n  background-color: #444; }\\n\\n.counter {\\n  text-decoration: underline; }\\n\\n.profile {\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  height: 100vh;\\n  flex-flow: column; }\\n  .profile img {\\n    border-radius: 100%;\\n    width: 300px;\\n    box-shadow: 0 0 20px black; }\\n  .profile .content {\\n    background: lightyellow;\\n    padding: 15px;\\n    border-radius: 8px; }\\n\\nh1 {\\n  /*height: 100vh;*/\\n  display: flex;\\n  color: white;\\n  align-items: center;\\n  justify-content: center;\\n  font-family: sans-serif;\\n  text-shadow: 0 0 20px black; }\\n\", \"\"]);\n\n"
+              "source": "exports = module.exports = require(\"../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body {\\n  margin: 0;\\n  background-color: #444; }\\n\\n.counter {\\n  text-decoration: underline; }\\n\", \"\"]);\n\n"
             },
             {
               "id": "./node_modules/css-loader/dist/runtime/api.js",
@@ -21767,7 +22718,7 @@
               "module": "",
               "moduleIdentifier": "",
               "moduleName": "",
-              "loc": "mini-css-extract-plugin",
+              "loc": "extract-css-chunks-webpack-plugin",
               "request": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
               "reasons": [
               ]
@@ -21782,7 +22733,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/main.scss",
           "index": 0,
           "index2": 1,
-          "size": 740,
+          "size": 237,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -21807,7 +22758,7 @@
               "moduleName": null,
               "type": "single entry",
               "userRequest": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/sass-loader/lib/loader.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/main.scss",
-              "loc": "mini-css-extract-plugin"
+              "loc": "extract-css-chunks-webpack-plugin"
             }
           ],
           "usedExports": true,
@@ -21816,7 +22767,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0,
-          "source": "exports = module.exports = require(\"../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body {\\n  margin: 0;\\n  background-color: #444; }\\n\\n.counter {\\n  text-decoration: underline; }\\n\\n.profile {\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  height: 100vh;\\n  flex-flow: column; }\\n  .profile img {\\n    border-radius: 100%;\\n    width: 300px;\\n    box-shadow: 0 0 20px black; }\\n  .profile .content {\\n    background: lightyellow;\\n    padding: 15px;\\n    border-radius: 8px; }\\n\\nh1 {\\n  /*height: 100vh;*/\\n  display: flex;\\n  color: white;\\n  align-items: center;\\n  justify-content: center;\\n  font-family: sans-serif;\\n  text-shadow: 0 0 20px black; }\\n\", \"\"]);\n\n"
+          "source": "exports = module.exports = require(\"../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body {\\n  margin: 0;\\n  background-color: #444; }\\n\\n.counter {\\n  text-decoration: underline; }\\n\", \"\"]);\n\n"
         },
         {
           "id": "./node_modules/css-loader/dist/runtime/api.js",
@@ -21870,7 +22821,7 @@
       "filteredModules": 0,
       "children": [
       ],
-      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!src/main.scss"
+      "name": "extract-css-chunks-webpack-plugin node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!src/main.scss"
     },
     {
       "errors": [
@@ -21885,7 +22836,7 @@
       ],
       "filteredAssets": 0,
       "entrypoints": {
-        "mini-css-extract-plugin": {
+        "extract-css-chunks-webpack-plugin": {
           "chunks": [
             0
           ],
@@ -21899,7 +22850,7 @@
         }
       },
       "namedChunkGroups": {
-        "mini-css-extract-plugin": {
+        "extract-css-chunks-webpack-plugin": {
           "chunks": [
             0
           ],
@@ -21920,12 +22871,12 @@
           "entry": true,
           "size": 2712,
           "names": [
-            "mini-css-extract-plugin"
+            "extract-css-chunks-webpack-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "2da0aa5655dc67d043fd",
+          "hash": "b3a56aa24f7b5d9b7230",
           "siblings": [
           ],
           "parents": [
@@ -21966,7 +22917,7 @@
                   "moduleName": null,
                   "type": "single entry",
                   "userRequest": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
-                  "loc": "mini-css-extract-plugin"
+                  "loc": "extract-css-chunks-webpack-plugin"
                 }
               ],
               "usedExports": true,
@@ -22032,7 +22983,7 @@
               "module": "",
               "moduleIdentifier": "",
               "moduleName": "",
-              "loc": "mini-css-extract-plugin",
+              "loc": "extract-css-chunks-webpack-plugin",
               "request": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
               "reasons": [
               ]
@@ -22072,7 +23023,7 @@
               "moduleName": null,
               "type": "single entry",
               "userRequest": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/nav.css",
-              "loc": "mini-css-extract-plugin"
+              "loc": "extract-css-chunks-webpack-plugin"
             }
           ],
           "usedExports": true,
@@ -22135,7 +23086,802 @@
       "filteredModules": 0,
       "children": [
       ],
-      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!src/components/nav.css"
+      "name": "extract-css-chunks-webpack-plugin node_modules/css-loader/dist/cjs.js!src/components/nav.css"
+    },
+    {
+      "errors": [
+      ],
+      "warnings": [
+      ],
+      "publicPath": "/",
+      "outputPath": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/dist",
+      "assetsByChunkName": {
+      },
+      "assets": [
+      ],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "extract-css-chunks-webpack-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {
+          },
+          "childAssets": {
+          }
+        }
+      },
+      "namedChunkGroups": {
+        "extract-css-chunks-webpack-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {
+          },
+          "childAssets": {
+          }
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 3092,
+          "names": [
+            "extract-css-chunks-webpack-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "a370fa8f1b041ace3d76",
+          "siblings": [
+          ],
+          "parents": [
+          ],
+          "children": [
+          ],
+          "childrenByOrder": {
+          },
+          "modules": [
+            {
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+              "index": 0,
+              "index2": 1,
+              "size": 686,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+              ],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+                  "loc": "extract-css-chunks-webpack-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0,
+              "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \".profile {\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n    height: 100vh;\\n    flex-flow: column;\\n\\n}\\n\\n\\n.profile > img {\\n    border-radius: 100%;\\n    width: 300px;\\n    box-shadow: 0 0 20px black;\\n}\\n\\n/*.content {*/\\n    /*background: lightyellow;*/\\n    /*padding: 15px;*/\\n    /*border-radius: 8px;*/\\n/*}*/\\n\\nh1 {\\n    /*height: 100vh;*/\\n    display: flex;\\n    color: white;\\n    align-items: center;\\n    justify-content: center;\\n    font-family: sans-serif;\\n    text-shadow: 0 0 20px black;\\n}\", \"\"]);\n\n"
+            },
+            {
+              "id": "./node_modules/css-loader/dist/runtime/api.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2406,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+              "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+              "issuerPath": [
+                {
+                  "id": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+              ],
+              "reasons": [
+                {
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+                  "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+                  "type": "cjs require",
+                  "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "1:27-87"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1,
+              "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return '@media ' + item[2] + '{' + content + '}';\n      } else {\n        return content;\n      }\n    }).join('');\n  }; // import a list of modules into the list\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (i = 0; i < modules.length; i++) {\n      var item = modules[i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || '';\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n  return '/*# ' + data + ' */';\n}"
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "extract-css-chunks-webpack-plugin",
+              "request": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+              "reasons": [
+              ]
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+          "name": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+          "index": 0,
+          "index2": 1,
+          "size": 686,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+              "loc": "extract-css-chunks-webpack-plugin"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \".profile {\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n    height: 100vh;\\n    flex-flow: column;\\n\\n}\\n\\n\\n.profile > img {\\n    border-radius: 100%;\\n    width: 300px;\\n    box-shadow: 0 0 20px black;\\n}\\n\\n/*.content {*/\\n    /*background: lightyellow;*/\\n    /*padding: 15px;*/\\n    /*border-radius: 8px;*/\\n/*}*/\\n\\nh1 {\\n    /*height: 100vh;*/\\n    display: flex;\\n    color: white;\\n    align-items: center;\\n    justify-content: center;\\n    font-family: sans-serif;\\n    text-shadow: 0 0 20px black;\\n}\", \"\"]);\n\n"
+        },
+        {
+          "id": "./node_modules/css-loader/dist/runtime/api.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/runtime/api.js",
+          "name": "./node_modules/css-loader/dist/runtime/api.js",
+          "index": 1,
+          "index2": 0,
+          "size": 2406,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+          "issuerPath": [
+            {
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/About.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/css/About.css",
+              "type": "cjs require",
+              "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "1:27-87"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return '@media ' + item[2] + '{' + content + '}';\n      } else {\n        return content;\n      }\n    }).join('');\n  }; // import a list of modules into the list\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (i = 0; i < modules.length; i++) {\n      var item = modules[i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || '';\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n  return '/*# ' + data + ' */';\n}"
+        }
+      ],
+      "filteredModules": 0,
+      "children": [
+      ],
+      "name": "extract-css-chunks-webpack-plugin node_modules/css-loader/dist/cjs.js!src/css/About.css"
+    },
+    {
+      "errors": [
+      ],
+      "warnings": [
+      ],
+      "publicPath": "/",
+      "outputPath": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/dist",
+      "assetsByChunkName": {
+      },
+      "assets": [
+      ],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "extract-css-chunks-webpack-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {
+          },
+          "childAssets": {
+          }
+        }
+      },
+      "namedChunkGroups": {
+        "extract-css-chunks-webpack-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {
+          },
+          "childAssets": {
+          }
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 2548,
+          "names": [
+            "extract-css-chunks-webpack-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "72b4dfdeaff1b8db4240",
+          "siblings": [
+          ],
+          "parents": [
+          ],
+          "children": [
+          ],
+          "childrenByOrder": {
+          },
+          "modules": [
+            {
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+              "index": 0,
+              "index2": 1,
+              "size": 142,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+              ],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+                  "loc": "extract-css-chunks-webpack-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0,
+              "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"\", \"\"]);\n\n"
+            },
+            {
+              "id": "./node_modules/css-loader/dist/runtime/api.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2406,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+              "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+              "issuerPath": [
+                {
+                  "id": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+              ],
+              "reasons": [
+                {
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+                  "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+                  "type": "cjs require",
+                  "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "1:27-87"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1,
+              "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return '@media ' + item[2] + '{' + content + '}';\n      } else {\n        return content;\n      }\n    }).join('');\n  }; // import a list of modules into the list\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (i = 0; i < modules.length; i++) {\n      var item = modules[i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || '';\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n  return '/*# ' + data + ' */';\n}"
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "extract-css-chunks-webpack-plugin",
+              "request": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+              "reasons": [
+              ]
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+          "name": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+          "index": 0,
+          "index2": 1,
+          "size": 142,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+              "loc": "extract-css-chunks-webpack-plugin"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"\", \"\"]);\n\n"
+        },
+        {
+          "id": "./node_modules/css-loader/dist/runtime/api.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/runtime/api.js",
+          "name": "./node_modules/css-loader/dist/runtime/api.js",
+          "index": 1,
+          "index2": 0,
+          "size": 2406,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+          "issuerPath": [
+            {
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Article.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/css/Article.css",
+              "type": "cjs require",
+              "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "1:27-87"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return '@media ' + item[2] + '{' + content + '}';\n      } else {\n        return content;\n      }\n    }).join('');\n  }; // import a list of modules into the list\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (i = 0; i < modules.length; i++) {\n      var item = modules[i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || '';\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n  return '/*# ' + data + ' */';\n}"
+        }
+      ],
+      "filteredModules": 0,
+      "children": [
+      ],
+      "name": "extract-css-chunks-webpack-plugin node_modules/css-loader/dist/cjs.js!src/css/Article.css"
+    },
+    {
+      "errors": [
+      ],
+      "warnings": [
+      ],
+      "publicPath": "/",
+      "outputPath": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/dist",
+      "assetsByChunkName": {
+      },
+      "assets": [
+      ],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "extract-css-chunks-webpack-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {
+          },
+          "childAssets": {
+          }
+        }
+      },
+      "namedChunkGroups": {
+        "extract-css-chunks-webpack-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {
+          },
+          "childAssets": {
+          }
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 2548,
+          "names": [
+            "extract-css-chunks-webpack-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "a95f7fa3dc7453b961ac",
+          "siblings": [
+          ],
+          "parents": [
+          ],
+          "children": [
+          ],
+          "childrenByOrder": {
+          },
+          "modules": [
+            {
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+              "index": 0,
+              "index2": 1,
+              "size": 142,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+              ],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+                  "loc": "extract-css-chunks-webpack-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0,
+              "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"\", \"\"]);\n\n"
+            },
+            {
+              "id": "./node_modules/css-loader/dist/runtime/api.js",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2406,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+              "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+              "issuerPath": [
+                {
+                  "id": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+                  "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+              ],
+              "reasons": [
+                {
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+                  "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+                  "type": "cjs require",
+                  "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "1:27-87"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1,
+              "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return '@media ' + item[2] + '{' + content + '}';\n      } else {\n        return content;\n      }\n    }).join('');\n  }; // import a list of modules into the list\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (i = 0; i < modules.length; i++) {\n      var item = modules[i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || '';\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n  return '/*# ' + data + ' */';\n}"
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "extract-css-chunks-webpack-plugin",
+              "request": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+              "reasons": [
+              ]
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+          "name": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+          "index": 0,
+          "index2": 1,
+          "size": 142,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "!!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+              "loc": "extract-css-chunks-webpack-plugin"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"\", \"\"]);\n\n"
+        },
+        {
+          "id": "./node_modules/css-loader/dist/runtime/api.js",
+          "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/runtime/api.js",
+          "name": "./node_modules/css-loader/dist/runtime/api.js",
+          "index": 1,
+          "index2": 0,
+          "size": 2406,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+          "issuerPath": [
+            {
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+              "identifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+              "moduleIdentifier": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/node_modules/css-loader/dist/cjs.js!/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/css/Gallery.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/css/Gallery.css",
+              "type": "cjs require",
+              "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "1:27-87"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return '@media ' + item[2] + '{' + content + '}';\n      } else {\n        return content;\n      }\n    }).join('');\n  }; // import a list of modules into the list\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (i = 0; i < modules.length; i++) {\n      var item = modules[i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || '';\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n  return '/*# ' + data + ' */';\n}"
+        }
+      ],
+      "filteredModules": 0,
+      "children": [
+      ],
+      "name": "extract-css-chunks-webpack-plugin node_modules/css-loader/dist/cjs.js!src/css/Gallery.css"
     }
   ]
 }

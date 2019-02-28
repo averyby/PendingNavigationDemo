@@ -7,6 +7,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const BrotliPlugin = require('brotli-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const ExtractCSSChunks = require('extract-css-chunks-webpack-plugin');
 
 module.exports = {
   name: "client",
@@ -41,7 +42,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCSSExtractPlugin.loader
+            loader: ExtractCSSChunks.loader
           },
           {
             loader: 'css-loader'
@@ -52,7 +53,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: MiniCSSExtractPlugin.loader
+            loader: ExtractCSSChunks.loader
           },
           {
             loader: 'css-loader'
@@ -65,7 +66,7 @@ module.exports = {
         test: /\.styl$/,
         use: [
           {
-            loader: MiniCSSExtractPlugin.loader
+            loader: ExtractCSSChunks.loader
           },
           {
             loader: 'css-loader',
@@ -86,7 +87,7 @@ module.exports = {
         test: /\.less$/,
         use: [
           {
-            loader: MiniCSSExtractPlugin.loader
+            loader: ExtractCSSChunks.loader
           },
           {
             loader: 'css-loader'
@@ -138,6 +139,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new ExtractCSSChunks(),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
@@ -147,9 +149,6 @@ module.exports = {
         }
       },
       canPrint: true
-    }),
-    new MiniCSSExtractPlugin({
-      filename: "[name].css"
     }),
     new webpack.NamedModulesPlugin(),
     // new HTMLWebpackPlugin({

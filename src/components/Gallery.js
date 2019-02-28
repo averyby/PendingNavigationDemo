@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Gallery.css';
 
 const getBundle = () => {
   // react-universal-component 使得动态 import 时无需写 magic comment

@@ -3966,6 +3966,17 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+extract-css-chunks-webpack-plugin@^3.3.2:
+  version "3.3.2"
+  resolved "http://registry.npm.taobao.org/extract-css-chunks-webpack-plugin/download/extract-css-chunks-webpack-plugin-3.3.2.tgz#c99ba78be7c670e1bbd1dcffe3e272ab5e88026d"
+  integrity sha1-yZuni+fGcOG70dz/4+Jyq16IAm0=
+  dependencies:
+    loader-utils "^1.1.0"
+    lodash "^4.17.11"
+    normalize-url "^4.1.0"
+    schema-utils "^1.0.0"
+    webpack-sources "^1.1.0"
+
 extract-loader@^3.1.0:
   version "3.1.0"
   resolved "http://registry.npm.taobao.org/extract-loader/download/extract-loader-3.1.0.tgz#d4b5fe517b9d28f035852602caeb4a215ea41dc3"
@@ -6197,6 +6208,11 @@ normalize-url@^3.0.0:
   version "3.3.0"
   resolved "http://registry.npm.taobao.org/normalize-url/download/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha1-suHE3E98bVd0PfczpPWXjRhlBVk=
+
+normalize-url@^4.1.0:
+  version "4.1.0"
+  resolved "http://registry.npm.taobao.org/normalize-url/download/normalize-url-4.1.0.tgz#307e74c87473efa81969ad1b4bb91f1990178904"
+  integrity sha1-MH50yHRz76gZaa0bS7kfGZAXiQQ=
 
 npm-bundled@^1.0.1:
   version "1.0.6"
@@ -9224,6 +9240,11 @@ webpack-dev-server@^3.2.0:
     webpack-dev-middleware "^3.5.1"
     webpack-log "^2.0.0"
     yargs "12.0.2"
+
+webpack-flush-chunks@^2.0.3:
+  version "2.0.3"
+  resolved "http://registry.npm.taobao.org/webpack-flush-chunks/download/webpack-flush-chunks-2.0.3.tgz#77a4f18d101f889ec33456a0c64a8c0f8b4600db"
+  integrity sha1-d6TxjRAfiJ7DNFagxkqMD4tGANs=
 
 webpack-hot-middleware@^2.24.3:
   version "2.24.3"

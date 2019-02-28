@@ -3,21 +3,30 @@ import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router";
 import Routes from '../components/Routes';
 
-export default () => (req, res) => {
+import { flushChunkNames } from "react-universal-component/server";
+import flushChunks from 'webpack-flush-chunks';
+
+export default ({ clientStats }) => (req, res) => {
+  const app = renderToString(
+    <StaticRouter location={req.path} context={{}}>
+      <Routes />
+    </StaticRouter>
+  );
+
+  const { js, styles, cssHash } = flushChunks(clientStats, {
+    chunkNames: flushChunkNames()
+  });
+
   res.send(`
       <html>
       <head>
-        <link rel="stylesheet" href="/main.css"> <!--样式标签说明开发环境中 webpack-dev-middleware 也需要在内存中生成独立的文件，只是没写文件而已-->
+        ${styles}
         <title>Hello Title</title>
       </head>
       <body>
-          <div id="react-root">${renderToString(
-            <StaticRouter location={req.path} context={{}}>
-              <Routes />
-            </StaticRouter>
-          )}</div>
-          <script src="/vendors~main.js"></script>
-          <script src="/main-bundle.js"></script>
+          <div id="react-root">${app}</div>
+          ${js}
+          ${cssHash}
       </body>
       </html>
     `);

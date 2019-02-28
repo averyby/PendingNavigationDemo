@@ -1,6 +1,7 @@
 import MarkdownData from "../../data/post.md";
 import React from 'react';
 import imagePath from '../images/square.jpg';
+import '../css/About.css';
 
 export default () => (
   <div className="profile">

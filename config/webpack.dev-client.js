@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 // const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const ExtractCSSChunks = require('extract-css-chunks-webpack-plugin');
 
 module.exports = {
   name: "client",
@@ -49,7 +50,7 @@ module.exports = {
         use: [
           'css-hot-loader',
           {
-            loader: MiniCSSExtractPlugin.loader
+            loader: ExtractCSSChunks.loader
           },
           {
             loader: 'css-loader'
@@ -61,7 +62,7 @@ module.exports = {
         use: [
           'css-hot-loader',
           {
-            loader: MiniCSSExtractPlugin.loader
+            loader: ExtractCSSChunks.loader
           },
           {
             loader: 'css-loader'
@@ -75,7 +76,7 @@ module.exports = {
         use: [
           'css-hot-loader',
           {
-            loader: MiniCSSExtractPlugin.loader
+            loader: ExtractCSSChunks.loader
           },
           {
             loader: 'css-loader',
@@ -97,7 +98,7 @@ module.exports = {
         use: [
           'css-hot-loader',
           {
-            loader: MiniCSSExtractPlugin.loader
+            loader: ExtractCSSChunks.loader
           },
           {
             loader: 'css-loader'
@@ -149,9 +150,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new MiniCSSExtractPlugin({
-      filename: "[name].css"
-    }),
+    new ExtractCSSChunks({ hot: true }),
+    // new MiniCSSExtractPlugin({
+    //   filename: "[name].css"
+    // }),
     new webpack.HotModuleReplacementPlugin(),
     // new HTMLWebpackPlugin({
     //   template: "./src/index.html",
