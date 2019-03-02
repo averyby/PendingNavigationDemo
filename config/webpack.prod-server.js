@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const externals = require('./node-externals');
+const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
 
 module.exports = {
   name: "server",
@@ -113,6 +114,9 @@ module.exports = {
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin({
       maxChunks: 1
+    }),
+    new ReactLoadablePlugin({
+      filename: './data/react-loadable.json'
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.DefinePlugin({

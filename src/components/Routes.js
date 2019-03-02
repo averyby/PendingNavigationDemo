@@ -1,26 +1,52 @@
 import { Link, Route, Switch } from "react-router-dom";
 import React from 'react';
-import universal from 'react-universal-component';
+import About from './About';
+import Gallery from './Gallery';
+import Loadable from 'react-loadable';
+// import Article from './Article';
 
-const UniversalComponent = universal(props => import(`./${props.page}`));
+const Article = Loadable({
+  loader: () => import(/* webpackChunkName: "Article" */'./Article'),
+  loading: () => <div>Loading...</div>
+});
 
-export default () => (
-  <div>
-    <div className="nav">
-      <Link to="/">Gallery</Link>
-      <Link to="/about">About</Link>
-      <Link to="/article">Article</Link>
-    </div>
-    <Switch>
-      <Route exact path="/">
-        <UniversalComponent page="Gallery" />
-      </Route>
-      <Route path="/about">
-        <UniversalComponent page="About" />
-      </Route>
-      <Route path="/article">
-        <UniversalComponent page="Article" />
-      </Route>
-    </Switch>
-  </div>
-);
+export default class Routes extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      show: false
+    }
+  }
+
+  handleClick = () => {
+    this.setState({
+      show: true
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <div className="nav">
+          <Link to="/">Gallery</Link>
+          <Link to="/about">About</Link>
+          <Link to="/article">Article</Link>
+        </div>
+
+        <button onClick={this.handleClick}>show article</button>
+        {this.state.show ? <Article /> : null}
+        {/*<Switch>*/}
+          {/*<Route exact path="/">*/}
+            {/*<Gallery />*/}
+          {/*</Route>*/}
+          {/*<Route path="/about">*/}
+            {/*<About />*/}
+          {/*</Route>*/}
+          {/*<Route path="/article">*/}
+            {/*/!*<Article />*!/*/}
+          {/*</Route>*/}
+        {/*</Switch>*/}
+      </div>
+    );
+  }
+}

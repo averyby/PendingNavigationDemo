@@ -1,0 +1,648 @@
+{
+  "../../data/post.md": [
+    {
+      "id": "./data/post.md",
+      "name": "./data/post.md",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./data/post.md",
+      "name": "./data/post.md",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "@babel/runtime/helpers/assertThisInitialized": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
+      "name": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
+      "name": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "@babel/runtime/helpers/classCallCheck": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/classCallCheck.js",
+      "name": "./node_modules/@babel/runtime/helpers/classCallCheck.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/classCallCheck.js",
+      "name": "./node_modules/@babel/runtime/helpers/classCallCheck.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "@babel/runtime/helpers/createClass": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/createClass.js",
+      "name": "./node_modules/@babel/runtime/helpers/createClass.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/createClass.js",
+      "name": "./node_modules/@babel/runtime/helpers/createClass.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "@babel/runtime/helpers/defineProperty": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
+      "name": "./node_modules/@babel/runtime/helpers/defineProperty.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
+      "name": "./node_modules/@babel/runtime/helpers/defineProperty.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "@babel/runtime/helpers/getPrototypeOf": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/getPrototypeOf.js",
+      "name": "./node_modules/@babel/runtime/helpers/getPrototypeOf.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/getPrototypeOf.js",
+      "name": "./node_modules/@babel/runtime/helpers/getPrototypeOf.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "@babel/runtime/helpers/inherits": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/inherits.js",
+      "name": "./node_modules/@babel/runtime/helpers/inherits.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/inherits.js",
+      "name": "./node_modules/@babel/runtime/helpers/inherits.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "@babel/runtime/helpers/possibleConstructorReturn": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js",
+      "name": "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js",
+      "name": "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./setPrototypeOf": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/setPrototypeOf.js",
+      "name": "./node_modules/@babel/runtime/helpers/setPrototypeOf.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/setPrototypeOf.js",
+      "name": "./node_modules/@babel/runtime/helpers/setPrototypeOf.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "../helpers/typeof": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/typeof.js",
+      "name": "./node_modules/@babel/runtime/helpers/typeof.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/typeof.js",
+      "name": "./node_modules/@babel/runtime/helpers/typeof.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "babel-plugin-universal-import/universalImport": [
+    {
+      "id": "./node_modules/babel-plugin-universal-import/universalImport.js",
+      "name": "./node_modules/babel-plugin-universal-import/universalImport.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/babel-plugin-universal-import/universalImport.js",
+      "name": "./node_modules/babel-plugin-universal-import/universalImport.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "../../node_modules/css-loader/dist/runtime/api.js": [
+    {
+      "id": "./node_modules/css-loader/dist/runtime/api.js",
+      "name": "./node_modules/css-loader/dist/runtime/api.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/css-loader/dist/runtime/api.js",
+      "name": "./node_modules/css-loader/dist/runtime/api.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./lib/webpack": [
+    {
+      "id": "./node_modules/react-loadable/lib/webpack.js",
+      "name": "./node_modules/react-loadable/lib/webpack.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-loadable/lib/webpack.js",
+      "name": "./node_modules/react-loadable/lib/webpack.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "react-loadable/webpack": [
+    {
+      "id": "./node_modules/react-loadable/webpack.js",
+      "name": "./node_modules/react-loadable/webpack.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-loadable/webpack.js",
+      "name": "./node_modules/react-loadable/webpack.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./helpers": [
+    {
+      "id": "./node_modules/react-universal-component/dist/helpers.js",
+      "name": "./node_modules/react-universal-component/dist/helpers.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-universal-component/dist/helpers.js",
+      "name": "./node_modules/react-universal-component/dist/helpers.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "react-universal-component": [
+    {
+      "id": "./node_modules/react-universal-component/dist/index.js",
+      "name": "./node_modules/react-universal-component/dist/index.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-universal-component/dist/index.js",
+      "name": "./node_modules/react-universal-component/dist/index.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./dist/report-chunks": [
+    {
+      "id": "./node_modules/react-universal-component/dist/report-chunks.js",
+      "name": "./node_modules/react-universal-component/dist/report-chunks.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-universal-component/dist/report-chunks.js",
+      "name": "./node_modules/react-universal-component/dist/report-chunks.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "undefined": [
+    {
+      "id": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
+      "name": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "fs",
+      "name": "fs",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "hoist-non-react-statics",
+      "name": "hoist-non-react-statics",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "lodash",
+      "name": "lodash",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "path",
+      "name": "path",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "prop-types",
+      "name": "prop-types",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "react",
+      "name": "react",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "react-dom/server",
+      "name": "react-dom/server",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "react-hot-loader",
+      "name": "react-hot-loader",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "react-loadable",
+      "name": "react-loadable",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "react-router",
+      "name": "react-router",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "react-router-dom",
+      "name": "react-router-dom",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "url",
+      "name": "url",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "vm",
+      "name": "vm",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
+      "name": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "fs",
+      "name": "fs",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "hoist-non-react-statics",
+      "name": "hoist-non-react-statics",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "lodash",
+      "name": "lodash",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "path",
+      "name": "path",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "prop-types",
+      "name": "prop-types",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "react",
+      "name": "react",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "react-dom/server",
+      "name": "react-dom/server",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "react-hot-loader",
+      "name": "react-hot-loader",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "react-loadable",
+      "name": "react-loadable",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "react-router",
+      "name": "react-router",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "react-router-dom",
+      "name": "react-router-dom",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "url",
+      "name": "url",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    },
+    {
+      "id": "vm",
+      "name": "vm",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./requireById": [
+    {
+      "id": "./node_modules/react-universal-component/dist/requireById/index.js",
+      "name": "./node_modules/react-universal-component/dist/requireById/index.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-universal-component/dist/requireById/index.js",
+      "name": "./node_modules/react-universal-component/dist/requireById/index.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./dist/requireUniversalModule": [
+    {
+      "id": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
+      "name": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
+      "name": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./utils": [
+    {
+      "id": "./node_modules/react-universal-component/dist/utils.js",
+      "name": "./node_modules/react-universal-component/dist/utils.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-universal-component/dist/utils.js",
+      "name": "./node_modules/react-universal-component/dist/utils.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "react-universal-component/server": [
+    {
+      "id": "./node_modules/react-universal-component/server.js",
+      "name": "./node_modules/react-universal-component/server.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-universal-component/server.js",
+      "name": "./node_modules/react-universal-component/server.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./createApiWithCss": [
+    {
+      "id": "./node_modules/webpack-flush-chunks/dist/createApiWithCss.js",
+      "name": "./node_modules/webpack-flush-chunks/dist/createApiWithCss.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/webpack-flush-chunks/dist/createApiWithCss.js",
+      "name": "./node_modules/webpack-flush-chunks/dist/createApiWithCss.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "webpack-flush-chunks": [
+    {
+      "id": "./node_modules/webpack-flush-chunks/dist/flushChunks.js",
+      "name": "./node_modules/webpack-flush-chunks/dist/flushChunks.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/webpack-flush-chunks/dist/flushChunks.js",
+      "name": "./node_modules/webpack-flush-chunks/dist/flushChunks.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./../../node_modules/webpack/buildin/harmony-module.js": [
+    {
+      "id": "./node_modules/webpack/buildin/harmony-module.js",
+      "name": "./node_modules/webpack/buildin/harmony-module.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/webpack/buildin/harmony-module.js",
+      "name": "./node_modules/webpack/buildin/harmony-module.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./../../webpack/buildin/module.js": [
+    {
+      "id": "./node_modules/webpack/buildin/module.js",
+      "name": "./node_modules/webpack/buildin/module.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/webpack/buildin/module.js",
+      "name": "./node_modules/webpack/buildin/module.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./About": [
+    {
+      "id": "./src/components/About.js",
+      "name": "./src/components/About.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./src/components/About.js",
+      "name": "./src/components/About.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./Article": [
+    {
+      "id": "./src/components/Article.js",
+      "name": "./src/components/Article.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./src/components/Article.js",
+      "name": "./src/components/Article.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./Gallery": [
+    {
+      "id": "./src/components/Gallery.js",
+      "name": "./src/components/Gallery.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./src/components/Gallery.js",
+      "name": "./src/components/Gallery.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "../components/Routes": [
+    {
+      "id": "./src/components/Routes.js",
+      "name": "./src/components/Routes.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./src/components/Routes.js",
+      "name": "./src/components/Routes.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "../css/About.css": [
+    {
+      "id": "./src/css/About.css",
+      "name": "./src/css/About.css",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./src/css/About.css",
+      "name": "./src/css/About.css",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "../css/Article.css": [
+    {
+      "id": "./src/css/Article.css",
+      "name": "./src/css/Article.css",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./src/css/Article.css",
+      "name": "./src/css/Article.css",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "../css/Gallery.css": [
+    {
+      "id": "./src/css/Gallery.css",
+      "name": "./src/css/Gallery.css",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./src/css/Gallery.css",
+      "name": "./src/css/Gallery.css",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "../images/square.jpg": [
+    {
+      "id": "./src/images/square.jpg",
+      "name": "./src/images/square.jpg",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./src/images/square.jpg",
+      "name": "./src/images/square.jpg",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "./src/server/render.js": [
+    {
+      "id": "./src/server/render.js",
+      "name": "./src/server/render.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./src/server/render.js",
+      "name": "./src/server/render.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import express from 'express';
 import React from 'react';
+import Loadable from 'react-loadable';
 import webpack from 'webpack';
 import webpackHotServerMiddleware from 'webpack-hot-server-middleware';
 
@@ -66,6 +67,9 @@ if (isDev) {
 
 
 const PORT = process.env.PORT || 8080; // heroku 会生成一个端口，如果在开发环境，我们使用 8080
-server.listen(PORT, () => {
-  console.log(`Server is listening on http://localhost:${PORT}`);
+
+Loadable.preloadAll().then(() => {
+  server.listen(PORT, () => {
+    console.log(`Server is listening on http://localhost:${PORT}`);
+  });
 });

@@ -2,11 +2,12 @@ const path = require('path');
 const webpack = require('webpack');
 // const nodeExternals = require('webpack-node-externals');
 const externals = require('./node-externals');
+const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
 
 module.exports = {
   name: "server",
   entry: "./src/server/render.js",
-  mode: 'production',
+  mode: 'development',
   output: {
     filename: 'dev-server-bundle.js', // name 会被 entry 名替换
     path: path.resolve(__dirname, '../build'),
@@ -114,6 +115,9 @@ module.exports = {
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin({
       maxChunks: 1
+    }),
+    new ReactLoadablePlugin({
+      filename: './data/react-loadable.json'
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.DefinePlugin({
