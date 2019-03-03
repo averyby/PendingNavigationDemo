@@ -16,15 +16,9 @@ export default ({ clientStats }) => (req, res) => {
     </Loadable.Capture>
   );
 
-  /*
-    ${bundles.map(bundle => {
-              return `<script src="${bundle.publicPath}"></script>`
-  }).join('\n')}
-  */
-
   const bundles = getBundles(stats, modules).filter(b => b.publicPath.endsWith('.js'));
-  console.log('bundles', bundles);
-  console.log('modules', modules);
+  // console.log('bundles', bundles);
+  // console.log('modules', modules);
 
   const { js, styles, cssHash } = flushChunks(clientStats, {
     chunkNames: flushChunkNames()
