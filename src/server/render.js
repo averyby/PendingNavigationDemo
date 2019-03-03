@@ -19,8 +19,8 @@ export default ({ clientStats }) => (req, res) => {
   );
 
   const bundles = getBundles(stats, modules).filter(b => b && b.publicPath.endsWith('.js'));
-  console.log('bundles', bundles);
-  console.log('modules', modules);
+  // console.log('bundles', bundles);
+  // console.log('modules', modules);
 
   const { js, styles, cssHash } = flushChunks(clientStats, {
     chunkNames: flushChunkNames()

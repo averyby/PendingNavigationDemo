@@ -28,10 +28,10 @@ class AppRoot extends React.Component {
     return (
       <div>
         <button onClick={this.handleClick}>
-          Reveal Loadable Content
+          Reveal Loadable Content, haha
         </button>
         <div>
-          {this.state.show ? <LoadableComponent /> : null}
+          {<LoadableComponent />}
         </div>
       </div>
     );

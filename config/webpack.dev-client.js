@@ -4,8 +4,9 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractCSSChunks = require('extract-css-chunks-webpack-plugin');
 const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
+const styleLoaders = require('./style-loaders-dev');
 
-module.exports = {
+const devClientConfig = {
   name: "client",
   entry: {
     main: [
@@ -51,69 +52,6 @@ module.exports = {
           }
         ],
         exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'css-hot-loader',
-          {
-            loader: ExtractCSSChunks.loader
-          },
-          {
-            loader: 'css-loader'
-          }
-        ]
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          'css-hot-loader',
-          {
-            loader: ExtractCSSChunks.loader
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'sass-loader'
-          }
-        ]
-      }, {
-        test: /\.styl$/,
-        use: [
-          'css-hot-loader',
-          {
-            loader: ExtractCSSChunks.loader
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              // modules: true,
-              // localIdentName: "[name]--[local]--[hash:base64:8]"
-            }
-          },
-          {
-            loader: "postcss-loader"
-          },
-          {
-            loader: 'stylus-loader'
-          }
-        ]
-      }, {
-        test: /\.less$/,
-        use: [
-          'css-hot-loader',
-          {
-            loader: ExtractCSSChunks.loader
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'less-loader'
-          }
-        ]
       },
       {
         test: /\.html$/,
@@ -175,3 +113,7 @@ module.exports = {
     })
   ]
 };
+
+devClientConfig.module.rules = devClientConfig.module.rules.concat(styleLoaders);
+
+module.exports = devClientConfig;

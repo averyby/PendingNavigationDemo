@@ -9,8 +9,9 @@ const BrotliPlugin = require('brotli-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
+const styleLoaders = require('./style-loaders-prod');
 
-module.exports = {
+const prodClientConfig = {
   name: "client",
   entry: {
     main: ['./src/main.js'],
@@ -38,65 +39,6 @@ module.exports = {
           }
         ],
         exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
-          {
-            loader: 'css-loader'
-          }
-        ]
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'sass-loader'
-          }
-        ]
-      }, {
-        test: /\.styl$/,
-        use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              // modules: true,
-              // localIdentName: "[name]--[local]--[hash:base64:8]"
-            }
-          },
-          {
-            loader: "postcss-loader"
-          },
-          {
-            loader: 'stylus-loader'
-          }
-        ]
-      }, {
-        test: /\.less$/,
-        use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'less-loader'
-          }
-        ]
       },
       {
         test: /\.html$/,
@@ -183,3 +125,7 @@ module.exports = {
     })
   ]
 };
+
+prodClientConfig.module.rules = prodClientConfig.module.rules.concat(styleLoaders);
+
+module.exports = prodClientConfig;

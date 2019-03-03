@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --inspect --watch config --watch src/server src/server/main.js",
+    "dev:build": "webpack --config=config/webpack.dev-client.js",
+    "dev": "npm run dev:build && nodemon --inspect --watch config --watch src/server src/server/main.js",
     "prod": "NODE_ENV=production node src/server/main.js",
     "heroku-postbuild": "echo Skip build on Heroku"
   },
