@@ -4,21 +4,21 @@
   "warnings": [
   ],
   "version": "4.29.5",
-  "hash": "988321d7ba090d3890ef",
-  "time": 6718,
-  "builtAt": 1551608885380,
+  "hash": "606a986c485fd6d11fac",
+  "time": 8436,
+  "builtAt": 1551610028878,
   "publicPath": "/",
   "outputPath": "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/dist",
   "assetsByChunkName": {
     "LoadOnDemand": [
-      "LoadOnDemand.2159b755379e10d7769b.css",
-      "LoadOnDemand.2b430eafd95b21d71932.js",
-      "LoadOnDemand.2b430eafd95b21d71932.js.map"
+      "LoadOnDemand.3734bb1574a0c884f2fa.css",
+      "LoadOnDemand.8eb17aaed62c2d4917dc.js",
+      "LoadOnDemand.8eb17aaed62c2d4917dc.js.map"
     ],
     "main": [
       "main.8121fea7d14b9e6e08e6.css",
-      "main.7548d1016fbd71aad838.js",
-      "main.7548d1016fbd71aad838.js.map"
+      "main.be23da3c29653c8499a0.js",
+      "main.be23da3c29653c8499a0.js.map"
     ],
     "vendors~main": [
       "vendors~main.2dde1d47b1e29a3b2111.js",
@@ -27,8 +27,8 @@
   },
   "assets": [
     {
-      "name": "LoadOnDemand.2b430eafd95b21d71932.js",
-      "size": 406,
+      "name": "LoadOnDemand.8eb17aaed62c2d4917dc.js",
+      "size": 405,
       "chunks": [
         0
       ],
@@ -38,7 +38,7 @@
       "emitted": true
     },
     {
-      "name": "main.7548d1016fbd71aad838.js",
+      "name": "main.be23da3c29653c8499a0.js",
       "size": 6397,
       "chunks": [
         1
@@ -71,8 +71,8 @@
         "vendors~main.2dde1d47b1e29a3b2111.js",
         "vendors~main.2dde1d47b1e29a3b2111.js.map",
         "main.8121fea7d14b9e6e08e6.css",
-        "main.7548d1016fbd71aad838.js",
-        "main.7548d1016fbd71aad838.js.map"
+        "main.be23da3c29653c8499a0.js",
+        "main.be23da3c29653c8499a0.js.map"
       ],
       "children": {
       },
@@ -90,8 +90,8 @@
         "vendors~main.2dde1d47b1e29a3b2111.js",
         "vendors~main.2dde1d47b1e29a3b2111.js.map",
         "main.8121fea7d14b9e6e08e6.css",
-        "main.7548d1016fbd71aad838.js",
-        "main.7548d1016fbd71aad838.js.map"
+        "main.be23da3c29653c8499a0.js",
+        "main.be23da3c29653c8499a0.js.map"
       ],
       "children": {
       },
@@ -103,9 +103,9 @@
         0
       ],
       "assets": [
-        "LoadOnDemand.2159b755379e10d7769b.css",
-        "LoadOnDemand.2b430eafd95b21d71932.js",
-        "LoadOnDemand.2b430eafd95b21d71932.js.map"
+        "LoadOnDemand.3734bb1574a0c884f2fa.css",
+        "LoadOnDemand.8eb17aaed62c2d4917dc.js",
+        "LoadOnDemand.8eb17aaed62c2d4917dc.js.map"
       ],
       "children": {
       },
@@ -119,16 +119,16 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 218,
+      "size": 225,
       "names": [
         "LoadOnDemand"
       ],
       "files": [
-        "LoadOnDemand.2159b755379e10d7769b.css",
-        "LoadOnDemand.2b430eafd95b21d71932.js",
-        "LoadOnDemand.2b430eafd95b21d71932.js.map"
+        "LoadOnDemand.3734bb1574a0c884f2fa.css",
+        "LoadOnDemand.8eb17aaed62c2d4917dc.js",
+        "LoadOnDemand.8eb17aaed62c2d4917dc.js.map"
       ],
-      "hash": "0b5c7b81b03e6e02f56b",
+      "hash": "8a3fe5785e01f63c18ae",
       "siblings": [
       ],
       "parents": [
@@ -146,7 +146,7 @@
           "name": "./src/components/LoadOnDemand.js",
           "index": 46,
           "index2": 48,
-          "size": 150,
+          "size": 149,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -221,8 +221,8 @@
             "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./src/components/AppRoot.js (referenced with import(), require.resolve)"
           ],
           "depth": 4,
-          "source": "import React from 'react';\nimport './index.css';\nexport default (function () {\n  return React.createElement(\"div\", null, \"My name is Avery Bai2\");\n});",
-          "parsedSrc": "function(n,e,s){\"use strict\";s.r(e);var c=s(\"./node_modules/react/index.js\"),o=s.n(c);s(\"./src/components/index.css\"),e.default=function(){return o.a.createElement(\"div\",null,\"My name is Avery Bai2\")}}"
+          "source": "import React from 'react';\nimport './index.css';\nexport default (function () {\n  return React.createElement(\"div\", null, \"My name is Avery Bai\");\n});",
+          "parsedSrc": "function(n,e,s){\"use strict\";s.r(e);var c=s(\"./node_modules/react/index.js\"),o=s.n(c);s(\"./src/components/index.css\"),e.default=function(){return o.a.createElement(\"div\",null,\"My name is Avery Bai\")}}"
         },
         {
           "id": "./src/components/index.css",
@@ -230,7 +230,7 @@
           "name": "./src/components/index.css",
           "index": 47,
           "index2": 47,
-          "size": 68,
+          "size": 76,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -299,7 +299,7 @@
           "name": "css ./node_modules/css-loader/dist/cjs.js!./src/components/index.css",
           "index": 48,
           "index2": 46,
-          "size": 29,
+          "size": 37,
           "built": false,
           "optional": false,
           "prefetched": false,
@@ -387,10 +387,10 @@
       ],
       "files": [
         "main.8121fea7d14b9e6e08e6.css",
-        "main.7548d1016fbd71aad838.js",
-        "main.7548d1016fbd71aad838.js.map"
+        "main.be23da3c29653c8499a0.js",
+        "main.be23da3c29653c8499a0.js.map"
       ],
-      "hash": "ef54fd2503dc4c6c004b",
+      "hash": "4157143d2e8a8434f7b3",
       "siblings": [
         2
       ],
@@ -648,7 +648,7 @@
           ],
           "depth": 3,
           "source": "import _classCallCheck from \"@babel/runtime/helpers/classCallCheck\";\nimport _createClass from \"@babel/runtime/helpers/createClass\";\nimport _possibleConstructorReturn from \"@babel/runtime/helpers/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime/helpers/getPrototypeOf\";\nimport _assertThisInitialized from \"@babel/runtime/helpers/assertThisInitialized\";\nimport _inherits from \"@babel/runtime/helpers/inherits\";\nimport _defineProperty from \"@babel/runtime/helpers/defineProperty\";\nimport _path from \"path\";\nimport _universalImport from \"babel-plugin-universal-import/universalImport\";\nimport React from 'react';\nimport { hot } from 'react-hot-loader/root';\nimport '../main.scss';\nimport './nav.css';\nimport Loadable from 'react-loadable';\nvar LoadableComponent = Loadable({\n  loader: function loader() {\n    return _universalImport({\n      id: \"./LoadOnDemand\",\n      load: function load() {\n        return Promise.all([import(\n        /* webpackChunkName: 'LoadOnDemand' */\n        './LoadOnDemand')]).then(function (proms) {\n          return proms[0];\n        });\n      },\n      path: function path() {\n        return _path.join(__dirname, './LoadOnDemand');\n      },\n      resolve: function resolve() {\n        return require.resolveWeak('./LoadOnDemand');\n      },\n      chunkName: function chunkName() {\n        return \"LoadOnDemand\";\n      }\n    });\n  },\n  modules: ['./LoadOnDemand'],\n  webpack: function webpack() {\n    return [require.resolveWeak('./LoadOnDemand')];\n  },\n  loading: function loading() {\n    return React.createElement(\"div\", null, \"Loading...\");\n  }\n});\n\nvar AppRoot =\n/*#__PURE__*/\nfunction (_React$Component) {\n  _inherits(AppRoot, _React$Component);\n\n  function AppRoot(props) {\n    var _this;\n\n    _classCallCheck(this, AppRoot);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(AppRoot).call(this, props));\n\n    _defineProperty(_assertThisInitialized(_this), \"handleClick\", function () {\n      _this.setState({\n        show: true\n      });\n    });\n\n    _this.state = {\n      show: false\n    };\n    return _this;\n  }\n\n  _createClass(AppRoot, [{\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\"div\", null, React.createElement(\"button\", {\n        onClick: this.handleClick\n      }, \"Reveal Loadable Content\"), React.createElement(\"div\", null, this.state.show ? React.createElement(LoadableComponent, null) : null));\n    }\n  }]);\n\n  return AppRoot;\n}(React.Component);\n\nexport default hot(AppRoot);",
-          "parsedSrc": "function(e,n,t){\"use strict\";(function(e){var r=t(\"./node_modules/@babel/runtime/helpers/classCallCheck.js\"),o=t.n(r),s=t(\"./node_modules/@babel/runtime/helpers/createClass.js\"),a=t.n(s),i=t(\"./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js\"),u=t.n(i),l=t(\"./node_modules/@babel/runtime/helpers/getPrototypeOf.js\"),d=t.n(l),c=t(\"./node_modules/@babel/runtime/helpers/assertThisInitialized.js\"),m=t.n(c),p=t(\"./node_modules/@babel/runtime/helpers/inherits.js\"),f=t.n(p),h=t(\"./node_modules/@babel/runtime/helpers/defineProperty.js\"),b=t.n(h),v=t(\"./node_modules/path-browserify/index.js\"),y=t.n(v),j=t(\"./node_modules/babel-plugin-universal-import/universalImport.js\"),g=t.n(j),_=t(\"./node_modules/react/index.js\"),O=t.n(_),x=t(\"./node_modules/react-hot-loader/root.js\"),w=(t(\"./src/main.scss\"),t(\"./src/components/nav.css\"),t(\"./node_modules/react-loadable/lib/index.js\")),E=t.n(w)()({loader:function(){return g()({id:\"./LoadOnDemand\",load:function(){return Promise.all([t.e(0).then(t.bind(null,\"./src/components/LoadOnDemand.js\"))]).then(function(e){return e[0]})},path:function(){return y.a.join(e,\"./LoadOnDemand\")},resolve:function(){return\"./src/components/LoadOnDemand.js\"},chunkName:function(){return\"LoadOnDemand\"}})},modules:[\"./LoadOnDemand\"],webpack:function(){return[\"./src/components/LoadOnDemand.js\"]},loading:function(){return O.a.createElement(\"div\",null,\"Loading...\")}}),k=function(e){function n(e){var t;return o()(this,n),t=u()(this,d()(n).call(this,e)),b()(m()(t),\"handleClick\",function(){t.setState({show:!0})}),t.state={show:!1},t}return f()(n,e),a()(n,[{key:\"render\",value:function(){return O.a.createElement(\"div\",null,O.a.createElement(\"button\",{onClick:this.handleClick},\"Reveal Loadable Content\"),O.a.createElement(\"div\",null,this.state.show?O.a.createElement(E,null):null))}}]),n}(O.a.Component);n.a=Object(x.hot)(k)}).call(this,\"/\")}"
+          "parsedSrc": "function(e,n,t){\"use strict\";(function(e){var r=t(\"./node_modules/@babel/runtime/helpers/classCallCheck.js\"),o=t.n(r),s=t(\"./node_modules/@babel/runtime/helpers/createClass.js\"),a=t.n(s),i=t(\"./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js\"),u=t.n(i),l=t(\"./node_modules/@babel/runtime/helpers/getPrototypeOf.js\"),d=t.n(l),c=t(\"./node_modules/@babel/runtime/helpers/assertThisInitialized.js\"),m=t.n(c),p=t(\"./node_modules/@babel/runtime/helpers/inherits.js\"),f=t.n(p),h=t(\"./node_modules/@babel/runtime/helpers/defineProperty.js\"),v=t.n(h),b=t(\"./node_modules/path-browserify/index.js\"),y=t.n(b),j=t(\"./node_modules/babel-plugin-universal-import/universalImport.js\"),g=t.n(j),_=t(\"./node_modules/react/index.js\"),O=t.n(_),x=t(\"./node_modules/react-hot-loader/root.js\"),w=(t(\"./src/main.scss\"),t(\"./src/components/nav.css\"),t(\"./node_modules/react-loadable/lib/index.js\")),E=t.n(w)()({loader:function(){return g()({id:\"./LoadOnDemand\",load:function(){return Promise.all([t.e(0).then(t.bind(null,\"./src/components/LoadOnDemand.js\"))]).then(function(e){return e[0]})},path:function(){return y.a.join(e,\"./LoadOnDemand\")},resolve:function(){return\"./src/components/LoadOnDemand.js\"},chunkName:function(){return\"LoadOnDemand\"}})},modules:[\"./LoadOnDemand\"],webpack:function(){return[\"./src/components/LoadOnDemand.js\"]},loading:function(){return O.a.createElement(\"div\",null,\"Loading...\")}}),k=function(e){function n(e){var t;return o()(this,n),t=u()(this,d()(n).call(this,e)),v()(m()(t),\"handleClick\",function(){t.setState({show:!0})}),t.state={show:!1},t}return f()(n,e),a()(n,[{key:\"render\",value:function(){return O.a.createElement(\"div\",null,O.a.createElement(\"button\",{onClick:this.handleClick},\"Reveal Loadable Content\"),O.a.createElement(\"div\",null,this.state.show?O.a.createElement(E,null):null))}}]),n}(O.a.Component);n.a=Object(x.hot)(k)}).call(this,\"/\")}"
         },
         {
           "id": "./src/components/nav.css",
@@ -7038,7 +7038,7 @@
       "name": "./src/components/LoadOnDemand.js",
       "index": 46,
       "index2": 48,
-      "size": 150,
+      "size": 149,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -7113,7 +7113,7 @@
         "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./src/components/AppRoot.js (referenced with import(), require.resolve)"
       ],
       "depth": 4,
-      "source": "import React from 'react';\nimport './index.css';\nexport default (function () {\n  return React.createElement(\"div\", null, \"My name is Avery Bai2\");\n});"
+      "source": "import React from 'react';\nimport './index.css';\nexport default (function () {\n  return React.createElement(\"div\", null, \"My name is Avery Bai\");\n});"
     },
     {
       "id": "./src/components/index.css",
@@ -7489,7 +7489,7 @@
       "name": "css ./node_modules/css-loader/dist/cjs.js!./src/components/index.css",
       "index": 48,
       "index2": 46,
-      "size": 29,
+      "size": 37,
       "built": false,
       "optional": false,
       "prefetched": false,
@@ -7865,14 +7865,14 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 2579,
+          "size": 2587,
           "names": [
             "mini-css-extract-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "eb9cceead579a8c34efd",
+          "hash": "de8ea68d32fd3b4d44e0",
           "siblings": [
           ],
           "parents": [
@@ -7888,7 +7888,7 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./src/components/index.css",
               "index": 0,
               "index2": 1,
-              "size": 173,
+              "size": 181,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -7922,7 +7922,7 @@
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 0,
-              "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body {\\n    background: red;\\n}\", \"\"]);\n\n"
+              "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body {\\n    background: yellowgreen;\\n}\", \"\"]);\n\n"
             },
             {
               "id": "./node_modules/css-loader/dist/runtime/api.js",
@@ -7994,7 +7994,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./src/components/index.css",
           "index": 0,
           "index2": 1,
-          "size": 173,
+          "size": 181,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -8028,7 +8028,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0,
-          "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body {\\n    background: red;\\n}\", \"\"]);\n\n"
+          "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body {\\n    background: yellowgreen;\\n}\", \"\"]);\n\n"
         },
         {
           "id": "./node_modules/css-loader/dist/runtime/api.js",

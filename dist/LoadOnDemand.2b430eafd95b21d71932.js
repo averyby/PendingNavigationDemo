@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{"./src/components/LoadOnDemand.js":function(n,e,s){"use strict";s.r(e);var c=s("./node_modules/react/index.js"),o=s.n(c);s("./src/components/index.css"),e.default=function(){return o.a.createElement("div",null,"My name is Avery Bai2")}},"./src/components/index.css":function(n,e,s){}}]);
-//# sourceMappingURL=LoadOnDemand.2b430eafd95b21d71932.js.map

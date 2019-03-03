@@ -1,9 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
 // const HTMLWebpackPlugin = require('html-webpack-plugin');
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractCSSChunks = require('extract-css-chunks-webpack-plugin');
+const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
 
 module.exports = {
   name: "client",
@@ -160,10 +160,10 @@ module.exports = {
     new CleanWebpackPlugin([
       path.resolve(__dirname, '../dist')
     ]),
+    new ReactLoadablePlugin({
+      filename: path.join(__dirname, '../react-loadable.json')
+    }),
     new ExtractCSSChunks({ hot: true }),
-    // new MiniCSSExtractPlugin({
-    //   filename: "[name].css"
-    // }),
     new webpack.HotModuleReplacementPlugin(),
     // new HTMLWebpackPlugin({
     //   template: "./src/index.html",

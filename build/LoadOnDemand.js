@@ -1,2 +1,0 @@
-exports.ids=[0],exports.modules={"./src/components/LoadOnDemand.js":function(n,e,s){"use strict";s.r(e);var o=s("react"),r=s.n(o);s("./src/components/index.css");e.default=function(){return r.a.createElement("div",null,"My name is Avery Bai2")}},"./src/components/index.css":function(n,e,s){(n.exports=s("./node_modules/css-loader/dist/runtime/api.js")(!1)).push([n.i,"body {\n    background: red;\n}",""])}};
-//# sourceMappingURL=LoadOnDemand.js.map
