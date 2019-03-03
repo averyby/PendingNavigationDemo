@@ -8,7 +8,7 @@ import Loadable from 'react-loadable';
 import { getBundles } from 'react-loadable/webpack';
 import stats from '../../react-loadable.json';
 
-console.log('stats', stats);
+// console.log('stats', stats);
 
 export default ({ clientStats }) => (req, res) => {
   const modules = [];

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppRoot from './components/AppRoot';
-
 import Loadable from 'react-loadable';
+import AppRoot from './components/AppRoot';
+import { type } from '../appConfig.json';
 
 Loadable.preloadReady().then(() => {
-
-  ReactDOM.hydrate(
+  const method = type === 'SSR' ? 'hydrate' : 'render';
+  ReactDOM[method](
     <AppRoot />,
     document.getElementById('react-root')
   );

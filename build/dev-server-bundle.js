@@ -2127,7 +2127,7 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
         onClick: this.handleClick
-      }, "Reveal Loadable Content, haha"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(LoadableComponent, null)));
+      }, "Reveal Loadable Content, haha"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, this.state.show ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(LoadableComponent, null) : null));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -2297,8 +2297,7 @@ var _react_loadable_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/_
 
 
 
-
-console.log('stats', _react_loadable_json__WEBPACK_IMPORTED_MODULE_7__);
+ // console.log('stats', stats);
 
 var _default = function _default(_ref) {
   var clientStats = _ref.clientStats;
@@ -2311,9 +2310,8 @@ var _default = function _default(_ref) {
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AppRoot__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
     var bundles = Object(react_loadable_webpack__WEBPACK_IMPORTED_MODULE_6__["getBundles"])(_react_loadable_json__WEBPACK_IMPORTED_MODULE_7__, modules).filter(function (b) {
       return b && b.publicPath.endsWith('.js');
-    });
-    console.log('bundles', bundles);
-    console.log('modules', modules);
+    }); // console.log('bundles', bundles);
+    // console.log('modules', modules);
 
     var _flushChunks = webpack_flush_chunks__WEBPACK_IMPORTED_MODULE_4___default()(clientStats, {
       chunkNames: Object(react_universal_component_server__WEBPACK_IMPORTED_MODULE_3__["flushChunkNames"])()

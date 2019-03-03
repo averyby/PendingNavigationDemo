@@ -1,6 +1,7 @@
 const path = require('path');
+const APPCONFIG = require('../appConfig.json');
 const webpack = require('webpack');
-// const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractCSSChunks = require('extract-css-chunks-webpack-plugin');
 const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
@@ -103,11 +104,6 @@ const devClientConfig = {
     }),
     new ExtractCSSChunks({ hot: true }),
     new webpack.HotModuleReplacementPlugin(),
-    // new HTMLWebpackPlugin({
-    //   template: "./src/index.html",
-    //   // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
-    //   title: "Link's Journal"
-    // }),
     new CleanWebpackPlugin(['dist', 'build'], {
       root: path.join(__dirname, '..')
     })
@@ -115,5 +111,15 @@ const devClientConfig = {
 };
 
 devClientConfig.module.rules = devClientConfig.module.rules.concat(styleLoaders);
+
+if (APPCONFIG.type === 'SPA') {
+  devClientConfig.plugins.push(
+    new HTMLWebpackPlugin({
+      template: "./src/index.html",
+      // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
+      title: "Link's Journal"
+    })
+  );
+}
 
 module.exports = devClientConfig;

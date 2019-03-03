@@ -31,7 +31,7 @@ class AppRoot extends React.Component {
           Reveal Loadable Content, haha
         </button>
         <div>
-          {<LoadableComponent />}
+          {this.state.show ? <LoadableComponent /> : null}
         </div>
       </div>
     );

@@ -10,6 +10,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
 const styleLoaders = require('./style-loaders-prod');
+const APPCONFIG = require('../appConfig.json');
 
 const prodClientConfig = {
   name: "client",
@@ -100,11 +101,6 @@ const prodClientConfig = {
       canPrint: true
     }),
     new webpack.NamedModulesPlugin(),
-    // new HTMLWebpackPlugin({
-    //   template: "./src/index.html",
-    //   // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
-    //   title: "Link's Journal"
-    // }),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
@@ -127,5 +123,15 @@ const prodClientConfig = {
 };
 
 prodClientConfig.module.rules = prodClientConfig.module.rules.concat(styleLoaders);
+
+if (APPCONFIG.type === 'SPA') {
+  prodClientConfig.plugins.push(
+    new HTMLWebpackPlugin({
+      template: "./src/index.html",
+      // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
+      title: "Link's Journal"
+    })
+  );
+}
 
 module.exports = prodClientConfig;

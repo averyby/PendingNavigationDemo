@@ -112,7 +112,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "f1c83650081099943661";
+/******/ 	var hotCurrentHash = "a7c4158c9af4200ed16c";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -971,6 +971,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./appConfig.json":
+/*!************************!*\
+  !*** ./appConfig.json ***!
+  \************************/
+/*! exports provided: type, default */
+/***/ (function(module) {
+
+module.exports = {"type":"SSR"};
+
+/***/ }),
+
 /***/ "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$":
 /*!***************************************************************************!*\
   !*** ./node_modules/react-universal-component/dist/requireById sync ^.*$ ***!
@@ -1020,15 +1031,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_AppRoot__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/AppRoot */ "./src/components/AppRoot.js");
-/* harmony import */ var react_loadable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-loadable */ "./node_modules/react-loadable/lib/index.js");
-/* harmony import */ var react_loadable__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_loadable__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_loadable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-loadable */ "./node_modules/react-loadable/lib/index.js");
+/* harmony import */ var react_loadable__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_loadable__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_AppRoot__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/AppRoot */ "./src/components/AppRoot.js");
+/* harmony import */ var _appConfig_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../appConfig.json */ "./appConfig.json");
+var _appConfig_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../appConfig.json */ "./appConfig.json", 1);
 
 
 
 
-react_loadable__WEBPACK_IMPORTED_MODULE_3___default.a.preloadReady().then(function () {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.hydrate(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AppRoot__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('react-root'));
+
+react_loadable__WEBPACK_IMPORTED_MODULE_2___default.a.preloadReady().then(function () {
+  var method = _appConfig_json__WEBPACK_IMPORTED_MODULE_4__["type"] === 'SSR' ? 'hydrate' : 'render';
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a[method](react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AppRoot__WEBPACK_IMPORTED_MODULE_3__["default"], null), document.getElementById('react-root'));
 });
 
 /***/ }),
@@ -1148,7 +1163,7 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
         onClick: this.handleClick
-      }, "Reveal Loadable Content, haha"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(LoadableComponent, null)));
+      }, "Reveal Loadable Content, haha"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, this.state.show ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(LoadableComponent, null) : null));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -1198,14 +1213,14 @@ var _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_10__["hot"]
 
 // extracted by extract-css-chunks-webpack-plugin
     if(true) {
-      // 1551612014070
+      // 1551626028676
       var cssReload = __webpack_require__(/*! ../../node_modules/css-hot-loader/hotModuleReplacement.js */ "./node_modules/css-hot-loader/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
     }
   
     if(true) {
-      // 1551612014070
+      // 1551626028676
       var cssReload = __webpack_require__(/*! ../../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js */ "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -1247,14 +1262,14 @@ console.log("Environment is ".concat("development"));
 
 // extracted by extract-css-chunks-webpack-plugin
     if(true) {
-      // 1551612014087
+      // 1551626028666
       var cssReload = __webpack_require__(/*! ../node_modules/css-hot-loader/hotModuleReplacement.js */ "./node_modules/css-hot-loader/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
     }
   
     if(true) {
-      // 1551612014087
+      // 1551626028666
       var cssReload = __webpack_require__(/*! ../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js */ "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
