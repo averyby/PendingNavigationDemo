@@ -14,6 +14,10 @@ module.exports = {
     libraryTarget: "commonjs2"
   },
   target: "node",
+  node: {
+    __dirname: false,
+    __filename: false
+  },
   externals,
   devtool: "source-map",
   module: {
