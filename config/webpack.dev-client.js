@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 // const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractCSSChunks = require('extract-css-chunks-webpack-plugin');
 
 module.exports = {
@@ -156,6 +157,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin([
+      path.resolve(__dirname, '../dist')
+    ]),
     new ExtractCSSChunks({ hot: true }),
     // new MiniCSSExtractPlugin({
     //   filename: "[name].css"
@@ -165,6 +169,9 @@ module.exports = {
     //   template: "./src/index.html",
     //   // inject: false, // 由于我们的 index.html 模板中已经手动添加了打包后的 js，所以这里不再自动注入
     //   title: "Link's Journal"
-    // })
+    // }),
+    new CleanWebpackPlugin(['dist', 'build'], {
+      root: path.join(__dirname, '..')
+    })
   ]
 };

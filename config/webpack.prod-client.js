@@ -8,6 +8,7 @@ const CompressionPlugin = require('compression-webpack-plugin');
 const BrotliPlugin = require('brotli-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const ExtractCSSChunks = require('extract-css-chunks-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   name: "client",
@@ -170,6 +171,9 @@ module.exports = {
     new BrotliPlugin(),
     new BundleAnalyzerPlugin({
       generateStatsFile: true
+    }),
+    new CleanWebpackPlugin(['dist', 'build'], {
+      root: path.join(__dirname, '..')
     })
   ]
 };
