@@ -112,7 +112,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "a7c4158c9af4200ed16c";
+/******/ 	var hotCurrentHash = "6d743d38dc7c34850578";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1163,7 +1163,9 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
         onClick: this.handleClick
-      }, "Reveal Loadable Content, haha"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, this.state.show ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(LoadableComponent, null) : null));
+      }, "Reveal Loadable Content, haha"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(LoadableComponent, null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
+        className: "loading fa fa-spinner fa-spin"
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, this.state.show ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(LoadableComponent, null) : null));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -1213,14 +1215,14 @@ var _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_10__["hot"]
 
 // extracted by extract-css-chunks-webpack-plugin
     if(true) {
-      // 1551626028676
+      // 1551628118741
       var cssReload = __webpack_require__(/*! ../../node_modules/css-hot-loader/hotModuleReplacement.js */ "./node_modules/css-hot-loader/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
     }
   
     if(true) {
-      // 1551626028676
+      // 1551628118741
       var cssReload = __webpack_require__(/*! ../../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js */ "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -1262,14 +1264,14 @@ console.log("Environment is ".concat("development"));
 
 // extracted by extract-css-chunks-webpack-plugin
     if(true) {
-      // 1551626028666
+      // 1551628118751
       var cssReload = __webpack_require__(/*! ../node_modules/css-hot-loader/hotModuleReplacement.js */ "./node_modules/css-hot-loader/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
     }
   
     if(true) {
-      // 1551626028666
+      // 1551628118751
       var cssReload = __webpack_require__(/*! ../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js */ "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -1279,14 +1281,15 @@ console.log("Environment is ".concat("development"));
 /***/ }),
 
 /***/ 0:
-/*!************************************************************************************************!*\
-  !*** multi @babel/runtime/regenerator webpack-hot-middleware/client?reload=true ./src/main.js ***!
-  \************************************************************************************************/
+/*!************************************************************************************************************************************!*\
+  !*** multi @babel/runtime/regenerator webpack-hot-middleware/client?reload=true font-awesome/scss/font-awesome.scss ./src/main.js ***!
+  \************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! @babel/runtime/regenerator */"./node_modules/@babel/runtime/regenerator/index.js");
 __webpack_require__(/*! webpack-hot-middleware/client?reload=true */"./node_modules/webpack-hot-middleware/client.js?reload=true");
+__webpack_require__(/*! font-awesome/scss/font-awesome.scss */"./node_modules/font-awesome/scss/font-awesome.scss");
 module.exports = __webpack_require__(/*! ./src/main.js */"./src/main.js");
 
 

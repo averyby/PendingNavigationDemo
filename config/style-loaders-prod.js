@@ -9,6 +9,17 @@ module.exports = [
       },
       {
         loader: 'css-loader'
+      },
+      {
+        loader: 'postcss-loader',
+        options: {
+          plugins: function() {
+            return [
+              require('precss'),
+              require('autoprefixer')
+            ]
+          }
+        }
       }
     ]
   },
@@ -20,6 +31,17 @@ module.exports = [
       },
       {
         loader: 'css-loader'
+      },
+      {
+        loader: 'postcss-loader',
+        options: {
+          plugins: function() {
+            return [
+              require('precss'),
+              require('autoprefixer')
+            ]
+          }
+        }
       },
       {
         loader: 'sass-loader'
@@ -40,7 +62,15 @@ module.exports = [
         }
       },
       {
-        loader: "postcss-loader"
+        loader: 'postcss-loader',
+        options: {
+          plugins: function() {
+            return [
+              require('precss'),
+              require('autoprefixer')
+            ]
+          }
+        }
       },
       {
         loader: 'stylus-loader'
@@ -54,6 +84,17 @@ module.exports = [
       },
       {
         loader: 'css-loader'
+      },
+      {
+        loader: 'postcss-loader',
+        options: {
+          plugins: function() {
+            return [
+              require('precss'),
+              require('autoprefixer')
+            ]
+          }
+        }
       },
       {
         loader: 'less-loader'

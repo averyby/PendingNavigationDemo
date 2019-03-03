@@ -30,6 +30,8 @@ class AppRoot extends React.Component {
         <button onClick={this.handleClick}>
           Reveal Loadable Content, haha
         </button>
+        <LoadableComponent />
+        <span className="loading fa fa-spinner fa-spin"></span>
         <div>
           {this.state.show ? <LoadableComponent /> : null}
         </div>

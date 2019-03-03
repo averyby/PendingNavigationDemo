@@ -13,6 +13,7 @@ const devClientConfig = {
     main: [
       '@babel/runtime/regenerator',
       'webpack-hot-middleware/client?reload=true',
+      "font-awesome/scss/font-awesome.scss",
       './src/main.js'
     ],
   },
@@ -45,6 +46,23 @@ const devClientConfig = {
   devtool: "source-map",
   module: {
     rules: [
+      {
+        test: /font-awesome\.config\.js/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'font-awesome-loader' }
+        ]
+      },
+      {
+        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/',
+          }
+        }]
+      },
       {
         test: /\.js$/,
         use: [

@@ -15,7 +15,10 @@ const APPCONFIG = require('../appConfig.json');
 const prodClientConfig = {
   name: "client",
   entry: {
-    main: ['./src/main.js'],
+    main: [
+      "font-awesome/scss/font-awesome.scss",
+      './src/main.js'
+    ],
   },
   mode: 'production',
   output: {
@@ -32,6 +35,23 @@ const prodClientConfig = {
   devtool: "source-map",
   module: {
     rules: [
+      {
+        test: /font-awesome\.config\.js/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'font-awesome-loader' }
+        ]
+      },
+      {
+        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/',
+          }
+        }]
+      },
       {
         test: /\.js$/,
         use: [
