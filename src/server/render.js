@@ -6,6 +6,7 @@ import { flushChunkNames } from "react-universal-component/server";
 import flushChunks from 'webpack-flush-chunks';
 import Loadable from 'react-loadable';
 import { getBundles } from 'react-loadable/webpack';
+import stats from '../../react-loadable.json';
 
 export default ({ clientStats }) => (req, res) => {
   const modules = [];
@@ -21,7 +22,6 @@ export default ({ clientStats }) => (req, res) => {
   }).join('\n')}
   */
 
-  const stats = require('../../data/react-loadable.json');
   const bundles = getBundles(stats, modules).filter(b => b.publicPath.endsWith('.js'));
   console.log('bundles', bundles);
   console.log('modules', modules);

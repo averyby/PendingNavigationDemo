@@ -27,20 +27,6 @@
       "publicPath": "/LoadOnDemand.js.map"
     }
   ],
-  "../../data/react-loadable.json": [
-    {
-      "id": "./data/react-loadable.json",
-      "name": "./data/react-loadable.json",
-      "file": "dev-server-bundle.js",
-      "publicPath": "/dev-server-bundle.js"
-    },
-    {
-      "id": "./data/react-loadable.json",
-      "name": "./data/react-loadable.json",
-      "file": "dev-server-bundle.js.map",
-      "publicPath": "/dev-server-bundle.js.map"
-    }
-  ],
   "@babel/runtime/helpers/assertThisInitialized": [
     {
       "id": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
@@ -181,7 +167,7 @@
       "publicPath": "/dev-server-bundle.js.map"
     }
   ],
-  "../node_modules/css-loader/dist/runtime/api.js": [
+  "../../node_modules/css-loader/dist/runtime/api.js": [
     {
       "id": "./node_modules/css-loader/dist/runtime/api.js",
       "name": "./node_modules/css-loader/dist/runtime/api.js",
@@ -521,6 +507,20 @@
     {
       "id": "./node_modules/webpack/buildin/module.js",
       "name": "./node_modules/webpack/buildin/module.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "../../react-loadable.json": [
+    {
+      "id": "./react-loadable.json",
+      "name": "./react-loadable.json",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./react-loadable.json",
+      "name": "./react-loadable.json",
       "file": "dev-server-bundle.js.map",
       "publicPath": "/dev-server-bundle.js.map"
     }

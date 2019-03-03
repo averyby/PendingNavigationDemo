@@ -30,7 +30,7 @@ module.exports = {
     hot: true,
     watchOptions: {
       ignored: [
-        path.resolve(__dirname, '../data')
+        path.resolve(__dirname, '../react-loadable.json')
       ]
     },
     writeToDisk: true
