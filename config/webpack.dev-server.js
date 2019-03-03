@@ -10,6 +10,7 @@ module.exports = {
   mode: 'development',
   output: {
     filename: 'dev-server-bundle.js', // name 会被 entry 名替换
+    chunkFilename: "[name].js",
     path: path.resolve(__dirname, '../build'),
     publicPath: "/",
     libraryTarget: "commonjs2"
@@ -113,12 +114,12 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.LimitChunkCountPlugin({
-      maxChunks: 1
-    }),
     new ReactLoadablePlugin({
       filename: './data/react-loadable.json'
     }),
+    // new webpack.optimize.LimitChunkCountPlugin({
+    //   maxChunks: 1
+    // }),
     new webpack.NamedModulesPlugin(),
     new webpack.DefinePlugin({
       'process.env': {

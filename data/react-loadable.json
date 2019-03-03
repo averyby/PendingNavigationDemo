@@ -1,14 +1,42 @@
 {
-  "../../data/post.md": [
+  "./LoadOnDemand": [
     {
-      "id": "./data/post.md",
-      "name": "./data/post.md",
+      "id": "./src/components/LoadOnDemand.js",
+      "name": "./src/components/LoadOnDemand.js",
+      "file": "LoadOnDemand.js",
+      "publicPath": "/LoadOnDemand.js"
+    },
+    {
+      "id": "./src/components/LoadOnDemand.js",
+      "name": "./src/components/LoadOnDemand.js",
+      "file": "LoadOnDemand.js.map",
+      "publicPath": "/LoadOnDemand.js.map"
+    }
+  ],
+  "./index.css": [
+    {
+      "id": "./src/components/index.css",
+      "name": "./src/components/index.css",
+      "file": "LoadOnDemand.js",
+      "publicPath": "/LoadOnDemand.js"
+    },
+    {
+      "id": "./src/components/index.css",
+      "name": "./src/components/index.css",
+      "file": "LoadOnDemand.js.map",
+      "publicPath": "/LoadOnDemand.js.map"
+    }
+  ],
+  "../../data/react-loadable.json": [
+    {
+      "id": "./data/react-loadable.json",
+      "name": "./data/react-loadable.json",
       "file": "dev-server-bundle.js",
       "publicPath": "/dev-server-bundle.js"
     },
     {
-      "id": "./data/post.md",
-      "name": "./data/post.md",
+      "id": "./data/react-loadable.json",
+      "name": "./data/react-loadable.json",
       "file": "dev-server-bundle.js.map",
       "publicPath": "/dev-server-bundle.js.map"
     }
@@ -153,7 +181,7 @@
       "publicPath": "/dev-server-bundle.js.map"
     }
   ],
-  "../../node_modules/css-loader/dist/runtime/api.js": [
+  "../node_modules/css-loader/dist/runtime/api.js": [
     {
       "id": "./node_modules/css-loader/dist/runtime/api.js",
       "name": "./node_modules/css-loader/dist/runtime/api.js",
@@ -163,6 +191,20 @@
     {
       "id": "./node_modules/css-loader/dist/runtime/api.js",
       "name": "./node_modules/css-loader/dist/runtime/api.js",
+      "file": "dev-server-bundle.js.map",
+      "publicPath": "/dev-server-bundle.js.map"
+    }
+  ],
+  "react-hot-loader/root": [
+    {
+      "id": "./node_modules/react-hot-loader/root.js",
+      "name": "./node_modules/react-hot-loader/root.js",
+      "file": "dev-server-bundle.js",
+      "publicPath": "/dev-server-bundle.js"
+    },
+    {
+      "id": "./node_modules/react-hot-loader/root.js",
+      "name": "./node_modules/react-hot-loader/root.js",
       "file": "dev-server-bundle.js.map",
       "publicPath": "/dev-server-bundle.js.map"
     }
@@ -257,12 +299,6 @@
       "publicPath": "/dev-server-bundle.js"
     },
     {
-      "id": "lodash",
-      "name": "lodash",
-      "file": "dev-server-bundle.js",
-      "publicPath": "/dev-server-bundle.js"
-    },
-    {
       "id": "path",
       "name": "path",
       "file": "dev-server-bundle.js",
@@ -295,18 +331,6 @@
     {
       "id": "react-loadable",
       "name": "react-loadable",
-      "file": "dev-server-bundle.js",
-      "publicPath": "/dev-server-bundle.js"
-    },
-    {
-      "id": "react-router",
-      "name": "react-router",
-      "file": "dev-server-bundle.js",
-      "publicPath": "/dev-server-bundle.js"
-    },
-    {
-      "id": "react-router-dom",
-      "name": "react-router-dom",
       "file": "dev-server-bundle.js",
       "publicPath": "/dev-server-bundle.js"
     },
@@ -341,12 +365,6 @@
       "publicPath": "/dev-server-bundle.js.map"
     },
     {
-      "id": "lodash",
-      "name": "lodash",
-      "file": "dev-server-bundle.js.map",
-      "publicPath": "/dev-server-bundle.js.map"
-    },
-    {
       "id": "path",
       "name": "path",
       "file": "dev-server-bundle.js.map",
@@ -379,18 +397,6 @@
     {
       "id": "react-loadable",
       "name": "react-loadable",
-      "file": "dev-server-bundle.js.map",
-      "publicPath": "/dev-server-bundle.js.map"
-    },
-    {
-      "id": "react-router",
-      "name": "react-router",
-      "file": "dev-server-bundle.js.map",
-      "publicPath": "/dev-server-bundle.js.map"
-    },
-    {
-      "id": "react-router-dom",
-      "name": "react-router-dom",
       "file": "dev-server-bundle.js.map",
       "publicPath": "/dev-server-bundle.js.map"
     },
@@ -519,114 +525,44 @@
       "publicPath": "/dev-server-bundle.js.map"
     }
   ],
-  "./About": [
+  "../components/AppRoot": [
     {
-      "id": "./src/components/About.js",
-      "name": "./src/components/About.js",
+      "id": "./src/components/AppRoot.js",
+      "name": "./src/components/AppRoot.js",
       "file": "dev-server-bundle.js",
       "publicPath": "/dev-server-bundle.js"
     },
     {
-      "id": "./src/components/About.js",
-      "name": "./src/components/About.js",
+      "id": "./src/components/AppRoot.js",
+      "name": "./src/components/AppRoot.js",
       "file": "dev-server-bundle.js.map",
       "publicPath": "/dev-server-bundle.js.map"
     }
   ],
-  "./Article": [
+  "./nav.css": [
     {
-      "id": "./src/components/Article.js",
-      "name": "./src/components/Article.js",
+      "id": "./src/components/nav.css",
+      "name": "./src/components/nav.css",
       "file": "dev-server-bundle.js",
       "publicPath": "/dev-server-bundle.js"
     },
     {
-      "id": "./src/components/Article.js",
-      "name": "./src/components/Article.js",
+      "id": "./src/components/nav.css",
+      "name": "./src/components/nav.css",
       "file": "dev-server-bundle.js.map",
       "publicPath": "/dev-server-bundle.js.map"
     }
   ],
-  "./Gallery": [
+  "../main.scss": [
     {
-      "id": "./src/components/Gallery.js",
-      "name": "./src/components/Gallery.js",
+      "id": "./src/main.scss",
+      "name": "./src/main.scss",
       "file": "dev-server-bundle.js",
       "publicPath": "/dev-server-bundle.js"
     },
     {
-      "id": "./src/components/Gallery.js",
-      "name": "./src/components/Gallery.js",
-      "file": "dev-server-bundle.js.map",
-      "publicPath": "/dev-server-bundle.js.map"
-    }
-  ],
-  "../components/Routes": [
-    {
-      "id": "./src/components/Routes.js",
-      "name": "./src/components/Routes.js",
-      "file": "dev-server-bundle.js",
-      "publicPath": "/dev-server-bundle.js"
-    },
-    {
-      "id": "./src/components/Routes.js",
-      "name": "./src/components/Routes.js",
-      "file": "dev-server-bundle.js.map",
-      "publicPath": "/dev-server-bundle.js.map"
-    }
-  ],
-  "../css/About.css": [
-    {
-      "id": "./src/css/About.css",
-      "name": "./src/css/About.css",
-      "file": "dev-server-bundle.js",
-      "publicPath": "/dev-server-bundle.js"
-    },
-    {
-      "id": "./src/css/About.css",
-      "name": "./src/css/About.css",
-      "file": "dev-server-bundle.js.map",
-      "publicPath": "/dev-server-bundle.js.map"
-    }
-  ],
-  "../css/Article.css": [
-    {
-      "id": "./src/css/Article.css",
-      "name": "./src/css/Article.css",
-      "file": "dev-server-bundle.js",
-      "publicPath": "/dev-server-bundle.js"
-    },
-    {
-      "id": "./src/css/Article.css",
-      "name": "./src/css/Article.css",
-      "file": "dev-server-bundle.js.map",
-      "publicPath": "/dev-server-bundle.js.map"
-    }
-  ],
-  "../css/Gallery.css": [
-    {
-      "id": "./src/css/Gallery.css",
-      "name": "./src/css/Gallery.css",
-      "file": "dev-server-bundle.js",
-      "publicPath": "/dev-server-bundle.js"
-    },
-    {
-      "id": "./src/css/Gallery.css",
-      "name": "./src/css/Gallery.css",
-      "file": "dev-server-bundle.js.map",
-      "publicPath": "/dev-server-bundle.js.map"
-    }
-  ],
-  "../images/square.jpg": [
-    {
-      "id": "./src/images/square.jpg",
-      "name": "./src/images/square.jpg",
-      "file": "dev-server-bundle.js",
-      "publicPath": "/dev-server-bundle.js"
-    },
-    {
-      "id": "./src/images/square.jpg",
-      "name": "./src/images/square.jpg",
+      "id": "./src/main.scss",
+      "name": "./src/main.scss",
       "file": "dev-server-bundle.js.map",
       "publicPath": "/dev-server-bundle.js.map"
     }

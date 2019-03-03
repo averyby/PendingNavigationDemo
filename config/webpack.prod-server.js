@@ -10,6 +10,7 @@ module.exports = {
   output: {
     filename: 'prod-server-bundle.js', // name 会被 entry 名替换
     path: path.resolve(__dirname, '../build'),
+    chunkFilename: "[name].js",
     publicPath: "/",
     libraryTarget: "commonjs2"
   },

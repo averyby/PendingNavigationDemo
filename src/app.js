@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AppRoot from './components/AppRoot';
-import Data from '../data/bio';
 
-ReactDOM.hydrate(
-  <AppRoot heading={Data.heading} content={Data.bioText} />,
-  document.getElementById('react-root')
-);
+import Loadable from 'react-loadable';
+
+Loadable.preloadReady().then(() => {
+
+  ReactDOM.hydrate(
+    <AppRoot />,
+    document.getElementById('react-root')
+  );
+
+});

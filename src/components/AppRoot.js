@@ -1,24 +1,40 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
 import '../main.scss';
-import { BrowserRouter as Router } from "react-router-dom";
 import './nav.css';
-import Routes from './Routes';
 
+import Loadable from 'react-loadable';
 
-class Heading extends Component {
+const LoadableComponent = Loadable({
+  loader: () => import(/* webpackChunkName: "LoadOnDemand" */ './LoadOnDemand'),
+  loading: () => <div>Loading...</div>
+});
+
+class AppRoot extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      show: false
+    }
   }
 
+  handleClick = () => {
+    this.setState({
+      show: true
+    })
+  };
   render() {
     return (
-      <Router>
-        <Routes />
-      </Router>
-    )
+      <div>
+        <button onClick={this.handleClick}>
+          Reveal Loadable Content
+        </button>
+        <div>
+          {<LoadableComponent />}
+        </div>
+      </div>
+    );
   }
 }
 
-export default hot(Heading);
+export default hot(AppRoot);

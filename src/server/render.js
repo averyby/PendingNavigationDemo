@@ -1,7 +1,6 @@
 import React from 'react';
 import { renderToString } from "react-dom/server";
-import { StaticRouter } from "react-router";
-import Routes from '../components/Routes';
+import AppRoot from '../components/AppRoot';
 
 import { flushChunkNames } from "react-universal-component/server";
 import flushChunks from 'webpack-flush-chunks';
@@ -12,14 +11,20 @@ export default ({ clientStats }) => (req, res) => {
   const modules = [];
   const app = renderToString(
     <Loadable.Capture report={moduleName => modules.push(moduleName)}>
-      <StaticRouter location={req.path} context={{}}>
-        <Routes />
-      </StaticRouter>
+      <AppRoot />
     </Loadable.Capture>
   );
 
-  // const stats = require('../../data/react-loadable.json');
-  // const bundles = getBundles(stats, modules);
+  /*
+    ${bundles.map(bundle => {
+              return `<script src="${bundle.publicPath}"></script>`
+  }).join('\n')}
+  */
+
+  const stats = require('../../data/react-loadable.json');
+  const bundles = getBundles(stats, modules).filter(b => b.publicPath.endsWith('.js'));
+  console.log('bundles', bundles);
+  console.log('modules', modules);
 
   const { js, styles, cssHash } = flushChunks(clientStats, {
     chunkNames: flushChunkNames()
@@ -33,7 +38,9 @@ export default ({ clientStats }) => (req, res) => {
       </head>
       <body>
           <div id="react-root">${app}</div>
-         
+          ${bundles.map(bundle => {
+    return `<script src="${bundle.publicPath}"></script>`
+  }).join('\\n')}
           ${js}
           ${cssHash}
       </body>

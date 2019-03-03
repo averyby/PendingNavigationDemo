@@ -24,9 +24,15 @@ module.exports = {
     // 注意这里指定 dist 目录时没有使用 .. 进入上级目录，原因是这里的相对路径
     // 是相对于 webpack-dev-server 的命令运行所处的目录的。由于 webpack-dev-server 是在
     // 项目根目录运行的，而 dist 即是在项目根目录下面，所以这里无需先进入上级目录。
-    contentBase: "dist",
+    // contentBase: "dist",
     overlay: true,
-    hot: true
+    hot: true,
+    watchOptions: {
+      ignored: [
+        path.resolve(__dirname, '../data')
+      ]
+    },
+    writeToDisk: true
   },
   optimization: {
     splitChunks: {

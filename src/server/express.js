@@ -39,8 +39,20 @@ if (isDev) {
   server.use(webpackDevMiddleware);
   server.use(webpackHotMiddleware);
   server.use(webpackHotServerMiddleware(compiler)); // 将会 serve 服务端渲染的 html
+  setTimeout(() => {
 
-  console.log('Middleware enabled.');
+    console.log('Middleware enabled.');
+
+
+    const PORT = process.env.PORT || 8080; // heroku 会生成一个端口，如果在开发环境，我们使用 8080
+
+    Loadable.preloadAll().then(() => {
+      server.listen(PORT, () => {
+        console.log(`Server is listening on http://localhost:${PORT}`);
+      });
+    });
+
+  }, 5000);
 } else {
   // 生产环境下，使用 webpack 函数启动打包过程，生成客户端和服务端的资源包
   webpack([configProdClient, configProdServer]).run((err, stats) => {
@@ -65,11 +77,3 @@ if (isDev) {
   });
 }
 
-
-const PORT = process.env.PORT || 8080; // heroku 会生成一个端口，如果在开发环境，我们使用 8080
-
-Loadable.preloadAll().then(() => {
-  server.listen(PORT, () => {
-    console.log(`Server is listening on http://localhost:${PORT}`);
-  });
-});
