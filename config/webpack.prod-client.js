@@ -7,8 +7,9 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const BrotliPlugin = require('brotli-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const ExtractCSSChunks = require('extract-css-chunks-webpack-plugin');
+const ExtractCSSPlugin = require('extract-css-chunks-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
 
 module.exports = {
   name: "client",
@@ -17,8 +18,8 @@ module.exports = {
   },
   mode: 'production',
   output: {
-    filename: '[name]-bundle.js', // name 会被 entry 名替换
-    chunkFilename: "[name].js",
+    filename: '[name].[contenthash].js', // name 会被 entry 名替换
+    chunkFilename: "[name].[contenthash].js",
     path: path.resolve(__dirname, '../dist'),
     publicPath: "/"
   },
@@ -43,7 +44,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: ExtractCSSChunks.loader
+            loader: MiniCSSExtractPlugin.loader
           },
           {
             loader: 'css-loader'
@@ -54,7 +55,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: ExtractCSSChunks.loader
+            loader: MiniCSSExtractPlugin.loader
           },
           {
             loader: 'css-loader'
@@ -67,7 +68,7 @@ module.exports = {
         test: /\.styl$/,
         use: [
           {
-            loader: ExtractCSSChunks.loader
+            loader: MiniCSSExtractPlugin.loader
           },
           {
             loader: 'css-loader',
@@ -88,7 +89,7 @@ module.exports = {
         test: /\.less$/,
         use: [
           {
-            loader: ExtractCSSChunks.loader
+            loader: MiniCSSExtractPlugin.loader
           },
           {
             loader: 'css-loader'
@@ -140,7 +141,13 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractCSSChunks(),
+    new ReactLoadablePlugin({
+      filename: path.join(__dirname, '../react-loadable.json')
+    }),
+    new MiniCSSExtractPlugin({
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[name].[contenthash].css'
+    }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),

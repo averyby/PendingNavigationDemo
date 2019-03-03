@@ -113,12 +113,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.LimitChunkCountPlugin({
-      maxChunks: 1
-    }),
-    new ReactLoadablePlugin({
-      filename: './data/react-loadable.json'
-    }),
+    // new webpack.optimize.LimitChunkCountPlugin({
+    //   maxChunks: 1
+    // }),
     new webpack.NamedModulesPlugin(),
     new webpack.DefinePlugin({
       'process.env': {

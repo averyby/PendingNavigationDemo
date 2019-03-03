@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { hot } from 'react-hot-loader/root';
 import '../main.scss';
 import './nav.css';
@@ -6,7 +6,7 @@ import './nav.css';
 import Loadable from 'react-loadable';
 
 const LoadableComponent = Loadable({
-  loader: () => import(/* webpackChunkName: "LoadOnDemand" */ './LoadOnDemand'),
+  loader: () => import('./LoadOnDemand'),
   loading: () => <div>Loading...</div>
 });
 
@@ -23,6 +23,7 @@ class AppRoot extends React.Component {
       show: true
     })
   };
+
   render() {
     return (
       <div>
@@ -30,7 +31,7 @@ class AppRoot extends React.Component {
           Reveal Loadable Content
         </button>
         <div>
-          {<LoadableComponent />}
+          {this.state.show ? <LoadableComponent /> : null}
         </div>
       </div>
     );
