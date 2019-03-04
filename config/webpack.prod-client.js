@@ -17,7 +17,7 @@ const prodClientConfig = {
   entry: {
     main: [
       "font-awesome/scss/font-awesome.scss",
-      './src/main.js'
+      './src/clientEntry.js'
     ],
   },
   mode: 'production',

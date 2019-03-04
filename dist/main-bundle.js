@@ -112,7 +112,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "6d743d38dc7c34850578";
+/******/ 	var hotCurrentHash = "5c4728b152bad4fb6018";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1048,6 +1048,30 @@ react_loadable__WEBPACK_IMPORTED_MODULE_2___default.a.preloadReady().then(functi
 
 /***/ }),
 
+/***/ "./src/clientEntry.js":
+/*!****************************!*\
+  !*** ./src/clientEntry.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! @babel/register */ "./node_modules/@babel/register/lib/index.js"); // 为了支持 index.html 模板改了之后浏览器能够自动刷新，需要在 js 里显式地 require index.html。
+// 但是对于处理 index.html 中的 img 的 src 地址来说，即使没有在 js 里 require index.html，img 的
+// src 地址仍然会得到 html-loader 的处理。这说明 html-webpack-plugin 生成的 html 会被 html-loader
+// 处理。然而，如果不在 js 里显式 require index.html，则 hmr 无法对 index.html 的改动有感知。require
+// index.html 有点相当于将 html 纳入了静态资源的范畴。
+// 如果不在 js 里显式 require index.html，如果改了 index.html，webpack-dev-server 或者 webpack-dev-middleware
+// 还是会感知到这种变化并作出重新构建的（控制台可以看到动静），因为 html-webpack-plugin 使得
+// index.html 成为了它们跟踪的资源。但是浏览器并不会自动刷新。
+// require('./index.html');
+
+
+__webpack_require__(/*! ./app */ "./src/app.js");
+
+console.log("Environment is ".concat("development"));
+
+/***/ }),
+
 /***/ "./src/components/AppRoot.js":
 /*!***********************************!*\
   !*** ./src/components/AppRoot.js ***!
@@ -1079,12 +1103,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var react_hot_loader_root__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-hot-loader/root */ "./node_modules/react-hot-loader/root.js");
 /* harmony import */ var react_hot_loader_root__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../main.scss */ "./src/main.scss");
-/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _nav_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./nav.css */ "./src/components/nav.css");
-/* harmony import */ var _nav_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_nav_css__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var react_loadable__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-loadable */ "./node_modules/react-loadable/lib/index.js");
-/* harmony import */ var react_loadable__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_loadable__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var react_loadable__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-loadable */ "./node_modules/react-loadable/lib/index.js");
+/* harmony import */ var react_loadable__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_loadable__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
@@ -1103,9 +1123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-var LoadableComponent = react_loadable__WEBPACK_IMPORTED_MODULE_13___default()({
+var LoadableComponent = react_loadable__WEBPACK_IMPORTED_MODULE_11___default()({
   loader: function loader() {
     return babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_8___default()({
       id: "./LoadOnDemand",
@@ -1163,7 +1181,29 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
         onClick: this.handleClick
-      }, "Reveal Loadable Content, haha"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(LoadableComponent, null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
+      }, "Reveal Loadable Content, haha"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        className: "alert alert-dark",
+        role: "alert"
+      }, "This is a dark alert\u2014check it out!"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        className: "alert alert-primary",
+        role: "alert"
+      }, "This is a primary alert\u2014check it out!"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        className: "alert alert-secondary",
+        role: "alert"
+      }, "This is a secondary alert\u2014check it out!"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        className: "alert alert-success",
+        role: "alert"
+      }, "This is a success alert\u2014check it out!"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+        className: "alert alert-danger",
+        role: "alert"
+      }, "This is a danger alert\u2014check it out!"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("button", {
+        type: "button",
+        className: "btn btn-primary"
+      }, "Profile ", react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
+        className: "badge badge-light"
+      }, "9"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
+        className: "sr-only"
+      }, "unread messages")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(LoadableComponent, null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
         className: "loading fa fa-spinner fa-spin"
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, this.state.show ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(LoadableComponent, null) : null));
     }
@@ -1206,91 +1246,17 @@ var _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_10__["hot"]
 
 /***/ }),
 
-/***/ "./src/components/nav.css":
-/*!********************************!*\
-  !*** ./src/components/nav.css ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by extract-css-chunks-webpack-plugin
-    if(true) {
-      // 1551628118741
-      var cssReload = __webpack_require__(/*! ../../node_modules/css-hot-loader/hotModuleReplacement.js */ "./node_modules/css-hot-loader/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
-      module.hot.dispose(cssReload);
-      module.hot.accept(undefined, cssReload);;
-    }
-  
-    if(true) {
-      // 1551628118741
-      var cssReload = __webpack_require__(/*! ../../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js */ "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
-      module.hot.dispose(cssReload);
-      module.hot.accept(undefined, cssReload);;
-    }
-  
-
-/***/ }),
-
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! @babel/register */ "./node_modules/@babel/register/lib/index.js"); // 为了支持 index.html 模板改了之后浏览器能够自动刷新，需要在 js 里显式地 require index.html。
-// 但是对于处理 index.html 中的 img 的 src 地址来说，即使没有在 js 里 require index.html，img 的
-// src 地址仍然会得到 html-loader 的处理。这说明 html-webpack-plugin 生成的 html 会被 html-loader
-// 处理。然而，如果不在 js 里显式 require index.html，则 hmr 无法对 index.html 的改动有感知。require
-// index.html 有点相当于将 html 纳入了静态资源的范畴。
-// 如果不在 js 里显式 require index.html，如果改了 index.html，webpack-dev-server 或者 webpack-dev-middleware
-// 还是会感知到这种变化并作出重新构建的（控制台可以看到动静），因为 html-webpack-plugin 使得
-// index.html 成为了它们跟踪的资源。但是浏览器并不会自动刷新。
-// require('./index.html');
-
-
-__webpack_require__(/*! ./app */ "./src/app.js");
-
-console.log("Environment is ".concat("development"));
-
-/***/ }),
-
-/***/ "./src/main.scss":
-/*!***********************!*\
-  !*** ./src/main.scss ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by extract-css-chunks-webpack-plugin
-    if(true) {
-      // 1551628118751
-      var cssReload = __webpack_require__(/*! ../node_modules/css-hot-loader/hotModuleReplacement.js */ "./node_modules/css-hot-loader/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
-      module.hot.dispose(cssReload);
-      module.hot.accept(undefined, cssReload);;
-    }
-  
-    if(true) {
-      // 1551628118751
-      var cssReload = __webpack_require__(/*! ../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js */ "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
-      module.hot.dispose(cssReload);
-      module.hot.accept(undefined, cssReload);;
-    }
-  
-
-/***/ }),
-
 /***/ 0:
-/*!************************************************************************************************************************************!*\
-  !*** multi @babel/runtime/regenerator webpack-hot-middleware/client?reload=true font-awesome/scss/font-awesome.scss ./src/main.js ***!
-  \************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************!*\
+  !*** multi @babel/runtime/regenerator webpack-hot-middleware/client?reload=true font-awesome/scss/font-awesome.scss ./src/clientEntry.js ***!
+  \*******************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! @babel/runtime/regenerator */"./node_modules/@babel/runtime/regenerator/index.js");
 __webpack_require__(/*! webpack-hot-middleware/client?reload=true */"./node_modules/webpack-hot-middleware/client.js?reload=true");
 __webpack_require__(/*! font-awesome/scss/font-awesome.scss */"./node_modules/font-awesome/scss/font-awesome.scss");
-module.exports = __webpack_require__(/*! ./src/main.js */"./src/main.js");
+module.exports = __webpack_require__(/*! ./src/clientEntry.js */"./src/clientEntry.js");
 
 
 /***/ })

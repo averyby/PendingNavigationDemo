@@ -33,8 +33,8 @@ npm manifest:
     "description": "",
     "main": "index.js",
     "scripts": {
-      "dev": "nodemon --inspect --watch config --watch src/server src/server/main.js",
-      "prod": "NODE_ENV=production node src/server/main.js",
+      "dev": "nodemon --inspect --watch config --watch src/server src/server/serverEntry.js",
+      "prod": "NODE_ENV=production node src/server/serverEntry.js",
       "heroku-postbuild": "echo Skip build on Heroku"
     },
     "keywords": [],

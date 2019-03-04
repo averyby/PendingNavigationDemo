@@ -79,30 +79,6 @@
     {
       "id": 0,
       "name": null,
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
-      "name": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "?1ae2",
-      "name": null,
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "?5b2c",
-      "name": null,
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": 0,
-      "name": null,
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
     },
@@ -111,42 +87,6 @@
       "name": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
-    },
-    {
-      "id": "?1ae2",
-      "name": null,
-      "file": "main-bundle.js",
-      "publicPath": "/main-bundle.js"
-    },
-    {
-      "id": "?5b2c",
-      "name": null,
-      "file": "main-bundle.js",
-      "publicPath": "/main-bundle.js"
-    },
-    {
-      "id": 0,
-      "name": null,
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
-      "name": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "?1ae2",
-      "name": null,
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "?5b2c",
-      "name": null,
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
     },
     {
       "id": 0,
@@ -157,18 +97,6 @@
     {
       "id": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
       "name": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
-      "file": "main-bundle.js.map",
-      "publicPath": "/main-bundle.js.map"
-    },
-    {
-      "id": "?1ae2",
-      "name": null,
-      "file": "main-bundle.js.map",
-      "publicPath": "/main-bundle.js.map"
-    },
-    {
-      "id": "?5b2c",
-      "name": null,
       "file": "main-bundle.js.map",
       "publicPath": "/main-bundle.js.map"
     },
@@ -201,20 +129,8 @@
     {
       "id": "./appConfig.json",
       "name": "./appConfig.json",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./appConfig.json",
-      "name": "./appConfig.json",
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
-    },
-    {
-      "id": "./appConfig.json",
-      "name": "./appConfig.json",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
     },
     {
       "id": "./appConfig.json",
@@ -227,24 +143,26 @@
     {
       "id": "./src/app.js",
       "name": "./src/app.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./src/app.js",
-      "name": "./src/app.js",
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
     },
     {
       "id": "./src/app.js",
       "name": "./src/app.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
+      "file": "main-bundle.js.map",
+      "publicPath": "/main-bundle.js.map"
+    }
+  ],
+  "./src/clientEntry.js": [
+    {
+      "id": "./src/clientEntry.js",
+      "name": "./src/clientEntry.js",
+      "file": "main-bundle.js",
+      "publicPath": "/main-bundle.js"
     },
     {
-      "id": "./src/app.js",
-      "name": "./src/app.js",
+      "id": "./src/clientEntry.js",
+      "name": "./src/clientEntry.js",
       "file": "main-bundle.js.map",
       "publicPath": "/main-bundle.js.map"
     }
@@ -253,102 +171,12 @@
     {
       "id": "./src/components/AppRoot.js",
       "name": "./src/components/AppRoot.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./src/components/AppRoot.js",
-      "name": "./src/components/AppRoot.js",
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
     },
     {
       "id": "./src/components/AppRoot.js",
       "name": "./src/components/AppRoot.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./src/components/AppRoot.js",
-      "name": "./src/components/AppRoot.js",
-      "file": "main-bundle.js.map",
-      "publicPath": "/main-bundle.js.map"
-    }
-  ],
-  "./nav.css": [
-    {
-      "id": "./src/components/nav.css",
-      "name": "./src/components/nav.css",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./src/components/nav.css",
-      "name": "./src/components/nav.css",
-      "file": "main-bundle.js",
-      "publicPath": "/main-bundle.js"
-    },
-    {
-      "id": "./src/components/nav.css",
-      "name": "./src/components/nav.css",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./src/components/nav.css",
-      "name": "./src/components/nav.css",
-      "file": "main-bundle.js.map",
-      "publicPath": "/main-bundle.js.map"
-    }
-  ],
-  "./src/main.js": [
-    {
-      "id": "./src/main.js",
-      "name": "./src/main.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./src/main.js",
-      "name": "./src/main.js",
-      "file": "main-bundle.js",
-      "publicPath": "/main-bundle.js"
-    },
-    {
-      "id": "./src/main.js",
-      "name": "./src/main.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./src/main.js",
-      "name": "./src/main.js",
-      "file": "main-bundle.js.map",
-      "publicPath": "/main-bundle.js.map"
-    }
-  ],
-  "../main.scss": [
-    {
-      "id": "./src/main.scss",
-      "name": "./src/main.scss",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./src/main.scss",
-      "name": "./src/main.scss",
-      "file": "main-bundle.js",
-      "publicPath": "/main-bundle.js"
-    },
-    {
-      "id": "./src/main.scss",
-      "name": "./src/main.scss",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./src/main.scss",
-      "name": "./src/main.scss",
       "file": "main-bundle.js.map",
       "publicPath": "/main-bundle.js.map"
     }
@@ -795,7 +623,7 @@
       "publicPath": "/vendors~main.js.map"
     }
   ],
-  "!../node_modules/css-hot-loader/hotModuleReplacement.js": [
+  "!../../node_modules/css-hot-loader/hotModuleReplacement.js": [
     {
       "id": "./node_modules/css-hot-loader/hotModuleReplacement.js",
       "name": "./node_modules/css-hot-loader/hotModuleReplacement.js",
@@ -821,7 +649,7 @@
       "publicPath": "/vendors~main.js.map"
     }
   ],
-  "../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js": [
+  "../../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js": [
     {
       "id": "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js",
       "name": "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js",
