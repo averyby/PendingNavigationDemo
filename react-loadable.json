@@ -1,80 +1,22 @@
 {
-  "./LoadOnDemand": [
-    {
-      "id": "./src/components/LoadOnDemand.js",
-      "name": "./src/components/LoadOnDemand.js",
-      "file": "LoadOnDemand.css",
-      "publicPath": "/LoadOnDemand.css"
-    },
-    {
-      "id": "./src/components/LoadOnDemand.js",
-      "name": "./src/components/LoadOnDemand.js",
-      "file": "LoadOnDemand.js",
-      "publicPath": "/LoadOnDemand.js"
-    },
-    {
-      "id": "./src/components/LoadOnDemand.js",
-      "name": "./src/components/LoadOnDemand.js",
-      "file": "LoadOnDemand.css.map",
-      "publicPath": "/LoadOnDemand.css.map"
-    },
-    {
-      "id": "./src/components/LoadOnDemand.js",
-      "name": "./src/components/LoadOnDemand.js",
-      "file": "LoadOnDemand.js.map",
-      "publicPath": "/LoadOnDemand.js.map"
-    }
-  ],
-  "./index.css": [
-    {
-      "id": "./src/components/index.css",
-      "name": "./src/components/index.css",
-      "file": "LoadOnDemand.css",
-      "publicPath": "/LoadOnDemand.css"
-    },
-    {
-      "id": "./src/components/index.css",
-      "name": "./src/components/index.css",
-      "file": "LoadOnDemand.js",
-      "publicPath": "/LoadOnDemand.js"
-    },
-    {
-      "id": "./src/components/index.css",
-      "name": "./src/components/index.css",
-      "file": "LoadOnDemand.css.map",
-      "publicPath": "/LoadOnDemand.css.map"
-    },
-    {
-      "id": "./src/components/index.css",
-      "name": "./src/components/index.css",
-      "file": "LoadOnDemand.js.map",
-      "publicPath": "/LoadOnDemand.js.map"
-    }
-  ],
   "undefined": [
     {
-      "id": "?2381",
+      "id": 0,
       "name": null,
-      "file": "LoadOnDemand.css",
-      "publicPath": "/LoadOnDemand.css"
+      "file": "main.css",
+      "publicPath": "/main.css"
     },
     {
-      "id": "?2381",
+      "id": "?bfc7",
       "name": null,
-      "file": "LoadOnDemand.js",
-      "publicPath": "/LoadOnDemand.js"
+      "file": "main.css",
+      "publicPath": "/main.css"
     },
     {
-      "id": "?2381",
+      "id": "?e319",
       "name": null,
-      "file": "LoadOnDemand.css.map",
-      "publicPath": "/LoadOnDemand.css.map"
-    },
-    {
-      "id": "?2381",
-      "name": null,
-      "file": "LoadOnDemand.js.map",
-      "publicPath": "/LoadOnDemand.js.map"
+      "file": "main.css",
+      "publicPath": "/main.css"
     },
     {
       "id": 0,
@@ -83,10 +25,34 @@
       "publicPath": "/main-bundle.js"
     },
     {
-      "id": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
-      "name": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
+      "id": "?bfc7",
+      "name": null,
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
+    },
+    {
+      "id": "?e319",
+      "name": null,
+      "file": "main-bundle.js",
+      "publicPath": "/main-bundle.js"
+    },
+    {
+      "id": 0,
+      "name": null,
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "?bfc7",
+      "name": null,
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "?e319",
+      "name": null,
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
     },
     {
       "id": 0,
@@ -95,8 +61,14 @@
       "publicPath": "/main-bundle.js.map"
     },
     {
-      "id": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
-      "name": "./node_modules/react-universal-component/dist/requireById sync recursive ^.*$",
+      "id": "?bfc7",
+      "name": null,
+      "file": "main-bundle.js.map",
+      "publicPath": "/main-bundle.js.map"
+    },
+    {
+      "id": "?e319",
+      "name": null,
       "file": "main-bundle.js.map",
       "publicPath": "/main-bundle.js.map"
     },
@@ -129,8 +101,20 @@
     {
       "id": "./appConfig.json",
       "name": "./appConfig.json",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./appConfig.json",
+      "name": "./appConfig.json",
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
+    },
+    {
+      "id": "./appConfig.json",
+      "name": "./appConfig.json",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
     },
     {
       "id": "./appConfig.json",
@@ -143,8 +127,20 @@
     {
       "id": "./src/app.js",
       "name": "./src/app.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./src/app.js",
+      "name": "./src/app.js",
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
+    },
+    {
+      "id": "./src/app.js",
+      "name": "./src/app.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
     },
     {
       "id": "./src/app.js",
@@ -157,8 +153,20 @@
     {
       "id": "./src/clientEntry.js",
       "name": "./src/clientEntry.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./src/clientEntry.js",
+      "name": "./src/clientEntry.js",
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
+    },
+    {
+      "id": "./src/clientEntry.js",
+      "name": "./src/clientEntry.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
     },
     {
       "id": "./src/clientEntry.js",
@@ -171,12 +179,76 @@
     {
       "id": "./src/components/AppRoot.js",
       "name": "./src/components/AppRoot.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./src/components/AppRoot.js",
+      "name": "./src/components/AppRoot.js",
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
     },
     {
       "id": "./src/components/AppRoot.js",
       "name": "./src/components/AppRoot.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./src/components/AppRoot.js",
+      "name": "./src/components/AppRoot.js",
+      "file": "main-bundle.js.map",
+      "publicPath": "/main-bundle.js.map"
+    }
+  ],
+  "./AppRoot.scss": [
+    {
+      "id": "./src/components/AppRoot.scss",
+      "name": "./src/components/AppRoot.scss",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./src/components/AppRoot.scss",
+      "name": "./src/components/AppRoot.scss",
+      "file": "main-bundle.js",
+      "publicPath": "/main-bundle.js"
+    },
+    {
+      "id": "./src/components/AppRoot.scss",
+      "name": "./src/components/AppRoot.scss",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./src/components/AppRoot.scss",
+      "name": "./src/components/AppRoot.scss",
+      "file": "main-bundle.js.map",
+      "publicPath": "/main-bundle.js.map"
+    }
+  ],
+  "./index.scss": [
+    {
+      "id": "./src/index.scss",
+      "name": "./src/index.scss",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./src/index.scss",
+      "name": "./src/index.scss",
+      "file": "main-bundle.js",
+      "publicPath": "/main-bundle.js"
+    },
+    {
+      "id": "./src/index.scss",
+      "name": "./src/index.scss",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./src/index.scss",
+      "name": "./src/index.scss",
       "file": "main-bundle.js.map",
       "publicPath": "/main-bundle.js.map"
     }
@@ -233,7 +305,7 @@
       "publicPath": "/vendors~main.js.map"
     }
   ],
-  "@babel/runtime/helpers/assertThisInitialized": [
+  "./assertThisInitialized": [
     {
       "id": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
       "name": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
@@ -307,32 +379,6 @@
     {
       "id": "./node_modules/@babel/runtime/helpers/createClass.js",
       "name": "./node_modules/@babel/runtime/helpers/createClass.js",
-      "file": "vendors~main.js.map",
-      "publicPath": "/vendors~main.js.map"
-    }
-  ],
-  "@babel/runtime/helpers/defineProperty": [
-    {
-      "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
-      "name": "./node_modules/@babel/runtime/helpers/defineProperty.js",
-      "file": "vendors~main.css",
-      "publicPath": "/vendors~main.css"
-    },
-    {
-      "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
-      "name": "./node_modules/@babel/runtime/helpers/defineProperty.js",
-      "file": "vendors~main.js",
-      "publicPath": "/vendors~main.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
-      "name": "./node_modules/@babel/runtime/helpers/defineProperty.js",
-      "file": "vendors~main.css.map",
-      "publicPath": "/vendors~main.css.map"
-    },
-    {
-      "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
-      "name": "./node_modules/@babel/runtime/helpers/defineProperty.js",
       "file": "vendors~main.js.map",
       "publicPath": "/vendors~main.js.map"
     }
@@ -597,33 +643,33 @@
       "publicPath": "/vendors~main.js.map"
     }
   ],
-  "babel-plugin-universal-import/universalImport": [
+  "bootstrap": [
     {
-      "id": "./node_modules/babel-plugin-universal-import/universalImport.js",
-      "name": "./node_modules/babel-plugin-universal-import/universalImport.js",
+      "id": "./node_modules/bootstrap/dist/js/bootstrap.js",
+      "name": "./node_modules/bootstrap/dist/js/bootstrap.js",
       "file": "vendors~main.css",
       "publicPath": "/vendors~main.css"
     },
     {
-      "id": "./node_modules/babel-plugin-universal-import/universalImport.js",
-      "name": "./node_modules/babel-plugin-universal-import/universalImport.js",
+      "id": "./node_modules/bootstrap/dist/js/bootstrap.js",
+      "name": "./node_modules/bootstrap/dist/js/bootstrap.js",
       "file": "vendors~main.js",
       "publicPath": "/vendors~main.js"
     },
     {
-      "id": "./node_modules/babel-plugin-universal-import/universalImport.js",
-      "name": "./node_modules/babel-plugin-universal-import/universalImport.js",
+      "id": "./node_modules/bootstrap/dist/js/bootstrap.js",
+      "name": "./node_modules/bootstrap/dist/js/bootstrap.js",
       "file": "vendors~main.css.map",
       "publicPath": "/vendors~main.css.map"
     },
     {
-      "id": "./node_modules/babel-plugin-universal-import/universalImport.js",
-      "name": "./node_modules/babel-plugin-universal-import/universalImport.js",
+      "id": "./node_modules/bootstrap/dist/js/bootstrap.js",
+      "name": "./node_modules/bootstrap/dist/js/bootstrap.js",
       "file": "vendors~main.js.map",
       "publicPath": "/vendors~main.js.map"
     }
   ],
-  "!../../node_modules/css-hot-loader/hotModuleReplacement.js": [
+  "!../node_modules/css-hot-loader/hotModuleReplacement.js": [
     {
       "id": "./node_modules/css-hot-loader/hotModuleReplacement.js",
       "name": "./node_modules/css-hot-loader/hotModuleReplacement.js",
@@ -649,7 +695,7 @@
       "publicPath": "/vendors~main.js.map"
     }
   ],
-  "../../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js": [
+  "../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js": [
     {
       "id": "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js",
       "name": "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js",
@@ -907,32 +953,6 @@
       "publicPath": "/vendors~main.js.map"
     }
   ],
-  "indexof": [
-    {
-      "id": "./node_modules/indexof/index.js",
-      "name": "./node_modules/indexof/index.js",
-      "file": "vendors~main.css",
-      "publicPath": "/vendors~main.css"
-    },
-    {
-      "id": "./node_modules/indexof/index.js",
-      "name": "./node_modules/indexof/index.js",
-      "file": "vendors~main.js",
-      "publicPath": "/vendors~main.js"
-    },
-    {
-      "id": "./node_modules/indexof/index.js",
-      "name": "./node_modules/indexof/index.js",
-      "file": "vendors~main.css.map",
-      "publicPath": "/vendors~main.css.map"
-    },
-    {
-      "id": "./node_modules/indexof/index.js",
-      "name": "./node_modules/indexof/index.js",
-      "file": "vendors~main.js.map",
-      "publicPath": "/vendors~main.js.map"
-    }
-  ],
   "is-plain-obj": [
     {
       "id": "./node_modules/is-plain-obj/index.js",
@@ -955,6 +975,32 @@
     {
       "id": "./node_modules/is-plain-obj/index.js",
       "name": "./node_modules/is-plain-obj/index.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "jquery": [
+    {
+      "id": "./node_modules/jquery/dist/jquery.js",
+      "name": "./node_modules/jquery/dist/jquery.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/jquery/dist/jquery.js",
+      "name": "./node_modules/jquery/dist/jquery.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/jquery/dist/jquery.js",
+      "name": "./node_modules/jquery/dist/jquery.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/jquery/dist/jquery.js",
+      "name": "./node_modules/jquery/dist/jquery.js",
       "file": "vendors~main.js.map",
       "publicPath": "/vendors~main.js.map"
     }
@@ -1323,28 +1369,28 @@
       "publicPath": "/vendors~main.js.map"
     }
   ],
-  "path": [
+  "popper.js": [
     {
-      "id": "./node_modules/path-browserify/index.js",
-      "name": "./node_modules/path-browserify/index.js",
+      "id": "./node_modules/popper.js/dist/esm/popper.js",
+      "name": "./node_modules/popper.js/dist/esm/popper.js",
       "file": "vendors~main.css",
       "publicPath": "/vendors~main.css"
     },
     {
-      "id": "./node_modules/path-browserify/index.js",
-      "name": "./node_modules/path-browserify/index.js",
+      "id": "./node_modules/popper.js/dist/esm/popper.js",
+      "name": "./node_modules/popper.js/dist/esm/popper.js",
       "file": "vendors~main.js",
       "publicPath": "/vendors~main.js"
     },
     {
-      "id": "./node_modules/path-browserify/index.js",
-      "name": "./node_modules/path-browserify/index.js",
+      "id": "./node_modules/popper.js/dist/esm/popper.js",
+      "name": "./node_modules/popper.js/dist/esm/popper.js",
       "file": "vendors~main.css.map",
       "publicPath": "/vendors~main.css.map"
     },
     {
-      "id": "./node_modules/path-browserify/index.js",
-      "name": "./node_modules/path-browserify/index.js",
+      "id": "./node_modules/popper.js/dist/esm/popper.js",
+      "name": "./node_modules/popper.js/dist/esm/popper.js",
       "file": "vendors~main.js.map",
       "publicPath": "/vendors~main.js.map"
     }
@@ -1371,32 +1417,6 @@
     {
       "id": "./node_modules/prepend-http/index.js",
       "name": "./node_modules/prepend-http/index.js",
-      "file": "vendors~main.js.map",
-      "publicPath": "/vendors~main.js.map"
-    }
-  ],
-  "./../process/browser.js": [
-    {
-      "id": "./node_modules/process/browser.js",
-      "name": "./node_modules/process/browser.js",
-      "file": "vendors~main.css",
-      "publicPath": "/vendors~main.css"
-    },
-    {
-      "id": "./node_modules/process/browser.js",
-      "name": "./node_modules/process/browser.js",
-      "file": "vendors~main.js",
-      "publicPath": "/vendors~main.js"
-    },
-    {
-      "id": "./node_modules/process/browser.js",
-      "name": "./node_modules/process/browser.js",
-      "file": "vendors~main.css.map",
-      "publicPath": "/vendors~main.css.map"
-    },
-    {
-      "id": "./node_modules/process/browser.js",
-      "name": "./node_modules/process/browser.js",
       "file": "vendors~main.js.map",
       "publicPath": "/vendors~main.js.map"
     }
@@ -1895,162 +1915,6 @@
       "publicPath": "/vendors~main.js.map"
     }
   ],
-  "./helpers": [
-    {
-      "id": "./node_modules/react-universal-component/dist/helpers.js",
-      "name": "./node_modules/react-universal-component/dist/helpers.js",
-      "file": "vendors~main.css",
-      "publicPath": "/vendors~main.css"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/helpers.js",
-      "name": "./node_modules/react-universal-component/dist/helpers.js",
-      "file": "vendors~main.js",
-      "publicPath": "/vendors~main.js"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/helpers.js",
-      "name": "./node_modules/react-universal-component/dist/helpers.js",
-      "file": "vendors~main.css.map",
-      "publicPath": "/vendors~main.css.map"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/helpers.js",
-      "name": "./node_modules/react-universal-component/dist/helpers.js",
-      "file": "vendors~main.js.map",
-      "publicPath": "/vendors~main.js.map"
-    }
-  ],
-  "react-universal-component": [
-    {
-      "id": "./node_modules/react-universal-component/dist/index.js",
-      "name": "./node_modules/react-universal-component/dist/index.js",
-      "file": "vendors~main.css",
-      "publicPath": "/vendors~main.css"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/index.js",
-      "name": "./node_modules/react-universal-component/dist/index.js",
-      "file": "vendors~main.js",
-      "publicPath": "/vendors~main.js"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/index.js",
-      "name": "./node_modules/react-universal-component/dist/index.js",
-      "file": "vendors~main.css.map",
-      "publicPath": "/vendors~main.css.map"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/index.js",
-      "name": "./node_modules/react-universal-component/dist/index.js",
-      "file": "vendors~main.js.map",
-      "publicPath": "/vendors~main.js.map"
-    }
-  ],
-  "./report-chunks": [
-    {
-      "id": "./node_modules/react-universal-component/dist/report-chunks.js",
-      "name": "./node_modules/react-universal-component/dist/report-chunks.js",
-      "file": "vendors~main.css",
-      "publicPath": "/vendors~main.css"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/report-chunks.js",
-      "name": "./node_modules/react-universal-component/dist/report-chunks.js",
-      "file": "vendors~main.js",
-      "publicPath": "/vendors~main.js"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/report-chunks.js",
-      "name": "./node_modules/react-universal-component/dist/report-chunks.js",
-      "file": "vendors~main.css.map",
-      "publicPath": "/vendors~main.css.map"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/report-chunks.js",
-      "name": "./node_modules/react-universal-component/dist/report-chunks.js",
-      "file": "vendors~main.js.map",
-      "publicPath": "/vendors~main.js.map"
-    }
-  ],
-  "./requireById": [
-    {
-      "id": "./node_modules/react-universal-component/dist/requireById/index.js",
-      "name": "./node_modules/react-universal-component/dist/requireById/index.js",
-      "file": "vendors~main.css",
-      "publicPath": "/vendors~main.css"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/requireById/index.js",
-      "name": "./node_modules/react-universal-component/dist/requireById/index.js",
-      "file": "vendors~main.js",
-      "publicPath": "/vendors~main.js"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/requireById/index.js",
-      "name": "./node_modules/react-universal-component/dist/requireById/index.js",
-      "file": "vendors~main.css.map",
-      "publicPath": "/vendors~main.css.map"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/requireById/index.js",
-      "name": "./node_modules/react-universal-component/dist/requireById/index.js",
-      "file": "vendors~main.js.map",
-      "publicPath": "/vendors~main.js.map"
-    }
-  ],
-  "./requireUniversalModule": [
-    {
-      "id": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
-      "name": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
-      "file": "vendors~main.css",
-      "publicPath": "/vendors~main.css"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
-      "name": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
-      "file": "vendors~main.js",
-      "publicPath": "/vendors~main.js"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
-      "name": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
-      "file": "vendors~main.css.map",
-      "publicPath": "/vendors~main.css.map"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
-      "name": "./node_modules/react-universal-component/dist/requireUniversalModule.js",
-      "file": "vendors~main.js.map",
-      "publicPath": "/vendors~main.js.map"
-    }
-  ],
-  "./utils": [
-    {
-      "id": "./node_modules/react-universal-component/dist/utils.js",
-      "name": "./node_modules/react-universal-component/dist/utils.js",
-      "file": "vendors~main.css",
-      "publicPath": "/vendors~main.css"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/utils.js",
-      "name": "./node_modules/react-universal-component/dist/utils.js",
-      "file": "vendors~main.js",
-      "publicPath": "/vendors~main.js"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/utils.js",
-      "name": "./node_modules/react-universal-component/dist/utils.js",
-      "file": "vendors~main.css.map",
-      "publicPath": "/vendors~main.css.map"
-    },
-    {
-      "id": "./node_modules/react-universal-component/dist/utils.js",
-      "name": "./node_modules/react-universal-component/dist/utils.js",
-      "file": "vendors~main.js.map",
-      "publicPath": "/vendors~main.js.map"
-    }
-  ],
   "./cjs/react.development.js": [
     {
       "id": "./node_modules/react/cjs/react.development.js",
@@ -2359,32 +2223,6 @@
     {
       "id": "./node_modules/url/util.js",
       "name": "./node_modules/url/util.js",
-      "file": "vendors~main.js.map",
-      "publicPath": "/vendors~main.js.map"
-    }
-  ],
-  "vm": [
-    {
-      "id": "./node_modules/vm-browserify/index.js",
-      "name": "./node_modules/vm-browserify/index.js",
-      "file": "vendors~main.css",
-      "publicPath": "/vendors~main.css"
-    },
-    {
-      "id": "./node_modules/vm-browserify/index.js",
-      "name": "./node_modules/vm-browserify/index.js",
-      "file": "vendors~main.js",
-      "publicPath": "/vendors~main.js"
-    },
-    {
-      "id": "./node_modules/vm-browserify/index.js",
-      "name": "./node_modules/vm-browserify/index.js",
-      "file": "vendors~main.css.map",
-      "publicPath": "/vendors~main.css.map"
-    },
-    {
-      "id": "./node_modules/vm-browserify/index.js",
-      "name": "./node_modules/vm-browserify/index.js",
       "file": "vendors~main.js.map",
       "publicPath": "/vendors~main.js.map"
     }

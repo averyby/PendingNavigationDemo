@@ -1,5 +1,6 @@
 require('@babel/register');
-
+import './index.scss';
+import 'bootstrap';
 // 为了支持 index.html 模板改了之后浏览器能够自动刷新，需要在 js 里显式地 require index.html。
 // 但是对于处理 index.html 中的 img 的 src 地址来说，即使没有在 js 里 require index.html，img 的
 // src 地址仍然会得到 html-loader 的处理。这说明 html-webpack-plugin 生成的 html 会被 html-loader

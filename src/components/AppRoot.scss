@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/bootstrap";
+
+.app-root-container {
+  color: black;
+  border: 1px solid green;
+
+  .row {
+    & > * {
+      &:nth-child(2n) {
+        //background: green;
+        border: 1px solid red;
+      }
+
+      &:nth-child(2n + 1) {
+        //background: blue;
+        border: 1px solid blue;
+      }
+    }
+  }
+}
+

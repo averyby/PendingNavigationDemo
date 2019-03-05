@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractCSSChunks = require('extract-css-chunks-webpack-plugin');
+const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
 const styleLoaders = require('./style-loaders-dev');
 
@@ -124,6 +125,9 @@ const devClientConfig = {
     new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(['dist', 'build'], {
       root: path.join(__dirname, '..')
+    }),
+    new OpenBrowserPlugin({
+      url: 'http://localhost:8080'
     })
   ]
 };
