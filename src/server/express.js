@@ -66,6 +66,13 @@ if (isDev) {
 
   webpackDevMiddleware.waitUntilValid(startListening);
 } else {
+  server.use('/api', proxy({
+    target: 'http://192.168.1.174',
+    changeOrigin: true,
+    headers: {
+      "Connection": "keep-alive"
+    }
+  }));
   // 生产环境下，使用 webpack 函数启动打包过程，生成客户端和服务端的资源包
   webpack([configProdClient]).run((err, stats) => {
     if (APPCONFIG.type === 'SSR') {
