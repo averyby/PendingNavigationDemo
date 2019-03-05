@@ -643,6 +643,656 @@
       "publicPath": "/vendors~main.js.map"
     }
   ],
+  "axios": [
+    {
+      "id": "./node_modules/axios/index.js",
+      "name": "./node_modules/axios/index.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/index.js",
+      "name": "./node_modules/axios/index.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/index.js",
+      "name": "./node_modules/axios/index.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/index.js",
+      "name": "./node_modules/axios/index.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./adapters/xhr": [
+    {
+      "id": "./node_modules/axios/lib/adapters/xhr.js",
+      "name": "./node_modules/axios/lib/adapters/xhr.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/adapters/xhr.js",
+      "name": "./node_modules/axios/lib/adapters/xhr.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/adapters/xhr.js",
+      "name": "./node_modules/axios/lib/adapters/xhr.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/adapters/xhr.js",
+      "name": "./node_modules/axios/lib/adapters/xhr.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./lib/axios": [
+    {
+      "id": "./node_modules/axios/lib/axios.js",
+      "name": "./node_modules/axios/lib/axios.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/axios.js",
+      "name": "./node_modules/axios/lib/axios.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/axios.js",
+      "name": "./node_modules/axios/lib/axios.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/axios.js",
+      "name": "./node_modules/axios/lib/axios.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./cancel/Cancel": [
+    {
+      "id": "./node_modules/axios/lib/cancel/Cancel.js",
+      "name": "./node_modules/axios/lib/cancel/Cancel.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/cancel/Cancel.js",
+      "name": "./node_modules/axios/lib/cancel/Cancel.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/cancel/Cancel.js",
+      "name": "./node_modules/axios/lib/cancel/Cancel.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/cancel/Cancel.js",
+      "name": "./node_modules/axios/lib/cancel/Cancel.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./cancel/CancelToken": [
+    {
+      "id": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "name": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "name": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "name": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "name": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./cancel/isCancel": [
+    {
+      "id": "./node_modules/axios/lib/cancel/isCancel.js",
+      "name": "./node_modules/axios/lib/cancel/isCancel.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/cancel/isCancel.js",
+      "name": "./node_modules/axios/lib/cancel/isCancel.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/cancel/isCancel.js",
+      "name": "./node_modules/axios/lib/cancel/isCancel.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/cancel/isCancel.js",
+      "name": "./node_modules/axios/lib/cancel/isCancel.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./core/Axios": [
+    {
+      "id": "./node_modules/axios/lib/core/Axios.js",
+      "name": "./node_modules/axios/lib/core/Axios.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/Axios.js",
+      "name": "./node_modules/axios/lib/core/Axios.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/Axios.js",
+      "name": "./node_modules/axios/lib/core/Axios.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/Axios.js",
+      "name": "./node_modules/axios/lib/core/Axios.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./InterceptorManager": [
+    {
+      "id": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "name": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "name": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "name": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "name": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "../core/createError": [
+    {
+      "id": "./node_modules/axios/lib/core/createError.js",
+      "name": "./node_modules/axios/lib/core/createError.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/createError.js",
+      "name": "./node_modules/axios/lib/core/createError.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/createError.js",
+      "name": "./node_modules/axios/lib/core/createError.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/createError.js",
+      "name": "./node_modules/axios/lib/core/createError.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./dispatchRequest": [
+    {
+      "id": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "name": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "name": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "name": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "name": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./enhanceError": [
+    {
+      "id": "./node_modules/axios/lib/core/enhanceError.js",
+      "name": "./node_modules/axios/lib/core/enhanceError.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/enhanceError.js",
+      "name": "./node_modules/axios/lib/core/enhanceError.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/enhanceError.js",
+      "name": "./node_modules/axios/lib/core/enhanceError.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/enhanceError.js",
+      "name": "./node_modules/axios/lib/core/enhanceError.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./../core/settle": [
+    {
+      "id": "./node_modules/axios/lib/core/settle.js",
+      "name": "./node_modules/axios/lib/core/settle.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/settle.js",
+      "name": "./node_modules/axios/lib/core/settle.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/settle.js",
+      "name": "./node_modules/axios/lib/core/settle.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/settle.js",
+      "name": "./node_modules/axios/lib/core/settle.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./transformData": [
+    {
+      "id": "./node_modules/axios/lib/core/transformData.js",
+      "name": "./node_modules/axios/lib/core/transformData.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/transformData.js",
+      "name": "./node_modules/axios/lib/core/transformData.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/transformData.js",
+      "name": "./node_modules/axios/lib/core/transformData.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/core/transformData.js",
+      "name": "./node_modules/axios/lib/core/transformData.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./defaults": [
+    {
+      "id": "./node_modules/axios/lib/defaults.js",
+      "name": "./node_modules/axios/lib/defaults.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/defaults.js",
+      "name": "./node_modules/axios/lib/defaults.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/defaults.js",
+      "name": "./node_modules/axios/lib/defaults.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/defaults.js",
+      "name": "./node_modules/axios/lib/defaults.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./helpers/bind": [
+    {
+      "id": "./node_modules/axios/lib/helpers/bind.js",
+      "name": "./node_modules/axios/lib/helpers/bind.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/bind.js",
+      "name": "./node_modules/axios/lib/helpers/bind.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/bind.js",
+      "name": "./node_modules/axios/lib/helpers/bind.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/bind.js",
+      "name": "./node_modules/axios/lib/helpers/bind.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./../helpers/btoa": [
+    {
+      "id": "./node_modules/axios/lib/helpers/btoa.js",
+      "name": "./node_modules/axios/lib/helpers/btoa.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/btoa.js",
+      "name": "./node_modules/axios/lib/helpers/btoa.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/btoa.js",
+      "name": "./node_modules/axios/lib/helpers/btoa.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/btoa.js",
+      "name": "./node_modules/axios/lib/helpers/btoa.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./../helpers/buildURL": [
+    {
+      "id": "./node_modules/axios/lib/helpers/buildURL.js",
+      "name": "./node_modules/axios/lib/helpers/buildURL.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/buildURL.js",
+      "name": "./node_modules/axios/lib/helpers/buildURL.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/buildURL.js",
+      "name": "./node_modules/axios/lib/helpers/buildURL.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/buildURL.js",
+      "name": "./node_modules/axios/lib/helpers/buildURL.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./../helpers/combineURLs": [
+    {
+      "id": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "name": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "name": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "name": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "name": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./../helpers/cookies": [
+    {
+      "id": "./node_modules/axios/lib/helpers/cookies.js",
+      "name": "./node_modules/axios/lib/helpers/cookies.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/cookies.js",
+      "name": "./node_modules/axios/lib/helpers/cookies.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/cookies.js",
+      "name": "./node_modules/axios/lib/helpers/cookies.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/cookies.js",
+      "name": "./node_modules/axios/lib/helpers/cookies.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./../helpers/isAbsoluteURL": [
+    {
+      "id": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "name": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "name": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "name": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "name": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./../helpers/isURLSameOrigin": [
+    {
+      "id": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "name": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "name": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "name": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "name": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./helpers/normalizeHeaderName": [
+    {
+      "id": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "name": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "name": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "name": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "name": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./../helpers/parseHeaders": [
+    {
+      "id": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "name": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "name": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "name": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "name": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./helpers/spread": [
+    {
+      "id": "./node_modules/axios/lib/helpers/spread.js",
+      "name": "./node_modules/axios/lib/helpers/spread.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/spread.js",
+      "name": "./node_modules/axios/lib/helpers/spread.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/spread.js",
+      "name": "./node_modules/axios/lib/helpers/spread.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/helpers/spread.js",
+      "name": "./node_modules/axios/lib/helpers/spread.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./utils": [
+    {
+      "id": "./node_modules/axios/lib/utils.js",
+      "name": "./node_modules/axios/lib/utils.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/axios/lib/utils.js",
+      "name": "./node_modules/axios/lib/utils.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/axios/lib/utils.js",
+      "name": "./node_modules/axios/lib/utils.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/axios/lib/utils.js",
+      "name": "./node_modules/axios/lib/utils.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
   "bootstrap": [
     {
       "id": "./node_modules/bootstrap/dist/js/bootstrap.js",
@@ -949,6 +1599,32 @@
     {
       "id": "./node_modules/html-entities/lib/xml-entities.js",
       "name": "./node_modules/html-entities/lib/xml-entities.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "is-buffer": [
+    {
+      "id": "./node_modules/is-buffer/index.js",
+      "name": "./node_modules/is-buffer/index.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/is-buffer/index.js",
+      "name": "./node_modules/is-buffer/index.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/is-buffer/index.js",
+      "name": "./node_modules/is-buffer/index.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/is-buffer/index.js",
+      "name": "./node_modules/is-buffer/index.js",
       "file": "vendors~main.js.map",
       "publicPath": "/vendors~main.js.map"
     }
@@ -1417,6 +2093,32 @@
     {
       "id": "./node_modules/prepend-http/index.js",
       "name": "./node_modules/prepend-http/index.js",
+      "file": "vendors~main.js.map",
+      "publicPath": "/vendors~main.js.map"
+    }
+  ],
+  "./../../process/browser.js": [
+    {
+      "id": "./node_modules/process/browser.js",
+      "name": "./node_modules/process/browser.js",
+      "file": "vendors~main.css",
+      "publicPath": "/vendors~main.css"
+    },
+    {
+      "id": "./node_modules/process/browser.js",
+      "name": "./node_modules/process/browser.js",
+      "file": "vendors~main.js",
+      "publicPath": "/vendors~main.js"
+    },
+    {
+      "id": "./node_modules/process/browser.js",
+      "name": "./node_modules/process/browser.js",
+      "file": "vendors~main.css.map",
+      "publicPath": "/vendors~main.css.map"
+    },
+    {
+      "id": "./node_modules/process/browser.js",
+      "name": "./node_modules/process/browser.js",
       "file": "vendors~main.js.map",
       "publicPath": "/vendors~main.js.map"
     }

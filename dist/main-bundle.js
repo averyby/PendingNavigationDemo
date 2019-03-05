@@ -112,7 +112,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "024b81878f0de89f4643";
+/******/ 	var hotCurrentHash = "9b4524055b03b67b872c";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -954,10 +954,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_hot_loader_root__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-hot-loader/root */ "./node_modules/react-hot-loader/root.js");
-/* harmony import */ var react_hot_loader_root__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _AppRoot_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./AppRoot.scss */ "./src/components/AppRoot.scss");
-/* harmony import */ var _AppRoot_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_AppRoot_scss__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_hot_loader_root__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-hot-loader/root */ "./node_modules/react-hot-loader/root.js");
+/* harmony import */ var react_hot_loader_root__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _AppRoot_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./AppRoot.scss */ "./src/components/AppRoot.scss");
+/* harmony import */ var _AppRoot_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_AppRoot_scss__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
@@ -968,6 +970,7 @@ __webpack_require__.r(__webpack_exports__);
   var enterModule = (typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal : __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js")).enterModule;
   enterModule && enterModule(module);
 })();
+
 
 
 
@@ -985,6 +988,30 @@ function (_React$Component) {
   }
 
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(AppRoot, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      axios__WEBPACK_IMPORTED_MODULE_6___default()({
+        method: 'POST',
+        url: '/api/ims/profile/position',
+        data: {
+          "header": {},
+          "request": {
+            "c": "",
+            "m": "",
+            "p": {
+              "jd_id": 123,
+              "job_func": "史诗级PHP开发",
+              "plc_id": 1000105,
+              "work_dura": 0,
+              "session": "eyJmcm9tIjoiQSIsInNyY19pZCI6MSwibWFuYWdlcl9pZCI6MCwidXNlcl9pZCI6MCwiZXhwaXJlIjoxNTUxNzc0MDAwLCJzaWduYXR1cmUiOiI4NTY1ZDg5MjBjMWFhNmQ3NmQ3ZTExMmQxNjEyOGFhOTBkNTJhN2MzIn0="
+            }
+          }
+        }
+      }).then(function (res) {
+        console.log('res', res);
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -1009,7 +1036,7 @@ function (_React$Component) {
   return AppRoot;
 }(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
 
-var _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_6__["hot"])(AppRoot);
+var _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_7__["hot"])(AppRoot);
 
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
@@ -1044,14 +1071,14 @@ var _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_6__["hot"])
 
 // extracted by extract-css-chunks-webpack-plugin
     if(true) {
-      // 1551750121577
+      // 1551760854536
       var cssReload = __webpack_require__(/*! ../../node_modules/css-hot-loader/hotModuleReplacement.js */ "./node_modules/css-hot-loader/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
     }
   
     if(true) {
-      // 1551750121577
+      // 1551760854536
       var cssReload = __webpack_require__(/*! ../../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js */ "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -1069,14 +1096,14 @@ var _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_6__["hot"])
 
 // extracted by extract-css-chunks-webpack-plugin
     if(true) {
-      // 1551750117071
+      // 1551760851171
       var cssReload = __webpack_require__(/*! ../node_modules/css-hot-loader/hotModuleReplacement.js */ "./node_modules/css-hot-loader/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
     }
   
     if(true) {
-      // 1551750117071
+      // 1551760851171
       var cssReload = __webpack_require__(/*! ../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js */ "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;

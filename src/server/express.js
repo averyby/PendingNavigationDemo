@@ -1,4 +1,5 @@
 import express from 'express';
+import proxy from 'http-proxy-middleware';
 import React from 'react';
 import Loadable from 'react-loadable';
 import webpack from 'webpack';
@@ -50,8 +51,15 @@ if (isDev) {
 
   server.use(webpackDevMiddleware);
   server.use(webpackHotMiddleware);
+  server.use('/api', proxy({
+    target: 'http://192.168.1.174',
+    changeOrigin: true,
+    headers: {
+      "Connection": "keep-alive"
+    }
+  }));
   if (APPCONFIG.type === 'SSR') {
-    server.use(webpackHotServerMiddleware(compiler)); // 将会 serve 服务端渲染的 html
+    server.use(webpackHotServerMiddleware(compiler)) // 将会 serve 服务端渲染的 html
   }
 
   console.log('Middleware enabled.');
