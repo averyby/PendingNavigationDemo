@@ -1,1 +1,1 @@
-web: npm run prod:spa
+web: npm run prod
