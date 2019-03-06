@@ -234,15 +234,40 @@ function (_React$Component) {
       }
     });
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6___default()(_this), "getContent", function () {
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6___default()(_this), "getContent", function (showType) {
       var _this$state = _this.state,
           error = _this$state.error,
-          position = _this$state.position;
-      var data = position;
+          position = _this$state.position,
+          cv = _this$state.cv,
+          talent = _this$state.talent,
+          jd = _this$state.jd;
       if (error) return '加载出错，请稍后重试';
-      return data ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_json_tree__WEBPACK_IMPORTED_MODULE_14___default.a, {
-        data: data
-      }) : 'Loading...';
+
+      if (showType === 'cv') {
+        return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+          className: "cv"
+        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h3", null, "CV\u6570\u636E\uFF1A"), cv ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_json_tree__WEBPACK_IMPORTED_MODULE_14___default.a, {
+          data: cv
+        }) : 'Loading...'), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+          className: "talent"
+        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h3", null, "\u4EBA\u624D\u753B\u50CF\u6570\u636E\uFF1A"), talent ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_json_tree__WEBPACK_IMPORTED_MODULE_14___default.a, {
+          data: talent
+        }) : 'Loading...'));
+      }
+
+      if (showType === 'jd') {
+        return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+          className: "cv"
+        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h3", null, "JD\u6570\u636E\uFF1A"), jd ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_json_tree__WEBPACK_IMPORTED_MODULE_14___default.a, {
+          data: jd
+        }) : 'Loading...'), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
+          className: "talent"
+        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h3", null, "\u5C97\u4F4D\u753B\u50CF\u6570\u636E\uFF1A"), position ? react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_json_tree__WEBPACK_IMPORTED_MODULE_14___default.a, {
+          data: position
+        }) : 'Loading...'));
+      }
+
+      return 'url 参数错误：无效的 showType';
     });
 
     _this.state = {
@@ -287,8 +312,8 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var data = this.state.position;
-      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, this.getContent(), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_toastify__WEBPACK_IMPORTED_MODULE_11__["ToastContainer"], null));
+      var parsed = query_string__WEBPACK_IMPORTED_MODULE_15___default.a.parse(location.search);
+      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, this.getContent(parsed.showType), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_toastify__WEBPACK_IMPORTED_MODULE_11__["ToastContainer"], null));
     }
   }, {
     key: "__reactstandin__regenerateByEval",
@@ -327,7 +352,63 @@ var _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_13__["hot"]
 })();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
-/***/ })
+/***/ }),
+
+/***/ "./src/components/AppRoot.scss":
+/*!*************************************!*\
+  !*** ./src/components/AppRoot.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by extract-css-chunks-webpack-plugin
+    if(true) {
+      // 1551837114009
+      var cssReload = __webpack_require__(/*! ../../node_modules/css-hot-loader/hotModuleReplacement.js */ "./node_modules/css-hot-loader/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
+      module.hot.dispose(cssReload);
+      module.hot.accept(undefined, cssReload);;
+    }
+  
+    if(true) {
+      // 1551837114009
+      var cssReload = __webpack_require__(/*! ../../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js */ "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
+      module.hot.dispose(cssReload);
+      module.hot.accept(undefined, cssReload);;
+    }
+  
+
+/***/ }),
+
+/***/ "./src/index.scss":
+/*!************************!*\
+  !*** ./src/index.scss ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by extract-css-chunks-webpack-plugin
+    if(true) {
+      // 1551837109721
+      var cssReload = __webpack_require__(/*! ../node_modules/css-hot-loader/hotModuleReplacement.js */ "./node_modules/css-hot-loader/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
+      module.hot.dispose(cssReload);
+      module.hot.accept(undefined, cssReload);;
+    }
+  
+    if(true) {
+      // 1551837109722
+      var cssReload = __webpack_require__(/*! ../node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js */ "./node_modules/extract-css-chunks-webpack-plugin/dist/hotModuleReplacement.js")(module.i, {"fileMap":"{fileName}"});
+      module.hot.dispose(cssReload);
+      module.hot.accept(undefined, cssReload);;
+    }
+  
+
+/***/ }),
+
+/***/ "?bfc7":
+false,
+
+/***/ "?e319":
+false
 
 })
-//# sourceMappingURL=main.b47c503ef5af302f13b2.hot-update.js.map
+//# sourceMappingURL=main.ffdcb7029ed66c3ca009.hot-update.js.map

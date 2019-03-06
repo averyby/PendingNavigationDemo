@@ -23,7 +23,6 @@ class AppRoot extends React.Component {
   }
 
   componentDidMount() {
-    const type = '';
     const parsed = queryString.parse(location.search);
     console.log('query string parsed', parsed);
     const { session, jd_id, job_func, plc_id, work_dura, cv_id } = parsed;
@@ -137,21 +136,48 @@ class AppRoot extends React.Component {
     }
   };
 
-  getContent = () => {
-    const { error, position } = this.state;
-    const data = position;
+  getContent = (showType) => {
+    const { error, position, cv, talent, jd } = this.state;
 
     if (error) return '加载出错，请稍后重试';
-    return data ? <JSONTree data={data} /> : 'Loading...';
+    if (showType === 'cv') {
+      return (
+        <div>
+          <div className="cv">
+            <h3>CV数据：</h3>
+            {cv ? <JSONTree data={cv} /> : 'Loading...'}
+          </div>
+          <div className="talent">
+            <h3>人才画像数据：</h3>
+            {talent ? <JSONTree data={talent} /> : 'Loading...'}
+          </div>
+        </div>
+      )
+    }
+    if (showType === 'jd') {
+      return (
+        <div>
+          <div className="cv">
+            <h3>JD数据：</h3>
+            {jd ? <JSONTree data={jd} /> : 'Loading...'}
+          </div>
+          <div className="talent">
+            <h3>岗位画像数据：</h3>
+            {position ? <JSONTree data={position} /> : 'Loading...'}
+          </div>
+        </div>
+      );
+    }
+    return 'url 参数错误：无效的 showType';
   };
 
   render() {
-    const data = this.state.position;
+    const parsed = queryString.parse(location.search);
 
     return (
       <div>
         {/*<ReactJson src={this.state.jd} />*/}
-        {this.getContent()}
+        {this.getContent(parsed.showType)}
         <ToastContainer />
       </div>
     );
