@@ -1,3 +1,5 @@
 node_modules
 .idea/
 appConfig.json
+dist
+build
