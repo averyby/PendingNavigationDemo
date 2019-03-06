@@ -41,8 +41,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_json_tree__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react_json_tree__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! query-string */ "./node_modules/query-string/index.js");
 /* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _AppRoot_scss__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./AppRoot.scss */ "./src/components/AppRoot.scss");
-/* harmony import */ var _AppRoot_scss__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_AppRoot_scss__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _cv_json__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./cv.json */ "./src/components/cv.json");
+var _cv_json__WEBPACK_IMPORTED_MODULE_16___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./cv.json */ "./src/components/cv.json", 1);
+/* harmony import */ var _jd_json__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./jd.json */ "./src/components/jd.json");
+var _jd_json__WEBPACK_IMPORTED_MODULE_17___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./jd.json */ "./src/components/jd.json", 1);
+/* harmony import */ var _AppRoot_scss__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./AppRoot.scss */ "./src/components/AppRoot.scss");
+/* harmony import */ var _AppRoot_scss__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_AppRoot_scss__WEBPACK_IMPORTED_MODULE_18__);
 
 
 
@@ -67,7 +71,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 var params = {};
+var mock = true;
 
 var AppRoot =
 /*#__PURE__*/
@@ -101,7 +108,22 @@ function (_React$Component) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              _context.next = 2;
+              if (!mock) {
+                _context.next = 7;
+                break;
+              }
+
+              console.log('mocking');
+              _context.next = 4;
+              return Promise.resolve(_jd_json__WEBPACK_IMPORTED_MODULE_17__);
+
+            case 4:
+              jdRes = _context.sent;
+              _context.next = 10;
+              break;
+
+            case 7:
+              _context.next = 9;
               return axios__WEBPACK_IMPORTED_MODULE_10___default()({
                 method: 'POST',
                 url: '/api/ims/profile/position',
@@ -121,9 +143,10 @@ function (_React$Component) {
                 }
               });
 
-            case 2:
+            case 9:
               jdRes = _context.sent;
 
+            case 10:
               _this.responseValidate(jdRes);
 
               jdResults = jdRes.data.response.results;
@@ -138,7 +161,7 @@ function (_React$Component) {
                 position: jdResults.position_profile
               });
 
-            case 9:
+            case 16:
             case "end":
               return _context.stop();
           }
@@ -156,7 +179,21 @@ function (_React$Component) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
-              _context2.next = 2;
+              if (!mock) {
+                _context2.next = 6;
+                break;
+              }
+
+              _context2.next = 3;
+              return Promise.resolve(_cv_json__WEBPACK_IMPORTED_MODULE_16__);
+
+            case 3:
+              cvRes = _context2.sent;
+              _context2.next = 9;
+              break;
+
+            case 6:
+              _context2.next = 8;
               return axios__WEBPACK_IMPORTED_MODULE_10___default()({
                 method: 'POST',
                 url: '/api/ims/profile/talent',
@@ -173,9 +210,10 @@ function (_React$Component) {
                 }
               });
 
-            case 2:
+            case 8:
               cvRes = _context2.sent;
 
+            case 9:
               _this.responseValidate(cvRes);
 
               cvResults = cvRes.data.response.results;
@@ -190,7 +228,7 @@ function (_React$Component) {
                 talent: cvResults.talent_profile
               });
 
-            case 9:
+            case 15:
             case "end":
               return _context2.stop();
           }
@@ -199,6 +237,7 @@ function (_React$Component) {
     })));
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6___default()(_this), "responseValidate", function (res) {
+      console.log('res', res);
       var serverResponse = res.data;
 
       if (!serverResponse) {
@@ -283,7 +322,7 @@ function (_React$Component) {
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(AppRoot, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var parsed = query_string__WEBPACK_IMPORTED_MODULE_15___default.a.parse(location.search);
+      var parsed = query_string__WEBPACK_IMPORTED_MODULE_15___default.a.parse(window.location.search);
       console.log('query string parsed', parsed);
       var session = parsed.session,
           jd_id = parsed.jd_id,
@@ -311,7 +350,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var parsed = query_string__WEBPACK_IMPORTED_MODULE_15___default.a.parse(location.search);
+      var parsed = query_string__WEBPACK_IMPORTED_MODULE_15___default.a.parse(window.location.search);
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, this.getContent(parsed.showType), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_toastify__WEBPACK_IMPORTED_MODULE_11__["ToastContainer"], null));
     }
   }, {
@@ -339,6 +378,7 @@ var _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_13__["hot"]
   }
 
   reactHotLoader.register(params, "params", "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js");
+  reactHotLoader.register(mock, "mock", "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js");
   reactHotLoader.register(AppRoot, "AppRoot", "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js");
   reactHotLoader.register(_default, "default", "/Users/vimer/IdeaProjects/udemy-courses/webpack-course/src/components/AppRoot.js");
 })();
@@ -354,4 +394,4 @@ var _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_13__["hot"]
 /***/ })
 
 })
-//# sourceMappingURL=main.390f136c3fde102a2320.hot-update.js.map
+//# sourceMappingURL=main.6ce78de7c4cf0974f695.hot-update.js.map

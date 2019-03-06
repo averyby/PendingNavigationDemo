@@ -6,9 +6,12 @@ import { hot } from 'react-hot-loader/root';
 // import ReactJson from 'react-json-view';
 import JSONTree from 'react-json-tree';
 import queryString from 'query-string';
+import mockCvData from './cv.json';
+import mockJdData from './jd.json';
 import './AppRoot.scss';
 
 let params = {};
+const mock = true;
 
 class AppRoot extends React.Component {
   constructor(props) {
@@ -23,7 +26,7 @@ class AppRoot extends React.Component {
   }
 
   componentDidMount() {
-    const parsed = queryString.parse(location.search);
+    const parsed = queryString.parse(window.location.search);
     console.log('query string parsed', parsed);
     const { session, jd_id, job_func, plc_id, work_dura, cv_id } = parsed;
     params = parsed;
@@ -52,29 +55,37 @@ class AppRoot extends React.Component {
   };
 
   getJD = async () => {
-    const jdRes = await axios({
-      method: 'POST',
-      url: '/api/ims/profile/position',
-      data: {
-        "header": {},
-        "request": {
-          "c": "",
-          "m": "",
-          "p": {
-            "jd_id": params.jd_id,
-            "job_func": params.job_func,
-            "plc_id": params.plc_id,
-            "work_dura": params.work_dura,
-            "session": params.session
+    let jdRes;
+
+    if (mock) {
+      console.log('mocking');
+      jdRes = await Promise.resolve(mockJdData);
+    } else {
+      jdRes= await axios({
+        method: 'POST',
+        url: '/api/ims/profile/position',
+        data: {
+          "header": {},
+          "request": {
+            "c": "",
+            "m": "",
+            "p": {
+              "jd_id": params.jd_id,
+              "job_func": params.job_func,
+              "plc_id": params.plc_id,
+              "work_dura": params.work_dura,
+              "session": params.session
+            }
           }
         }
-      }
-    });
+      });
+    }
 
     this.responseValidate(jdRes);
 
     const jdResults = jdRes.data.response.results;
 
+    console.log('jd results', jdResults);
     this.informOutside(jdResults);
 
     console.log('JD 数据', jdResults.jd);
@@ -87,21 +98,27 @@ class AppRoot extends React.Component {
   };
 
   getCV = async () => {
-    const cvRes = await axios({
-      method: 'POST',
-      url: '/api/ims/profile/talent',
-      data: {
-        "header": {},
-        "request": {
-          "c": "",
-          "m": "",
-          "p": {
-            "cv_id": params.cv_id,
-            "session": params.session
+    let cvRes;
+
+    if (mock) {
+      cvRes = await Promise.resolve(mockCvData);
+    } else {
+      cvRes = await axios({
+        method: 'POST',
+        url: '/api/ims/profile/talent',
+        data: {
+          "header": {},
+          "request": {
+            "c": "",
+            "m": "",
+            "p": {
+              "cv_id": params.cv_id,
+              "session": params.session
+            }
           }
         }
-      }
-    });
+      });
+    }
     this.responseValidate(cvRes);
     const cvResults = cvRes.data.response.results;
 
@@ -116,6 +133,7 @@ class AppRoot extends React.Component {
   };
 
   responseValidate = (res) => {
+    console.log('res', res);
     const serverResponse = res.data;
     if (!serverResponse) {
       this.setState({ error: true });
@@ -172,7 +190,7 @@ class AppRoot extends React.Component {
   };
 
   render() {
-    const parsed = queryString.parse(location.search);
+    const parsed = queryString.parse(window.location.search);
 
     return (
       <div>
