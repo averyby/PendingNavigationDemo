@@ -27,19 +27,19 @@ class AppRoot extends React.Component {
   componentDidMount() {
     const parsed = queryString.parse(window.location.search);
     console.log('query string parsed', parsed);
-    const { session, jd_id, job_func, plc_id, work_dura, cv_id } = parsed;
+    const { session, jd_id, job_func, plc_id, work_dura, cv_id, showType } = parsed;
     params = parsed;
 
-    if (jd_id) {
+    if (showType === 'jd') {
       this.getJD();
       return;
     }
-    if (cv_id) {
+    if (showType === 'cv') {
       this.getCV();
       return;
     }
     this.setState({ error: true });
-    toast('未收到 cv_id 或 jd_id');
+    toast('url 参数错误：无效的 showType');
   }
 
   informOutside = (data) => {

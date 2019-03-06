@@ -16,7 +16,6 @@ const prodClientConfig = {
   name: "client",
   entry: {
     main: [
-      "font-awesome/scss/font-awesome.scss",
       './src/clientEntry.js'
     ],
   },

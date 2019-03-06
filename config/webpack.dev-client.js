@@ -14,7 +14,6 @@ const devClientConfig = {
     main: [
       '@babel/runtime/regenerator',
       'webpack-hot-middleware/client?reload=true',
-      "font-awesome/scss/font-awesome.scss",
       './src/clientEntry.js'
     ],
   },
