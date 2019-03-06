@@ -27,6 +27,7 @@ const startListening = () => {
   });
 };
 
+console.log('isDev', isDev);
 if (isDev) {
   // 开发环境下，使用 webpack 函数启动打包过程，生成客户端和服务端的资源包
   const compiler = webpack([configDevClient, configDevServer]);
