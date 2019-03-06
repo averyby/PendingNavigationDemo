@@ -10,5 +10,4 @@ Loadable.preloadReady().then(() => {
     <AppRoot />,
     document.getElementById('react-root')
   );
-
 });

@@ -34,45 +34,17 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          {
-            loader: 'css-loader'
-          }
-        ]
+        use: ['css-loader']
       },
       {
         test: /\.scss$/,
-        use: [
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'sass-loader'
-          }
-        ]
+        use: ['css-loader', 'sass-loader']
       }, {
         test: /\.styl$/,
-        use: [
-          {
-            loader: 'css-loader',
-          },
-          {
-            loader: "postcss-loader"
-          },
-          {
-            loader: 'stylus-loader'
-          }
-        ]
+        use: ['css-loader', "postcss-loader", 'stylus-loader']
       }, {
         test: /\.less$/,
-        use: [
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'less-loader'
-          }
-        ]
+        use: ['css-loader', 'less-loader']
       },
       {
         test: /\.html$/,

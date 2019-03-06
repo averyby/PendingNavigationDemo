@@ -1,4 +1,5 @@
 require('@babel/register');
+import 'bootstrap';
 import './index.scss';
 // 为了支持 index.html 模板改了之后浏览器能够自动刷新，需要在 js 里显式地 require index.html。
 // 但是对于处理 index.html 中的 img 的 src 地址来说，即使没有在 js 里 require index.html，img 的
