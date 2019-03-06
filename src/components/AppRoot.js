@@ -123,8 +123,8 @@ class AppRoot extends React.Component {
 
     this.informOutside(cvResults);
 
-    console.log('CV 数据', cvRes.cv);
-    console.log('人才画像数据', cvRes.talent_profile);
+    console.log('CV 数据', cvResults.cv);
+    console.log('人才画像数据', cvResults.talent_profile);
     this.setState({
       cv: cvResults.cv,
       talent: cvResults.talent_profile

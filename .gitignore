@@ -3,3 +3,4 @@ node_modules
 appConfig.json
 dist
 build
+react-loadable.json
