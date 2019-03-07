@@ -6,7 +6,7 @@ import configDevServer from "../../config/webpack.dev-server";
 
 export default ({
                   server,
-                  setUpProxyServer,
+                  setUpProxy,
                   startListening
                 }) => {
 
@@ -33,8 +33,8 @@ export default ({
 
   server.use(webpackDevMiddleware);
   server.use(webpackHotMiddleware);
-  if (typeof setUpProxyServer === 'function') {
-    setUpProxyServer();
+  if (typeof setUpProxy === 'function') {
+    setUpProxy();
   }
 
   if (APPCONFIG.type === 'SSR') {

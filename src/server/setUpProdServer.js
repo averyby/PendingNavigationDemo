@@ -5,10 +5,13 @@ import configProdServer from "../../config/webpack.prod-server";
 
 export default ({
                   server,
-                  setUpProxyServer,
+                  setUpProxy,
                   startListening
                 }) => {
 
+  if (typeof setUpProxy === 'function') {
+    setUpProxy();
+  }
   // 生产环境下，使用 webpack 函数启动打包过程，生成客户端和服务端的资源包
   webpack([configProdClient]).run((err, stats) => {
     if (APPCONFIG.type === 'SPA') {

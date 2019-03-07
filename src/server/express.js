@@ -6,9 +6,6 @@ import setUpProdServer from './setUpProdServer';
 
 const server = express();
 
-const isProd = process.env.NODE_ENV === "production";
-const isDev = !isProd;
-
 const startListening = () => {
   // heroku 会生成一个端口，如果在开发环境，我们使用 8080
   const PORT = process.env.PORT || 8080;
@@ -20,7 +17,9 @@ const startListening = () => {
   });
 };
 
-const setUpProxyServer = () => {
+let setUpProxy;
+
+setUpProxy = () => {
   server.use('/api', proxy({
     target: 'http://192.168.1.174',
     changeOrigin: true,
@@ -33,8 +32,11 @@ const setUpProxyServer = () => {
 // noinspection JSUnusedGlobalSymbols
 const buildingAssets = {
   server,
-  setUpProxyServer,
+  setUpProxy,
   startListening
 };
+
+const isProd = process.env.NODE_ENV === "production";
+const isDev = !isProd;
 
 isDev ? setUpDevServer(buildingAssets) : setUpProdServer(buildingAssets);
