@@ -1,5 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
+const glob = require('glob');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
@@ -11,6 +13,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
 const styleLoaders = require('./style-loaders-prod');
 const APPCONFIG = require('../appConfig.json');
+
+const PATHS = {
+  src: path.join(__dirname, '../src')
+};
 
 const prodClientConfig = {
   name: "client",
@@ -28,7 +34,15 @@ const prodClientConfig = {
   },
   optimization: {
     splitChunks: {
-      chunks: "all"
+      chunks: "all",
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true
+        }
+      }
     }
   },
   devtool: "source-map",
@@ -108,6 +122,9 @@ const prodClientConfig = {
     new MiniCSSExtractPlugin({
       filename: '[name].[contenthash].css',
       chunkFilename: '[name].[contenthash].css'
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,

@@ -13,7 +13,7 @@ module.exports = [
       {
         loader: 'postcss-loader',
         options: {
-          plugins: function() {
+          plugins: function () {
             return [
               require('precss'),
               require('autoprefixer')
@@ -35,7 +35,7 @@ module.exports = [
       {
         loader: 'postcss-loader',
         options: {
-          plugins: function() {
+          plugins: function () {
             return [
               require('precss'),
               require('autoprefixer')
@@ -64,7 +64,7 @@ module.exports = [
       {
         loader: 'postcss-loader',
         options: {
-          plugins: function() {
+          plugins: function () {
             return [
               require('precss'),
               require('autoprefixer')
@@ -88,7 +88,7 @@ module.exports = [
       {
         loader: 'postcss-loader',
         options: {
-          plugins: function() {
+          plugins: function () {
             return [
               require('precss'),
               require('autoprefixer')

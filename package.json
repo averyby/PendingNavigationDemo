@@ -15,12 +15,16 @@
     "startDevServer": "nodemon --inspect --watch config --watch src/server src/server/serverEntry.js",
     "startProdServer": "cross-env NODE_ENV=production node src/server/serverEntry.js"
   },
-  "sideEffects": ["*.css", "*.scss"],
+  "sideEffects": [
+    "*.css",
+    "*.scss"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.2.0"
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "purgecss-webpack-plugin": "^1.4.0"
   },
   "dependencies": {
     "@babel/core": "^7.3.3",
