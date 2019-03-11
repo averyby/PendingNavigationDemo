@@ -15,7 +15,8 @@ const styleLoaders = require('./style-loaders-prod');
 const APPCONFIG = require('../appConfig.json');
 
 const PATHS = {
-  src: path.join(__dirname, '../src')
+  src: path.join(__dirname, '../src'),
+  npmModules: path.join(__dirname, '../node_modules')
 };
 
 const prodClientConfig = {
@@ -124,7 +125,9 @@ const prodClientConfig = {
       chunkFilename: '[name].[contenthash].css'
     }),
     new PurgecssPlugin({
-      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }).concat(
+        glob.sync(`${PATHS.npmModules}/bootstrap/**/*.js`, { nodir: true })
+      ),
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
