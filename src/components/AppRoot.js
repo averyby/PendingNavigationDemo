@@ -1,36 +1,23 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
-import Loadable from 'react-loadable';
-import _ from 'lodash-es';
 import './AppRoot.scss';
 
-const LoadableComponent = Loadable({
-  loader: () => import('./LoadOnDemand/LoadOnDemand'),
-  loading: () => <div>Loading...</div>
-});
-
-const ServerSideRendered = Loadable({
-  loader: () => import('./ServerSideRendered/ServerSideRendered'),
-  loading: () => <div>Loading...</div>
-});
 
 class AppRoot extends React.Component {
-  state = {
-    show: false
-  };
-
-  showComponent = () => {
-    this.setState({ show: true });
-  };
-
   render() {
     return (
-      <div className="app-root">
-        <button onClick={this.showComponent}>
-          测试 React Loadable
-        </button>
-        <ServerSideRendered />
-        {this.state.show ? <LoadableComponent /> : null}
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            1 of 3
+          </div>
+          <div className="col-md-auto">
+            Variable width content
+          </div>
+          <div className="col col-lg-2">
+            3 of 3
+          </div>
+        </div>
       </div>
     );
   }
