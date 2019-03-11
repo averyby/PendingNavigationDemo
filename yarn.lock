@@ -8115,6 +8115,24 @@ pure-color@^1.2.0:
   resolved "http://registry.npm.taobao.org/pure-color/download/pure-color-1.3.0.tgz#1fe064fb0ac851f0de61320a8bf796836422f33e"
   integrity sha1-H+Bk+wrIUfDeYTIKi/eWg2Qi8z4=
 
+purgecss-webpack-plugin@^1.4.0:
+  version "1.4.0"
+  resolved "http://registry.npm.taobao.org/purgecss-webpack-plugin/download/purgecss-webpack-plugin-1.4.0.tgz#accf6f8f41a7d48fe830da16a4c94d1ab884d6c0"
+  integrity sha1-rM9vj0Gn1I/oMNoWpMlNGriE1sA=
+  dependencies:
+    purgecss "^1.1.0"
+    webpack-sources "^1.3.0"
+
+purgecss@^1.1.0:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/purgecss/download/purgecss-1.1.0.tgz#0d27c18bb4070d246a845ea22697271eabb59ffe"
+  integrity sha1-DSfBi7QHDSRqhF6iJpcnHqu1n/4=
+  dependencies:
+    glob "^7.1.2"
+    postcss "^7.0.0"
+    postcss-selector-parser "^5.0.0-rc.3"
+    yargs "^12.0.1"
+
 q@^1.1.2:
   version "1.5.1"
   resolved "http://registry.npm.taobao.org/q/download/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
@@ -10352,7 +10370,7 @@ yargs@12.0.2:
     y18n "^3.2.1 || ^4.0.0"
     yargs-parser "^10.1.0"
 
-yargs@^12.0.4:
+yargs@^12.0.1, yargs@^12.0.4:
   version "12.0.5"
   resolved "http://registry.npm.taobao.org/yargs/download/yargs-12.0.5.tgz#05f5997b609647b64f66b81e3b4b10a368e7ad13"
   integrity sha1-BfWZe2CWR7ZPZrgeO0sQo2jnrRM=
