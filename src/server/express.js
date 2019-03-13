@@ -11,7 +11,7 @@ const startListening = () => {
   const PORT = process.env.PORT || 8080;
 
   Loadable.preloadAll().then(() => {
-    server.listen(PORT, () => {
+    server.listen(PORT, '0.0.0.0', () => {
       console.log(`Server is listening on http://localhost:${PORT}`);
     });
   });
