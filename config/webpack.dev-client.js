@@ -17,6 +17,9 @@ const devClientConfig = {
       './src/clientEntry.js'
     ],
   },
+  externals: {
+    jquery: 'jQuery'
+  },
   mode: 'development',
   output: {
     filename: '[name]-bundle.js', // name 会被 entry 名替换

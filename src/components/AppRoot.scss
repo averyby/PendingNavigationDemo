@@ -1,12 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+
 .container {
-  color: white;
-  border: 1px solid red;
-  .row {
-    & > div:nth-child(2n) {
-      background: brown;
-    }
-    & > div:nth-child(2n+1) {
-      background: blueviolet;
-    }
-  }
+  //color: white;
+  //border: 1px solid red;
+  //.row {
+  //  & > div:nth-child(2n) {
+  //    background: brown;
+  //  }
+  //  & > div:nth-child(2n+1) {
+  //    background: blueviolet;
+  //  }
+  //}
 }

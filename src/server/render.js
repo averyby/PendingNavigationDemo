@@ -43,6 +43,9 @@ export default ({ clientStats }) => (req, res) => {
           return `<link rel="stylesheet" href="${bundle.publicPath}">`  
         }).join('\n')}
         ${styles}
+        <style type="text/css">
+            html { display: none; }
+        </style>
         <title>Bootstrap Starter</title>
     </head>
     <body>
@@ -52,6 +55,14 @@ export default ({ clientStats }) => (req, res) => {
       }).join('\n')}
       
       ${js}
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {    // EDIT: From Adam Zerner's comment below: Rather use load: $(window).on('load', function () {...});
+          $('html').show();  // EDIT: Can also use $('html').removeClass('hidden'); 
+        });  
+      </script>
       ${cssHash}
     </body>
     </html>

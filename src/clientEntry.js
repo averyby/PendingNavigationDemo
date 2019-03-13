@@ -1,4 +1,5 @@
 require('@babel/register');
+import 'typeface-roboto';
 import 'bootstrap';
 import './index.scss';
 // 为了支持 index.html 模板改了之后浏览器能够自动刷新，需要在 js 里显式地 require index.html。

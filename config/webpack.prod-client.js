@@ -26,6 +26,9 @@ const prodClientConfig = {
       './src/clientEntry.js'
     ],
   },
+  externals: {
+    jquery: 'jQuery'
+  },
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js', // name 会被 entry 名替换
@@ -35,15 +38,7 @@ const prodClientConfig = {
   },
   optimization: {
     splitChunks: {
-      chunks: "all",
-      cacheGroups: {
-        styles: {
-          name: 'styles',
-          test: /\.css$/,
-          chunks: 'all',
-          enforce: true
-        }
-      }
+      chunks: "all"
     }
   },
   devtool: "source-map",
