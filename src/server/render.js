@@ -60,7 +60,7 @@ export default ({ clientStats }) => (req, res) => {
             crossorigin="anonymous"></script>
       <script type="text/javascript">
         $(document).ready(function() {    // EDIT: From Adam Zerner's comment below: Rather use load: $(window).on('load', function () {...});
-          $('html').show();  // EDIT: Can also use $('html').removeClass('hidden'); 
+          $('html').show();  
         });  
       </script>
       ${cssHash}
