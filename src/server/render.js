@@ -50,14 +50,14 @@ export default ({ clientStats }) => (req, res) => {
     </head>
     <body>
     <div id="react-root">${app}</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
       ${jsBundles.map(bundle => {
         return `<script src="${bundle.publicPath}"></script>`
       }).join('\n')}
       
       ${js}
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
       <script type="text/javascript">
         $(document).ready(function() {    // EDIT: From Adam Zerner's comment below: Rather use load: $(window).on('load', function () {...});
           $('html').show();  
