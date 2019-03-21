@@ -1,14 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
 
 .container {
-  //color: white;
-  //border: 1px solid red;
-  //.row {
-  //  & > div:nth-child(2n) {
-  //    background: brown;
-  //  }
-  //  & > div:nth-child(2n+1) {
-  //    background: blueviolet;
-  //  }
-  //}
+  border: 1px solid red;
+}
+
+.nav-bar {
+  background: antiquewhite;
+  padding: 1.2rem 0;
+  font-size: 1.3rem;
+  .col {
+    text-align: center;
+  }
 }

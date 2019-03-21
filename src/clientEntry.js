@@ -15,4 +15,23 @@ import './index.scss';
 // require('./index.html');
 require('./app');
 
+function getWidth() {
+  return Math.max(
+    document.body.scrollWidth,
+    document.documentElement.scrollWidth,
+    document.body.offsetWidth,
+    document.documentElement.offsetWidth,
+    document.documentElement.clientWidth
+  );
+}
+
+function adjustBaseFontSize() {
+  const browserWidth = getWidth();
+  document.getElementsByTagName('html')[0].style.fontSize = browserWidth / 100 + 'px';
+  console.log('browser width', browserWidth);
+}
+// adjustBaseFontSize();
+// window.onresize = adjustBaseFontSize;
+
+
 console.log(`Environment is ${process.env.NODE_ENV}`);
