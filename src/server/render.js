@@ -10,6 +10,8 @@ import flushChunks from 'webpack-flush-chunks';
 import Loadable from 'react-loadable';
 import { getBundles } from 'react-loadable/webpack';
 import stats from '../../react-loadable.json';
+import PendingNavDataLoader from '../components/PendingNavDataLoader/PendingNavDataLoader';
+
 
 // console.log('stats', stats);
 const store = createStore();
@@ -31,7 +33,9 @@ export default ({ clientStats }) => (req, res) => {
       <Loadable.Capture report={moduleName => modules.push(moduleName)}>
         <Provider store={store}>
           <StaticRouter location={req.path} context={{}}>
-            <div>{renderRoutes(routes)}</div>
+            <PendingNavDataLoader routes={routes}>
+              {renderRoutes(routes)}
+            </PendingNavDataLoader>
           </StaticRouter>
         </Provider>
       </Loadable.Capture>
