@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { fetchUsers } from "../../actions";
 import PropTypes from 'prop-types';
 
 class UsersList extends Component {
@@ -14,7 +15,7 @@ class UsersList extends Component {
   render() {
 
     return (
-      <section class="users-list">
+      <section className="users-list">
         <h3>Here are a list of users:</h3>
         <ul className="list-group">{this.getUsersList()}</ul>
       </section>
@@ -31,4 +32,11 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(UsersList);
+function loadData(store) {
+  return store.dispatch(fetchUsers());
+}
+
+export default {
+  loadData,
+  component: connect(mapStateToProps)(UsersList)
+};
