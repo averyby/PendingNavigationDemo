@@ -1,6 +1,10 @@
 import React from 'react';
 import { renderToString } from "react-dom/server";
-import AppRoot from '../components/AppRoot';
+import { renderRoutes } from "react-router-config";
+import { StaticRouter } from "react-router-dom";
+import { Provider } from 'react-redux';
+import routes from '../routes';
+import createStore from '../helpers/createStore';
 
 import { flushChunkNames } from "react-universal-component/server";
 import flushChunks from 'webpack-flush-chunks';
@@ -9,12 +13,17 @@ import { getBundles } from 'react-loadable/webpack';
 import stats from '../../react-loadable.json';
 
 // console.log('stats', stats);
+const store = createStore();
 
 export default ({ clientStats }) => (req, res) => {
   const modules = [];
   const app = renderToString(
     <Loadable.Capture report={moduleName => modules.push(moduleName)}>
-      <AppRoot />
+      <Provider store={store}>
+        <StaticRouter location={req.path} context={{}}>
+          <div>{renderRoutes(routes)}</div>
+        </StaticRouter>
+      </Provider>
     </Loadable.Capture>
   );
 
@@ -40,8 +49,8 @@ export default ({ clientStats }) => (req, res) => {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
         ${cssBundles.map(bundle => {
-          return `<link rel="stylesheet" href="${bundle.publicPath}">`  
-        }).join('\n')}
+    return `<link rel="stylesheet" href="${bundle.publicPath}">`
+  }).join('\n')}
         ${styles}
         <style type="text/css">
             html { display: none; }
@@ -54,8 +63,8 @@ export default ({ clientStats }) => (req, res) => {
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
       ${jsBundles.map(bundle => {
-        return `<script src="${bundle.publicPath}"></script>`
-      }).join('\n')}
+    return `<script src="${bundle.publicPath}"></script>`
+  }).join('\n')}
       
       ${js}
       <script type="text/javascript">
